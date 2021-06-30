@@ -105,7 +105,7 @@
 
 .normal-table tr td{
     border: 1px solid #e1e0e0 !important;
-    background-color: #ffffff;
+    background-color: #ffffff !important;
 }
 
 .cjk-list li{
