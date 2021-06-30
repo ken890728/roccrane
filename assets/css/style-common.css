@@ -107,3 +107,18 @@
     border: 1px solid #e1e0e0 !important;
     background-color: #ffffff;
 }
+
+.cjk-list li{
+    list-style-type:cjk-ideographic;
+    margin-left: 60px;
+}
+
+.decimal-list li{
+    list-style-type:decimal;
+    margin-left: 60px;
+}
+
+.square-list li{
+    list-style-type:square;
+    margin-left: 60px;
+}
