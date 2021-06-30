@@ -24,7 +24,7 @@
 .sideBar ul>li,
 .sideBar ul>li>a,
 .Content label {
-    font-size: 20pt;
+    font-size: 18pt;
     font-weight: 500;
     color: #52525b;
     text-decoration: none;
@@ -101,4 +101,9 @@
 .td-icon{
     float: left;
     margin-right: 10px;
+}
+
+.normal-table tr td{
+    border: 1px solid #e1e0e0 !important;
+    background-color: #ffffff;
 }
