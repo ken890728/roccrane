@@ -1,37 +1,40 @@
-
-.FormBlock label{
-    font-size: 24pt;
+.FormBlock label {
+    font-size: 18pt;
     font-weight: 500;
     color: #52525b;
     text-decoration: none;
 }
 
-.FormBlock .checkbox{
+.FormBlock .checkbox {
     margin-right: 20px;
     margin-left: 10px;
 }
 
-.FormBlock .title,.locate .title{
-    font-size: 35pt;
+.FormBlock .title,
+.locate .title {
+    font-size: 28pt;
     font-weight: 700;
-    color:#808a9e;
+    color: #808a9e;
 }
-.FormBlock .title span,.FormBlock label span{
+
+.FormBlock .title span,
+.FormBlock label span {
     font-size: 18pt;
     font-weight: 500;
-    color:#ff7200;
+    color: #ff7200;
 }
-.FormBlock label span.tips{
+
+.FormBlock label span.tips {
     color: #52525b;
 }
-.FormBlock input[type=submit]{
+
+.FormBlock input[type=submit] {
     background: #41516f;
     color: #ffffff;
     font-size: 18pt;
     font-weight: 500;
-    
-}
-.FormBlock input[type=checkbox]{
-    -webkit-appearance: checkbox;
 }
 
+.FormBlock input[type=checkbox] {
+    -webkit-appearance: checkbox;
+}
