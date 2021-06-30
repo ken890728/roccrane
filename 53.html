@@ -22,14 +22,17 @@
                     <ul class="my-2">
                         <li class="my-2"><a class="" href="51.html">月刊專區</a></li>
                         <li class="my-2"><a class="" href="52.html">出版刊物</a></li>
-                        <li class="my-2">
-                            <a class="active" href="53.html"><img src="images/arrow.png">文件下載</a>
-                            <ul>
-                                <li><a class="active" href=""> 固定式起重機 </a></li>
-                                <li><a href=""> 移動式起重機 </a></li>
-                                <li><a href=""> 人字臂起重機 </a></li>
-                            </ul>
-                        </li>
+                        <li class="my-2 arrow"><a class="active" href="53.html">文件下載</a></li>
+                        <ul>
+                            <li><a id="l1" onclick="tol1()" class="jsctr active"> 固定式起重機 </a></li>
+                            <li><a id="l2" onclick="tol2()" class="jsctr"> 移動式起重機 </a></li>
+                            <li><a id="l3" onclick="tol3()" class="jsctr"> 人字臂起重機 </a></li>
+                            <li><a id="l4" onclick="tol4()" class="jsctr"> 法規文件 </a></li>
+                            <li><a id="l5" onclick="tol5()" class="jsctr"> 安全檢查文件 </a></li>
+                            <li><a id="l6" onclick="tol6()" class="jsctr"> 場地租用 </a></li>
+                            <li><a id="l7" onclick="tol7()" class="jsctr"> 其他文件下載 </a></li>
+                            <li><a id="l8" onclick="tol8()" class="jsctr"> 圖片區 </a></li>
+                        </ul>          
                     </ul>
                 </div>
 
@@ -103,6 +106,45 @@
             $("#header").load("header.html");
             $("#footer").load("footer.html");
         });
+
+        function tol1(){
+            $(".jsctr").removeClass("active");
+            $("#l1").addClass("active");
+        }
+
+        function tol2(){
+            $(".jsctr").removeClass("active");
+            $("#l2").addClass("active");
+        }
+
+        function tol3(){
+            $(".jsctr").removeClass("active");
+            $("#l3").addClass("active");
+        }
+        function tol4(){
+            $(".jsctr").removeClass("active");
+            $("#l4").addClass("active");
+        }
+
+        function tol5(){
+            $(".jsctr").removeClass("active");
+            $("#l5").addClass("active");
+        }
+
+        function tol6(){
+            $(".jsctr").removeClass("active");
+            $("#l6").addClass("active");
+        }
+
+        function tol7(){
+            $(".jsctr").removeClass("active");
+            $("#l7").addClass("active");
+        }
+
+        function tol8(){
+            $(".jsctr").removeClass("active");
+            $("#l8").addClass("active");
+        }
     </script>
 </body>
 

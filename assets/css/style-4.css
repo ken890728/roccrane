@@ -14,4 +14,16 @@
     text-align: center;
 }
 
+.arrow{
+    margin-left: -30px;
+	padding: 0 0 0 30px;
+	list-style: none;
+	background-image: url("../../images/arrow.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 18pt;
+ }
 
+ .sideBar ul ul>li>a {
+    font-size: 16pt;
+}
