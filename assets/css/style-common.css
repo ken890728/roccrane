@@ -1,0 +1,104 @@
+/* SideBar */
+
+.sideBar{
+    height:850px
+}
+
+.sideBar>.container {
+    padding-top: 3rem;
+    width: max-content;
+}
+
+.sideBar .title,
+.Content .Name {
+    font-size: 24pt;
+    font-weight: 700;
+    color: #32325d;
+}
+
+.sideBar ul {
+    list-style: none;
+    padding-left: 3px;
+}
+
+.sideBar ul>li,
+.sideBar ul>li>a,
+.Content label {
+    font-size: 20pt;
+    font-weight: 500;
+    color: #52525b;
+    text-decoration: none;
+}
+
+.sideBar ul>li>a.active,
+.sideBar ul>li>a:hover{
+    color: #ff7200;
+}
+
+
+/* //SideBar */
+
+.Content .title,
+.locate .title {
+    font-size: 28pt;
+    font-weight: 700;
+    color: #808a9e;
+}
+
+.Content .title span {
+    font-size: 18pt;
+    font-weight: 500;
+    color: #ff7200;
+}
+
+.Content label span {
+    font-size: 18pt;
+    font-weight: 500;
+    color: #ff7200;
+}
+
+.Content input[type=submit] {
+    background: #41516f;
+    color: #ffffff;
+    font-size: 18pt;
+    font-weight: 500;
+}
+
+.Content .detail {
+    font-size: 18pt;
+    font-weight: 500;
+    color: #52525b;
+}
+
+.Content .detail table {
+    width: 100%;
+    border-color: #e1e0e0;
+}
+
+.Content .detail table tr th {
+    background-color: #e1e0e0;
+    font-size: 24pt;
+    font-weight: 700;
+    color: #32325d;
+    padding: 20px;
+    text-align: center;
+}
+
+.Content .detail table tr td {
+    font-size: 18pt;
+    font-weight: 500;
+    color: #52525b;
+    padding: 20px;
+}
+
+.Content .detail table tr td span {
+    font-size: 18pt;
+    font-weight: 500;
+    color: #52525b;
+    text-align: center;
+}
+
+.td-icon{
+    float: left;
+    margin-right: 10px;
+}

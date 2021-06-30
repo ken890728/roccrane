@@ -1,0 +1,132 @@
+.Content .titleOn,
+.locate .title {
+    font-size: 28pt;
+    font-weight: bolder;
+    color: #ff7200;
+    border-bottom: 2px solid;
+    width: 30%;
+    display:table-cell; 
+    vertical-align:bottom;
+    cursor: pointer;
+}
+
+.Content .titleOff,
+.locate .title {
+    font-size: 18pt;
+    font-weight: 700;
+    color: #808a9e;
+    border-bottom: 2px solid;
+    width: 30%;
+    display:table-cell; 
+    vertical-align:bottom;
+    cursor: pointer;
+}
+
+.Content .detail {
+    font-size: 18pt;
+    font-weight: 500;
+    color: #52525b;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.detail-box {
+    color: #e1e0e0;
+    border-bottom: 1px solid;
+    width: 70%;
+}
+
+.detail-box-bottom{
+    color: #e1e0e0;
+    width: 70%;
+}
+
+.detail-box-date{
+    text-align: center;
+    color: #41516f;
+    height: 120px;
+    width: 120px;
+}
+
+.detail-box-d{
+    text-align: center;
+    font-size: 50pt;
+    font-weight: bolder;
+    height: 75px;
+}
+
+.detail-box-ym{
+    text-align: center;
+}
+
+.detail-box-text a{
+    color: #52525b !important;
+    font-weight: bolder;
+}
+
+.td-icon{
+    float: left;
+    margin-right: 10px;
+}
+
+table tr td:nth-child(1){
+    width: 120px;
+}
+
+.map iframe {
+    border: none;
+    width: 100%;
+    min-height: 400px;
+    display: block;
+    -webkit-filter: var(--iframe-filter);
+    -moz-filter: var(--iframe-filter);
+    -ms-filter: var(--iframe-filter);
+    -o-filter: var(--iframe-filter);
+    filter: var(--iframe-filter);
+}
+
+.w3l-contact-main .map-content-9 form input,
+.w3l-contact-main .map-content-9 form textarea {
+    width: 100%;
+    color: var(--font-color);
+    background: var(--bg-color);
+    font-size: 17px;
+    font-weight: normal;
+    font-style: normal;
+    border: none;
+    font-family: inherit;
+    padding: 0px 16px;
+    border: 1px solid var(--border-color);
+    outline: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    height: 55px;
+    display: inline-block;
+    line-height: 52px;
+    box-shadow: none;
+}
+
+.w3l-contact-main .map-content-9 h5 {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    color: #233142;
+}
+
+.w3l-contact-main .map-content-9 form textarea {
+    resize: none;
+    height: 130px;
+    margin: 30px 0;
+    font-family: 'Spartan', sans-serif;
+}
+
+.w3l-contact-main .map-content-9 form input:focus,
+.w3l-contact-main .map-content-9 form textarea:focus {
+    outline: none;
+    border: 1px solid var(--heading-color);
+    background: none;
+}
