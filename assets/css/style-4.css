@@ -7,6 +7,10 @@
     text-align: center;
 }
 
+.Content .detail table.textcenter tr>td:nth-child(2) {
+    text-align: left;
+}
+
 .Content .detail table tr td span {
     font-size: 18pt;
     font-weight: 500;
@@ -14,16 +18,20 @@
     text-align: center;
 }
 
-.arrow{
+.arrow {
     margin-left: -30px;
-	padding: 0 0 0 30px;
-	list-style: none;
-	background-image: url("../../images/arrow.png");
-	background-repeat: no-repeat;
-	background-position: left center;
-	background-size: 18pt;
- }
+    padding: 0 0 0 30px;
+    list-style: none;
+    background-image: url("../../images/arrow.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 18pt;
+}
 
- .sideBar ul ul>li>a {
+.sideBar ul ul>li>a {
     font-size: 16pt;
+}
+
+.nowrap {
+    white-space: nowrap;
 }
