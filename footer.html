@@ -8,12 +8,45 @@
 <body>
 	<footer class="w3l-footer">
         <!-- move top -->
-        <button id="messenger" class="contact_box" title="messenger">
-            <div class="messenger"><img src="./images/messenger.png"></div>
-        </button>
-        <button id="line" class="contact_box" title="line">
-            <div class="line"><img src="./images/line.png"></div>
-        </button>
+        <div class="bottom_right" id="bottom_right">
+            <button id="messenger" class="contact_box" title="messenger">
+                <a href="https://zh-tw.facebook.com/roccrane/" target="_blank"><img src="./images/messenger.png"></a>
+            </button>
+            <button id="line" class="contact_box" title="line">
+                <a href="https://liff.line.me/1645278921-kWRPP32q?accountId=roccrane&openerPlatform=native&openerKey=urlSchema%3Aexternal#mst_challenge=lsTUMRvr7ZSy9eo8dHkTtV5bWcv1V9h3_cWoLmzbiig" target="_blank"><img src="./images/line.png"></a>
+            </button>
+            <button onclick="topFunction()" id="movetop" title="Go to top">
+                &#10548;
+            </button>
+
+            <script>
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function() {
+                    scrollFunction()
+                };
+
+                function scrollFunction() {
+                    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                        document.getElementById("bottom_right").style.display = "flex";
+                        document.getElementById("messenger").style.display = "flex";
+                        document.getElementById("line").style.display = "flex";
+                        document.getElementById("movetop").style.display = "flex";
+                    } else {
+                        document.getElementById("bottom_right").style.display = "none";
+                        document.getElementById("messenger").style.display = "none";
+                        document.getElementById("line").style.display = "none";
+                        document.getElementById("movetop").style.display = "none";
+                    }
+                }
+
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+            </script>
+
+        </div>
         <!-- /move top -->
         <div>
             <div class="row">

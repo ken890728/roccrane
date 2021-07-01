@@ -279,6 +279,12 @@ select {
     word-wrap: normal;
 }
 
+a.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: default;
+}
+
 button,
 [type='button'],
 [type='reset'],
@@ -3316,6 +3322,11 @@ input[type='button'].btn-block {
 .dropdown-menu-right {
     right: 0;
     left: auto;
+}
+
+.dropdown-menu.dropdown-menu-phone{
+    margin-left: 190px;
+    margin-top: -30px;
 }
 
 @media (min-width: 576px) {
@@ -13864,7 +13875,7 @@ a.dropdown-item {
 
 a.dropdown-item.active,
 a.dropdown-item:hover {
-    color: #ff7200;
+    color: #ff7200 !important;
     font-size: 16pt;
     font-weight: bolder;
     background: none !important;
