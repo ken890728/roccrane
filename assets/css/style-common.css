@@ -1,7 +1,7 @@
 /* SideBar */
 
-.sideBar{
-    height:850px
+.sideBar {
+    height: 850px
 }
 
 .sideBar>.container {
@@ -31,7 +31,7 @@
 }
 
 .sideBar ul>li>a.active,
-.sideBar ul>li>a:hover{
+.sideBar ul>li>a:hover {
     color: #ff7200;
 }
 
@@ -98,27 +98,32 @@
     text-align: center;
 }
 
-.td-icon{
+.td-icon {
     float: left;
     margin-right: 10px;
 }
 
-.normal-table tr td{
+.normal-table tr td {
     border: 1px solid #e1e0e0 !important;
     background-color: #ffffff !important;
 }
 
-.cjk-list li{
-    list-style-type:cjk-ideographic;
+.normal-table tr th {
+    border: 1px solid #e1e0e0 !important;
+    background-color: #e1e0e0!important;
+}
+
+.cjk-list li {
+    list-style-type: cjk-ideographic;
     margin-left: 60px;
 }
 
-.decimal-list li{
-    list-style-type:decimal;
+.decimal-list li {
+    list-style-type: decimal;
     margin-left: 60px;
 }
 
-.square-list li{
-    list-style-type:square;
+.square-list li {
+    list-style-type: square;
     margin-left: 60px;
 }

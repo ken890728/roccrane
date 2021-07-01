@@ -18,6 +18,10 @@
     text-align: center;
 }
 
+.Content .detail ul li a:hover {
+    color: #ff7200;
+}
+
 .arrow {
     margin-left: -30px;
     padding: 0 0 0 30px;
