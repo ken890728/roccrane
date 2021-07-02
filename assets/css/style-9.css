@@ -1,40 +1,59 @@
-    .Content .detail table.t9 th {
-        white-space: nowrap;
-    }
-    
-    .Content .detail table.t9 tr td {
-        font-size: 18pt;
-        text-align: center;
-        color: #000;
-        font-weight: 500;
-    }
-    
-    .Content .detail table.t9 tr td:nth-child(4),
-    .Content .detail table.t9 tr td:nth-child(5) {
-        white-space: nowrap;
-    }
-    
-    .Content .detail table.t9 tr td:nth-child(1),
-    .Content .detail table.t9 tr td:nth-child(6),
-    .Content .detail table.t9 tr td:nth-child(7) {
-        text-align: left;
-    }
-    
-    .Content .detail table.t9 tr:nth-child(odd) td {
-        background-color: #e1e0e0 !important;
-    }
-    
-    .Content .detail table.t9 tr:nth-child(even) td {
-        background-color: #FFF !important;
-    }
-    
-    .col-half-offset {
-        padding-left: 0px !important;
-        padding-right: 0px !important;
-        margin: 5px !important;
-    }
-    
-    table tr td {
-        border: 0 !important;
-        background-color: #fff !important;
-    }
+.Content .detail table.t9 th {
+    white-space: nowrap;
+}
+
+.Content .detail table.t9 tr td {
+    font-size: 18pt;
+    text-align: center;
+    color: #000;
+    font-weight: 500;
+}
+
+.Content .detail table.t9 tr td:nth-child(4),
+.Content .detail table.t9 tr td:nth-child(5) {
+    white-space: nowrap;
+}
+
+.Content .detail table.t9 tr td:nth-child(1),
+.Content .detail table.t9 tr td:nth-child(6),
+.Content .detail table.t9 tr td:nth-child(7) {
+    text-align: left;
+}
+
+.Content .detail table.t9 tr:nth-child(odd) td {
+    background-color: #e1e0e0 !important;
+}
+
+.Content .detail table.t9 tr:nth-child(even) td {
+    background-color: #FFF !important;
+}
+
+.col-half-offset {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin: 5px !important;
+}
+
+table tr td {
+    border: 0 !important;
+    background-color: #fff !important;
+}
+
+table.phone-main-layer tr:nth-child(odd) table tr td {
+    background-color: #e1e0e0 !important;
+}
+
+table.phone-main-layer tr:nth-child(even) table tr td {
+    background-color: #ffffff !important;
+}
+
+table.phone-main-layer table tr td {
+    padding: 3px;
+    vertical-align: top;
+}
+
+table.phone-main-layer table tr td:nth-child(1) {
+    font-weight: 600;
+    white-space: nowrap;
+    padding-right: 10px;
+}
