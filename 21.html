@@ -27,7 +27,7 @@
   <!-- //header top-->
 
 
-  <section>
+  <section class="d-none d-xl-block">
     <div class="row">
       <!-- Side Bar -->
       <div class="col-xl-2 sideBar d-none d-xl-block" style="background-color: #e1e0e0;">
@@ -114,7 +114,7 @@
         </div>
         <br>
         <div id="Taipei" class="training_box_cus city">
-          <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target=".bd-example-modal-xl">
+          <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target="#class-modal">
             <a>
               <div>110/6/1</div>
               拖吊 危險機械
@@ -153,7 +153,7 @@
             </div>
           </div>
 
-          <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target=".bd-example-modal-xl">
+          <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target="#class-modal">
             <a>
               <div class="none-class">尚未開班(請先報名)</div>
               拖吊 危險機械
@@ -192,7 +192,7 @@
             </div>
           </div>
 
-          <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target=".bd-example-modal-xl">
+          <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target="#class-modal">
             <a>
               <span></span>110/6/1<br>
               拖吊 危險機械
@@ -231,7 +231,7 @@
             </div>
           </div>
 
-          <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target=".bd-example-modal-xl">
+          <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target="#class-modal">
             <a>
               <div>110/6/1</div>
               拖吊 危險機械
@@ -270,7 +270,7 @@
             </div>
           </div>
 
-          <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target=".bd-example-modal-xl">
+          <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target="#class-modal">
             <a>
               <div class="none-class">尚未開班(請先報名)</div>
               拖吊 危險機械
@@ -309,7 +309,7 @@
             </div>
           </div>
 
-          <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target=".bd-example-modal-xl">
+          <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target="#class-modal">
             <a>
               <span></span>110/6/1<br>
               拖吊 危險機械
@@ -348,7 +348,7 @@
             </div>
           </div>
 
-          <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target=".bd-example-modal-xl">
+          <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target="#class-modal">
             <a>
               <div>110/6/1</div>
               拖吊 危險機械
@@ -387,7 +387,7 @@
             </div>
           </div>
 
-          <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target=".bd-example-modal-xl">
+          <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target="#class-modal">
             <a>
               <div class="none-class">尚未開班(請先報名)</div>
               拖吊 危險機械
@@ -426,7 +426,7 @@
             </div>
           </div>
 
-          <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target=".bd-example-modal-xl">
+          <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target="#class-modal">
             <a>
               <span></span>110/6/1<br>
               拖吊 危險機械
@@ -465,7 +465,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="form-group">
           <div class="row">
             <div class="col-md-12" style="text-align:center;">
@@ -477,7 +477,7 @@
     </div>
   </section>
 
-  <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+  <div id="class-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-xl">
       <div class="modal-content" style="border-radius: 100px;">
@@ -559,6 +559,287 @@
     </div>
   </div>
 
+  <section class="d-xl-none">
+    <div class="container">
+      <div class="content">
+          <div class="phone-title">課程查詢</div>
+          <form method="" target="">
+            <div class="input-group my-4 input-group-sm">
+              <div class="input-group-prepend">
+                <div class="input-group-text">課程類別</div>
+              </div>
+              <select class="custom-select" id="phone-class" name="class">
+                <option value="0" selected>所有課程</option>
+                <option value="1">技術操作類</option>
+                <option value="2">營造作業主管</option>
+                <option value="3">有害物作業主管</option>
+                <option value="4">其他教育訓練</option>
+                <option value="5">在職教育訓練(回訓)</option>
+              </select>
+            </div>
+
+            <div class="input-group my-4 input-group-sm">
+              <div class="input-group-prepend">
+                <div class="input-group-text">課程名稱</div>
+              </div>
+              <select class="custom-select" id="phone-class-name" name="class-name">
+              </select>
+            </div>
+
+            <div class="input-group my-4 input-group-sm">
+              <div class="input-group-prepend">
+                <div class="input-group-text">開課地點</div>
+              </div>
+              <select class="custom-select" id="phone-class-place" name="class-place">
+                <option value="0" selected>請選擇</option>
+                <option value="1">臺北</option>
+                <option value="2">桃園</option>
+              </select>
+            </div>
+
+            <div class="input-group my-4 input-group-sm">
+              <div class="input-group-prepend">
+                <div class="input-group-text">課程時段</div>
+              </div>
+              <select class="custom-select" id="phone-class-time" name="class-time">
+                <option value="0" selected>請選擇</option>
+                <option value="1">日間</option>
+                <option value="2">夜間</option>
+                <option value="3">假日</option>
+              </select>
+            </div>
+
+            <div class="input-group my-4 input-group-sm">
+              <div class="input-group-prepend">
+                <div class="input-group-text">課程關鍵字</div>
+              </div>
+              <input type="text" class="form-control" placeholder="請輸入" id="phone-class-keyword" name="class-keyword">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="送出查詢" class="btn phone-btn-cus">
+            </div>
+          </form>
+          <br>
+          <div class="phone-title">專業課程</div><br>
+
+          <div id="Taipei" class="phone-training_box_cus city">
+            <div class="phone-training_course_cus mb-5 p-4" data-toggle="modal" data-target="#phone-class-modal">
+              <a>
+                <div>110/6/1</div>
+                拖吊 危險機械
+                <h2>固定式起重機(伸臂式)</h2>
+              </a>
+              <div class="phone-training_in_cus mt-4">
+                <table class="phone-training_in_top_cus mb-2">
+                  <tbody>
+                    <tr>
+                      <td>內容</td>
+                      <td>吊升荷重在三公噸以上之固定式<br>
+                        起重機(伸臂式)安全衛生教育訓練</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="phone-training_in_bottom_cus mb-2">
+                  <tbody>
+                    <tr>
+                      <td>總時數</td>
+                      <td>18hr</td>
+                      <td style="width: 20px;"></td>
+                      <td>價格</td>
+                      <td>$1800</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5 class="mt-2">備註說明</h5>
+              </div>
+              <div class="phone-training_bottom row d-flex justify-content-between mr-2 mt-5">
+                <div class="col-6 d-flex justify-content-start align-self-end"><a
+                    class="phone-training_button d-flex justify-content-center align-self-center text-dark">登記課程</a></div>
+                <div class="col-5 row d-flex justify-content-around">
+                  <div class="phone-training_note d-flex flex-column"><img src="./images/time.png"><a>日間</a></div>
+                  <div class="phone-training_note d-flex flex-column"><img src="./images/gps.png"><a>台北</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="phone-training_course_cus mb-5 p-4" data-toggle="modal" data-target="#phone-class-modal">
+              <a>
+                <div class="phone-none-class">尚未開班(請先報名)</div>
+                拖吊 危險機械
+                <h2>固定式起重機(伸臂式)</h2>
+              </a>
+              <div class="phone-training_in_cus mt-4">
+                <table class="phone-training_in_top_cus mb-2">
+                  <tbody>
+                    <tr>
+                      <td>內容</td>
+                      <td>吊升荷重在三公噸以上之固定式<br>
+                        起重機(伸臂式)安全衛生教育訓練</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="phone-training_in_bottom_cus mb-2">
+                  <tbody>
+                    <tr>
+                      <td>總時數</td>
+                      <td>18hr</td>
+                      <td style="width: 20px;"></td>
+                      <td>價格</td>
+                      <td>$1800</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5 class="mt-2">備註說明</h5>
+              </div>
+              <div class="phone-training_bottom row d-flex justify-content-between mr-2 mt-5">
+                <div class="col-6 d-flex justify-content-start align-self-end"><a
+                    class="phone-training_button d-flex justify-content-center align-self-center text-dark">登記課程</a></div>
+                <div class="col-5 row d-flex justify-content-around">
+                  <div class="phone-training_note d-flex flex-column"><img src="./images/time.png"><a>日間</a></div>
+                  <div class="phone-training_note d-flex flex-column"><img src="./images/gps.png"><a>台北</a></div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="phone-training_course_cus mb-5 p-4" data-toggle="modal" data-target="#phone-class-modal">
+              <a>
+                <span></span>110/6/1<br>
+                拖吊 危險機械
+                <h2>固定式起重機(伸臂式)</h2>
+              </a>
+              <div class="phone-training_in_cus mt-4">
+                <table class="phone-training_in_top_cus mb-2">
+                  <tbody>
+                    <tr>
+                      <td>內容</td>
+                      <td>吊升荷重在三公噸以上之固定式<br>
+                        起重機(伸臂式)安全衛生教育訓練</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="phone-training_in_bottom_cus mb-2">
+                  <tbody>
+                    <tr>
+                      <td>總時數</td>
+                      <td>18hr</td>
+                      <td style="width: 20px;"></td>
+                      <td>價格</td>
+                      <td>$1800</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5 class="mt-2">備註說明</h5>
+              </div>
+              <div class="phone-training_bottom row d-flex justify-content-between mr-2 mt-5">
+                <div class="col-6 d-flex justify-content-start align-self-end"><a
+                    class="phone-training_button_over d-flex justify-content-center align-self-center text-dark">已額滿</a></div>
+                <div class="col-5 row d-flex justify-content-around">
+                  <div class="phone-training_note d-flex flex-column"><img src="./images/time.png"><a>日間</a></div>
+                  <div class="phone-training_note d-flex flex-column"><img src="./images/gps.png"><a>台北</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="phone-class-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content" style="border-radius: 100px;">
+        <div class="modal-header" style="border: none;">
+
+        </div>
+        <div class="modal-body">
+          <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <br>
+          <div class="Content">
+            <div class="phone-title" style="text-align: center;">開課簡章</div>
+
+            <div class="phone-detail">
+              <table class="phone-normal-table" border="1">
+                <tr>
+                  <th colspan="2">固定式起重機(伸臂式)</th>
+                </tr>
+                <tr>
+                  <td class="center"><b>開課日期</b></td>
+                </tr>
+                <tr>
+                  <td><span>預計110年10月23日-11/15日開班(110年9月30日以前報名繳費(學費9折優惠)</span></td>
+                </tr>
+                <tr>
+                  <td class="center"><b>課程班別</b></td>
+                </tr>
+                <tr>
+                  <td><span>【假日】09:00-18:00；術科實習為全天課程 08:00-17:00</span></td>
+                </tr>
+                <tr>
+                  <td class="center"><b>課程時數</b></td>
+                </tr>
+                <tr>
+                  <td><span>38小時</span></td>
+                </tr>
+                <tr>
+                  <td class="center"><b>上課地點</b></td>
+                </tr>
+                <tr>
+                  <td><span>學科：台北市中正區博愛路154號5樓 (近西門捷運站4號出口)<br><br>術科：臺灣港務股份有限公司(高雄市鼓山區蓬萊路10號)</span></td>
+                </tr>
+                <tr>
+                  <td class="center"><b>報名費用</b></td>
+                </tr>
+                <tr>
+                  <td><span>新台幣$ 21000元整 (此費用不包含技術士技能檢定費用)</span></td>
+                </tr>
+                <tr>
+                  <td class="center"><b>報名截止日</b></td>
+                </tr>
+                <tr>
+                  <td><span>110年度 10月21日止</span></td>
+                </tr>
+                <tr>
+                  <td class="center"><b>開課說明</b></td>
+                </tr>
+                <tr>
+                  <td><span>預定開班</span></td>
+                </tr>
+              </table>
+              <br>
+              <div style="margin-left: 25px;">
+                1. 受訓者須年滿18歲<br>
+                2. 參與111年度全國技術士技能檢定<br>
+                3. 技術士技能檢定費用：$2870元+簡章費用$50元<br>
+                4. 課程當日請攜帶一吋證件照3張(請勿繳交生活照、自拍照)、身分證正反面影本3份<br>
+                5. 團體報名另有優惠，請來電洽詢。<br>
+                台北職訓電話：02-23880159 訓練組 / 傳真：02-23880151<br>
+                桃園職訓電話：03-3577223 藍小姐 / 傳真：03-3571071
+              </div>
+            </div>
+
+          </div>
+          <br>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-12" style="text-align:center;">
+                <input type="submit" value="點我報名" class="w-40 btn btn-org"
+                  style="padding-left:50px;padding-right:50px;max-width:100%;"
+                  onclick="document.location.href='22.html'">
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="modal-footer" style="border: none;">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div id="footer">
 
   </div>
@@ -568,7 +849,7 @@
     $(function () {
       $("#header").load("./header.html");
       $("#footer").load("./footer.html");
-      if($( window ).width()>1600)
+      if ($(window).width() > 1600)
         $("#class-view").addClass("col-xl-9");
       else
         $("#class-view").addClass("col-xl-10");
@@ -618,6 +899,11 @@
       $("#class-name").html($("#class-name").html() + '<option value="' + i + '">' + s0[i] + "</option>");
     }
 
+    $("#phone-class-name").html('<option value="0" selected>所有課程</option>');
+    for (var i = 0; i < s0.length; i++) {
+      $("#phone-class-name").html($("#phone-class-name").html() + '<option value="' + i + '">' + s0[i] + "</option>");
+    }
+
     $("#class").change(function () {
       switch ($("#class").val()) {
         case "0":
@@ -652,6 +938,43 @@
           break;
         case "5":
           $("#class-name").html('<option value="0" selected>所有課程</option>');
+          break;
+      }
+    });
+    $("#phone-class").change(function () {
+      switch ($("#phone-class").val()) {
+        case "0":
+          $("#phone-class-name").html('<option value="0" selected>所有課程</option>');
+          for (var i = 0; i < s0.length; i++) {
+            $("#phone-class-name").html($("#phone-class-name").html() + '<option value="' + i + '">' + s0[i] + "</option>");
+          }
+          break;
+        case "1":
+          $("#phone-class-name").html('<option value="0" selected>所有課程</option>');
+          for (var i = 0; i < s1.length; i++) {
+            $("#phone-class-name").html($("#phone-class-name").html() + '<option value="' + i + '">' + s1[i] + "</option>");
+          }
+          break;
+        case "2":
+          $("#phone-class-name").html('<option value="0" selected>所有課程</option>');
+          for (var i = 0; i < s2.length; i++) {
+            $("#phone-class-name").html($("#phone-class-name").html() + '<option value="' + i + '">' + s2[i] + "</option>");
+          }
+          break;
+        case "3":
+          $("#phone-class-name").html('<option value="0" selected>所有課程</option>');
+          for (var i = 0; i < s3.length; i++) {
+            $("#phone-class-name").html($("#phone-class-name").html() + '<option value="' + i + '">' + s3[i] + "</option>");
+          }
+          break;
+        case "4":
+          $("#phone-class-name").html('<option value="0" selected>所有課程</option>');
+          for (var i = 0; i < s4.length; i++) {
+            $("#phone-class-name").html($("#phone-class-name").html() + '<option value="' + i + '">' + s4[i] + "</option>");
+          }
+          break;
+        case "5":
+          $("#phone-class-name").html('<option value="0" selected>所有課程</option>');
           break;
       }
     });

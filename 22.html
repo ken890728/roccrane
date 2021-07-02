@@ -27,7 +27,7 @@
   <!-- //header top-->
 
 
-  <section>
+  <section class="d-none d-xl-block">
     <div class="row">
       <!-- Side Bar -->
       <div class="col-2 sideBar" style="background-color: #e1e0e0;">
@@ -638,6 +638,604 @@
               </div>
             </div>
         </form>
+    </div>
+  </section>
+
+  <section class="d-xl-none">
+    <div class="container">
+      <form action="" enctype="multipart/form-data" method="">
+        <div class="form-horizontal">
+
+          <input type="hidden" name="TrainingScheduleId" value="61">
+          <div class="form-group">
+            <div class="Content info">
+              <div class="phone-Name">急救人員(回訓) 夜間【台東職訓中心】 2021/06/28<span>【確定開課】</span></div>
+            </div>
+          </div>
+          <div class="Content">
+            <div class="phone-title">個人基本資料<span>*為必填</span></div>
+          </div>
+
+
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-1">
+
+                <label class="control-label" for="StudentName">學員姓名<span style="color:red;">*</span></label>
+
+              </div>
+              <div class="col-md-3">
+                <input class="form-control inputRequired text-box single-line" data-val="true"
+                  data-val-length="姓名 輸入長度超過限制，最多30個字!!" data-val-length-max="30" data-val-required="請輸入學員姓名"
+                  id="StudentName" name="StudentName" type="text" value="">
+                <span class="field-validation-valid text-danger" data-valmsg-for="StudentName"
+                  data-valmsg-replace="true"></span>
+              </div>
+              <div class="col-md-1">
+                <label class="control-label" for="IdentifyId">身分證號<span style="color:red;">*</span></label>
+
+              </div>
+
+              <div class="col-md-3">
+                <input class="form-control inputRequired text-box single-line" data-val="true"
+                  data-val-regex="身份證字號或居留證號格式錯誤"
+                  data-val-regex-pattern="^([A-Z][0-9]{9}|[A-Z][0-9]{6}|[A-Z][0-9]{7}|[A-Z][A-Z][0-9]{8})$"
+                  data-val-required="請輸入身分證號" id="IdentifyId" name="IdentifyId" type="text" value="">
+                <span class="field-validation-valid text-danger" data-valmsg-for="IdentifyId"
+                  data-valmsg-replace="true"></span>
+              </div>
+
+              <label class="control-label col-md-1" for="PhotoFile">相片</label>
+              <div class="col-md-3">
+                <input accept=".jpg,.gif.png" class="form-control" id="PhotoFile" name="PhotoFile"
+                  onchange="checkFile(this)" type="file" value="">
+              </div>
+
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-1">
+                <label class="control-label" for="Birthday">生日<span style="color:red;">*</span></label>
+
+              </div>
+              <div class="col-md-3">
+                <input autocomplete="off" class="form-control datepicker inputRequired hasDatepicker" data-val="true"
+                  data-val-date="欄位 生日 必須是日期。" data-val-required="請輸入生日" id="Birthday" name="Birthday"
+                  placeholder="西元年/月/日" type="text" value="">
+                <span class="field-validation-valid text-danger" data-valmsg-for="Birthday"
+                  data-valmsg-replace="true"></span>
+              </div>
+              <div class="col-md-1">
+                <label class="control-label" for="MobilePhone1">手機一<span style="color:red;">*</span></label>
+              </div>
+              <div class="col-md-3">
+                <input class="form-control inputRequired text-box single-line" data-val="true"
+                  data-val-length="手機 輸入長度超過限制，最多10個字!!" data-val-length-max="10" data-val-required="請輸入手機一"
+                  id="MobilePhone1" name="MobilePhone1" type="tel" value="">
+                <span class="field-validation-valid text-danger" data-valmsg-for="MobilePhone1"
+                  data-valmsg-replace="true"></span>
+              </div>
+              <label class="control-label col-md-1" for="MobilePhone2">手機二</label>
+              <div class="col-md-3">
+                <input class="form-control text-box single-line" data-val="true" data-val-length="手機 輸入長度超過限制，最多10個字!!"
+                  data-val-length-max="10" id="MobilePhone2" name="MobilePhone2" type="tel" value="">
+                <span class="field-validation-valid text-danger" data-valmsg-for="MobilePhone2"
+                  data-valmsg-replace="true"></span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="form-group">
+            <div class="row">
+              <label class="control-label col-md-1" for="Gender">性別</label>
+              <div class="col-md-3">
+                <select class="form-control" data-val="true" data-val-number="欄位 性別 必須是數字。" data-val-range="請選擇正確性別"
+                  data-val-range-max="1" data-val-range-min="0" data-val-required="請輸入性別" id="Gender" name="Gender">
+                  <option value="1">男</option>
+                  <option value="0">女</option>
+                </select>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Gender"
+                  data-valmsg-replace="true"></span>
+              </div>
+              <label class="control-label col-md-1" for="EmailAddr">電子信箱</label>
+              <div class="col-md-7">
+                <input class="form-control text-box single-line" data-val="true" data-val-email="學員Email格式錯誤"
+                  data-val-length="電子信箱 輸入長度超過限制，最多50個字!!" data-val-length-max="50" id="EmailAddr" name="EmailAddr"
+                  type="email" value="">
+                <span class="field-validation-valid text-danger" data-valmsg-for="EmailAddr"
+                  data-valmsg-replace="true"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="row">
+              <label class="control-label col-md-1" for="Tel">電話</label>
+              <div class="col-md-5">
+                <div class="row">
+                  <div class="col-md-3">
+                    <input class="form-control text-box single-line" data-val="true"
+                      data-val-length="區碼 輸入長度超過限制，最多3個字!!" data-val-length-max="3" id="TelAreaCode" name="TelAreaCode"
+                      placeholder="區碼" type="text" value="">
+                  </div>
+                  <div class="col-md-6">
+                    <input class="form-control text-box single-line" data-val="true"
+                      data-val-length="電話 輸入長度超過限制，最多10個字!!" data-val-length-max="10" id="Tel" name="Tel"
+                      placeholder="電話號碼" type="text" value="">
+                    <span class="field-validation-valid text-danger" data-valmsg-for="TelExt"
+                      data-valmsg-replace="true"></span>
+                    <span class="field-validation-valid text-danger" data-valmsg-for="Tel"
+                      data-valmsg-replace="true"></span>
+                    <span class="field-validation-valid text-danger" data-valmsg-for="TelAreaCode"
+                      data-valmsg-replace="true"></span>
+                  </div>
+                  <div class="col-md-3">
+                    <input class="form-control text-box single-line" data-val="true"
+                      data-val-length="分機 輸入長度超過限制，最多10個字!!" data-val-length-max="10" id="TelExt" name="TelExt"
+                      placeholder="分機" type="text" value="">
+                  </div>
+                </div>
+              </div>
+              <label class="control-label col-md-1" for="Fax">傳真</label>
+              <div class="col-md-5">
+                <div class="row">
+                  <div class="col-md-3">
+                    <input class="form-control text-box single-line" data-val="true"
+                      data-val-length="區碼 輸入長度超過限制，最多3個字!!" data-val-length-max="3" id="FaxAreaCode" name="FaxAreaCode"
+                      placeholder="區碼" type="text" value="">
+                  </div>
+                  <div class="col-md-6">
+                    <input class="form-control text-box single-line" data-val="true"
+                      data-val-length="傳真 輸入長度超過限制，最多10個字!!" data-val-length-max="10" id="Fax" name="Fax"
+                      placeholder="傳真號碼" type="text" value="">
+                    <span class="field-validation-valid text-danger" data-valmsg-for="FaxExt"
+                      data-valmsg-replace="true"></span>
+                    <span class="field-validation-valid text-danger" data-valmsg-for="Fax"
+                      data-valmsg-replace="true"></span>
+                    <span class="field-validation-valid text-danger" data-valmsg-for="FaxAreaCode"
+                      data-valmsg-replace="true"></span>
+                  </div>
+                  <div class="col-md-3">
+                    <input class="form-control text-box single-line" data-val="true"
+                      data-val-length="分機 輸入長度超過限制，最多10個字!!" data-val-length-max="10" id="FaxExt" name="FaxExt"
+                      placeholder="分機" type="text" value="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="form-group">
+            <div class="row">
+              <label class="control-label col-md-1" for="Addr">聯絡地址</label>
+              <div class="col-md-11">
+                <div class="row">
+                  <div class="col-md-2">
+                    <input class="form-control text-box single-line" data-val="true"
+                      data-val-length="郵遞區號 輸入長度超過限制，最多10個字!!" data-val-length-max="10" id="AddrPostCode"
+                      name="AddrPostCode" placeholder="郵遞區號" type="text" value="">
+                    <span class="field-validation-valid text-danger" data-valmsg-for="AddrPostCode"
+                      data-valmsg-replace="true"></span>
+                  </div>
+                  <div class="col-md-10">
+                    <input class="form-control text-box single-line" data-val="true"
+                      data-val-length="地址 輸入長度超過限制，最多100個字!!" data-val-length-max="100" id="Addr" name="Addr"
+                      placeholder="聯絡地址" type="text" value="">
+                    <span class="field-validation-valid text-danger" data-valmsg-for="Addr"
+                      data-valmsg-replace="true"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <label class="control-label col-md-1" for="LawAddr">戶籍地址</label>
+              <div class="col-md-11">
+                <div class="row">
+                  <div class="col-md-2">
+                    <input class="form-control text-box single-line" data-val="true"
+                      data-val-length="郵遞區號 輸入長度超過限制，最多10個字!!" data-val-length-max="10" id="LawAddrPostCode"
+                      name="LawAddrPostCode" placeholder="郵遞區號" type="text" value="">
+                    <span class="field-validation-valid text-danger" data-valmsg-for="LawAddrPostCode"
+                      data-valmsg-replace="true"></span>
+                  </div>
+                  <div class="col-md-10">
+                    <input class="form-control text-box single-line" data-val="true"
+                      data-val-length="戶籍地址 輸入長度超過限制，最多100個字!!" data-val-length-max="100" id="LawAddr" name="LawAddr"
+                      placeholder="戶籍地址" type="text" value="">
+                    <span class="field-validation-valid text-danger" data-valmsg-for="LawAddr"
+                      data-valmsg-replace="true"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <label class="control-label col-md-1" for="EducationCode">學歷</label>
+              <div class="col-md-3">
+                <select class="form-control" data-val="true" data-val-number="欄位 學歷 必須是數字。" data-val-required="請輸入學歷"
+                  id="EducationCode" name="EducationCode">
+                  <option value="1">不識字</option>
+                  <option value="2">國小</option>
+                  <option value="3">國中</option>
+                  <option value="4">高中(職)</option>
+                  <option value="5">專科</option>
+                  <option value="6">大學</option>
+                  <option value="7">研究所以上</option>
+                  <option value="99">其他</option>
+                </select>
+                <span class="field-validation-valid text-danger" data-valmsg-for="EducationCode"
+                  data-valmsg-replace="true"></span>
+              </div>
+
+              <div class="col-md-1">
+                <label class="control-label" for="EducationSchoolName">學校名稱<span style="color:red;">*</span></label>
+
+              </div>
+              <div class="col-md-3">
+                <input class="form-control inputRequired text-box single-line" data-val="true"
+                  data-val-length="學校名稱 輸入長度超過限制，最多50個字!!" data-val-length-max="50" data-val-required="請輸入學校名稱"
+                  id="EducationSchoolName" name="EducationSchoolName" type="text" value="">
+                <span class="field-validation-valid text-danger" data-valmsg-for="EducationSchoolName"
+                  data-valmsg-replace="true"></span>
+              </div>
+              <label class="control-label col-md-1" for="EducationDepartment">科系</label>
+              <div class="col-md-3">
+                <input class="form-control text-box single-line" data-val="true" data-val-length="科系 輸入長度超過限制，最多50個字!!"
+                  data-val-length-max="50" id="EducationDepartment" name="EducationDepartment" type="text" value="">
+                <span class="field-validation-valid text-danger" data-valmsg-for="EducationDepartment"
+                  data-valmsg-replace="true"></span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="form-group">
+            <div class="row">
+              <label class="control-label col-md-1" for="EducationYear">畢業年</label>
+              <div class="col-md-3">
+                <input class="form-control text-box single-line" data-val="true" data-val-number="欄位 畢業年 必須是數字。"
+                  data-val-range="區間錯誤" data-val-range-max="200" data-val-range-min="1" id="EducationYear"
+                  name="EducationYear" type="number" value="">
+                <span class="field-validation-valid text-danger" data-valmsg-for="EducationYear"
+                  data-valmsg-replace="true"></span>
+              </div>
+              <label class="control-label col-md-1" for="EducationMonth">畢業月</label>
+              <div class="col-md-3">
+                <input class="form-control text-box single-line" data-val="true" data-val-number="欄位 畢業月 必須是數字。"
+                  data-val-range="區間錯誤" data-val-range-max="12" data-val-range-min="1" id="EducationMonth"
+                  name="EducationMonth" type="number" value="">
+                <span class="field-validation-valid text-danger" data-valmsg-for="EducationMonth"
+                  data-valmsg-replace="true"></span>
+              </div>
+              <label class="control-label col-md-1" for="EduFile">畢業證書</label>
+              <div class="col-md-3">
+                <input accept=".pdf" class="form-control" id="EduFile" name="EduFile" onchange="checkPdfFile(this)"
+                  type="file" value="">
+              </div>
+            </div>
+          </div>
+
+          <div class="Content">
+            <div class="phone-title">公司及聯絡人資料</div>
+          </div>
+
+          <div class="form-group">
+            <div class="row">
+              <label class="control-label col-md-1" for="ReceiptTitleType">發票抬頭</label>
+              <div class="col-md-3">
+                <select class="form-control" data-val="true" data-val-number="欄位 發票抬頭 必須是數字。"
+                  data-val-required="請輸入發票抬頭" id="ReceiptTitleType" name="ReceiptTitleType" onchange="refreshColumn()">
+                  <option value="1">個人</option>
+                  <option value="2">公司</option>
+                  <option value="9">指定</option>
+                </select>
+                <span class="field-validation-valid text-danger" data-valmsg-for="ReceiptTitleType"
+                  data-valmsg-replace="true"></span>
+              </div>
+
+              <label class="control-label col-md-1 receiptTitleArea" for="ReceiptTitle"
+                style="display: none;">指定抬頭</label>
+              <div class="col-md-7">
+                <input class="form-control receiptTitleArea text-box single-line" data-val="true"
+                  data-val-length="指定發票抬頭 輸入長度超過限制，最多50個字!!" data-val-length-max="50" id="ReceiptTitle"
+                  name="ReceiptTitle" placeholder="請輸入指定的發票抬頭文字" type="text" value="" style="display: none;">
+                <span class="field-validation-valid text-danger" data-valmsg-for="ReceiptTitle"
+                  data-valmsg-replace="true"></span>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="form-group">
+            <div class="row">
+              <label class="control-label col-md-1" for="CompanyName">公司名稱</label>
+              <div class="col-md-7">
+                <input class="form-control text-box single-line" data-val="true"
+                  data-val-length="郵遞區號 輸入長度超過限制，最多50個字!!" data-val-length-max="50" id="CompanyName" name="CompanyName"
+                  type="text" value="">
+                <span class="field-validation-valid text-danger" data-valmsg-for="CompanyName"
+                  data-valmsg-replace="true"></span>
+              </div>
+
+              <label class="control-label col-md-1" for="CompanyTaxId">統編</label>
+              <div class="col-md-3">
+                <input class="form-control text-box single-line" data-val="true" data-val-length="統編 輸入長度超過限制，最多8個字!!"
+                  data-val-length-max="8" id="CompanyTaxId" name="CompanyTaxId" type="text" value="">
+                <span class="field-validation-valid text-danger" data-valmsg-for="CompanyTaxId"
+                  data-valmsg-replace="true"></span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <label class="control-label col-md-1" for="JobTitle">職稱</label>
+              <div class="col-md-3">
+                <input class="form-control text-box single-line" data-val="true" data-val-length="職稱 輸入長度超過限制，最多20個字!!"
+                  data-val-length-max="20" id="JobTitle" name="JobTitle" type="text" value="">
+                <span class="field-validation-valid text-danger" data-valmsg-for="JobTitle"
+                  data-valmsg-replace="true"></span>
+              </div>
+              <label class="control-label col-md-1" for="CompanyTel">電話</label>
+              <div class="col-md-7">
+                <div class="row">
+                  <div class="col-md-3">
+                    <input class="form-control text-box single-line" data-val="true"
+                      data-val-length="區碼 輸入長度超過限制，最多3個字!!" data-val-length-max="3" id="CompanyTelAreaCode"
+                      name="CompanyTelAreaCode" type="text" value="">
+                  </div>
+                  <div class="col-md-6">
+                    <input class="form-control text-box single-line" data-val="true"
+                      data-val-length="電話 輸入長度超過限制，最多10個字!!" data-val-length-max="10" id="CompanyTel" name="CompanyTel"
+                      type="text" value="">
+                    <span class="field-validation-valid text-danger" data-valmsg-for="CompanyTelAreaCode"
+                      data-valmsg-replace="true"></span>
+                    <span class="field-validation-valid text-danger" data-valmsg-for="CompanyTel"
+                      data-valmsg-replace="true"></span>
+                    <span class="field-validation-valid text-danger" data-valmsg-for="CompanyTelExt"
+                      data-valmsg-replace="true"></span>
+                  </div>
+                  <div class="col-md-3">
+                    <input class="form-control text-box single-line" data-val="true"
+                      data-val-length="分機 輸入長度超過限制，最多10個字!!" data-val-length-max="10" id="CompanyTelExt"
+                      name="CompanyTelExt" type="text" value="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="form-group">
+            <div class="row">
+              <label class="control-label col-md-1" for="CompanyAddr">地址</label>
+              <div class="col-md-11">
+                <div class="row">
+                  <div class="col-md-2">
+                    <input class="form-control text-box single-line" data-val="true"
+                      data-val-length="郵遞區號 輸入長度超過限制，最多10個字!!" data-val-length-max="10" id="CompanyPostCode"
+                      name="CompanyPostCode" placeholder="郵遞區號" type="text" value="">
+                    <span class="field-validation-valid text-danger" data-valmsg-for="CompanyPostCode"
+                      data-valmsg-replace="true"></span>
+                  </div>
+                  <div class="col-md-10">
+                    <input class="form-control text-box single-line" data-val="true"
+                      data-val-length="電話 輸入長度超過限制，最多100個字!!" data-val-length-max="100" id="CompanyAddr"
+                      name="CompanyAddr" placeholder="聯絡地址" type="text" value="">
+                    <span class="field-validation-valid text-danger" data-valmsg-for="CompanyAddr"
+                      data-valmsg-replace="true"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="form-group">
+            <div class="row">
+              <label class="control-label col-md-1" for="ContactPName">聯絡人</label>
+              <div class="col-md-3">
+                <input class="form-control text-box single-line" data-val="true" data-val-length="聯絡人 輸入長度超過限制，最多10個字!!"
+                  data-val-length-max="10" id="ContactPName" name="ContactPName" type="text" value="">
+                <span class="field-validation-valid text-danger" data-valmsg-for="ContactPName"
+                  data-valmsg-replace="true"></span>
+              </div>
+
+              <label class="control-label col-md-1" for="ContactPDep">部門</label>
+              <div class="col-md-3">
+                <input class="form-control text-box single-line" id="ContactPDep" name="ContactPDep" type="text"
+                  value="">
+                <span class="field-validation-valid text-danger" data-valmsg-for="ContactPDep"
+                  data-valmsg-replace="true"></span>
+              </div>
+
+              <label class="control-label col-md-1" for="ContactPJobTitle">職稱</label>
+              <div class="col-md-3">
+                <input class="form-control text-box single-line" data-val="true" data-val-length="職稱 輸入長度超過限制，最多20個字!!"
+                  data-val-length-max="20" id="ContactPJobTitle" name="ContactPJobTitle" type="text" value="">
+                <span class="field-validation-valid text-danger" data-valmsg-for="ContactPJobTitle"
+                  data-valmsg-replace="true"></span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="form-group">
+            <div class="row">
+              <label class="control-label col-md-1" for="Tel">電話</label>
+              <div class="col-md-5">
+                <div class="row">
+                  <div class="col-md-3">
+                    <input class="form-control text-box single-line" data-val="true"
+                      data-val-length="區碼 輸入長度超過限制，最多3個字!!" data-val-length-max="3" id="ContactPTelAreaCode"
+                      name="ContactPTelAreaCode" placeholder="區碼" type="text" value="">
+
+
+                  </div>
+                  <div class="col-md-6">
+                    <input class="form-control text-box single-line" data-val="true"
+                      data-val-length="電話 輸入長度超過限制，最多10個字!!" data-val-length-max="10" id="ContactPTel"
+                      name="ContactPTel" placeholder="電話號碼" type="text" value="">
+                    <span class="field-validation-valid text-danger" data-valmsg-for="ContactPTelAreaCode"
+                      data-valmsg-replace="true"></span>
+                    <span class="field-validation-valid text-danger" data-valmsg-for="ContactPTel"
+                      data-valmsg-replace="true"></span>
+                    <span class="field-validation-valid text-danger" data-valmsg-for="ContactPTelExt"
+                      data-valmsg-replace="true"></span>
+                  </div>
+                  <div class="col-md-3">
+                    <input class="form-control text-box single-line" data-val="true"
+                      data-val-length="分機 輸入長度超過限制，最多10個字!!" data-val-length-max="10" id="ContactPTelExt"
+                      name="ContactPTelExt" placeholder="分機" type="text" value="">
+
+                  </div>
+                </div>
+              </div>
+              <label class="control-label col-md-1" for="ContactPFax">傳真</label>
+              <div class="col-md-5">
+                <div class="row">
+                  <div class="col-md-3">
+                    <input class="form-control text-box single-line" data-val="true"
+                      data-val-length="區碼 輸入長度超過限制，最多3個字!!" data-val-length-max="3" id="ContactPFaxAreaCode"
+                      name="ContactPFaxAreaCode" placeholder="區碼" type="text" value="">
+                  </div>
+                  <div class="col-md-6">
+                    <input class="form-control text-box single-line" data-val="true"
+                      data-val-length="傳真 輸入長度超過限制，最多10個字!!" data-val-length-max="10" id="ContactPFax"
+                      name="ContactPFax" placeholder="傳真號碼" type="text" value="">
+                    <span class="field-validation-valid text-danger" data-valmsg-for="ContactPFaxAreaCode"
+                      data-valmsg-replace="true"></span>
+                    <span class="field-validation-valid text-danger" data-valmsg-for="ContactPFax"
+                      data-valmsg-replace="true"></span>
+                    <span class="field-validation-valid text-danger" data-valmsg-for="ContactPFaxExt"
+                      data-valmsg-replace="true"></span>
+                  </div>
+                  <div class="col-md-3">
+                    <input class="form-control text-box single-line" data-val="true"
+                      data-val-length="分機 輸入長度超過限制，最多10個字!!" data-val-length-max="10" id="ContactPFaxExt"
+                      name="ContactPFaxExt" placeholder="分機" type="text" value="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="row">
+              <label class="control-label col-md-1" for="ContactPMobilePhone">手機</label>
+              <div class="col-md-3">
+                <input class="form-control text-box single-line" data-val="true"
+                  data-val-length="聯絡人手機 輸入長度超過限制，最多10個字!!" data-val-length-max="10" id="ContactPMobilePhone"
+                  name="ContactPMobilePhone" type="text" value="">
+                <span class="field-validation-valid text-danger" data-valmsg-for="ContactPMobilePhone"
+                  data-valmsg-replace="true"></span>
+              </div>
+
+              <label class="control-label col-md-1" for="ContactPEmailAddr">電子信箱</label>
+              <div class="col-md-7">
+                <input class="form-control text-box single-line" data-val="true" data-val-email="聯絡人Email格式錯誤"
+                  data-val-length="聯絡人電子信箱 輸入長度超過限制，最多50個字!!" data-val-length-max="50" id="ContactPEmailAddr"
+                  name="ContactPEmailAddr" type="email" value="">
+                <span class="field-validation-valid text-danger" data-valmsg-for="ContactPEmailAddr"
+                  data-valmsg-replace="true"></span>
+              </div>
+            </div>
+          </div>
+          <div class="Content">
+            <div class="phone-title">初訓資料<span class="no-color">(報名回訓課程者，請填寫初訓課程名稱、證書號碼並請提供初訓證書影本或電子檔)</span></div>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <label class="control-label col-md-2" for="BaseCertificateName">初訓名稱</label>
+              <div class="col-md-10">
+                <input class="form-control text-box single-line" data-val="true"
+                  data-val-length="初訓證書 輸入長度超過限制，最多50個字!!" data-val-length-max="50" id="BaseCertificateName"
+                  name="BaseCertificateName" type="text" value="">
+                <span class="field-validation-valid text-danger" data-valmsg-for="BaseCertificateName"
+                  data-valmsg-replace="true"></span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <label class="control-label col-md-2" for="BaseCertificateNo">初訓證號</label>
+              <div class="col-md-10">
+                <input class="form-control text-box single-line" data-val="true"
+                  data-val-length="初訓證號 輸入長度超過限制，最多50個字!!" data-val-length-max="50" id="BaseCertificateNo"
+                  name="BaseCertificateNo" type="text" value="">
+                <span class="field-validation-valid text-danger" data-valmsg-for="BaseCertificateNo"
+                  data-valmsg-replace="true"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="well">
+
+            <div class="form-group">
+              <div class="row">
+
+
+
+                <label class="control-label col-md-2" for="BaseCertificateFile">初訓證書檔案</label>
+                <div class="col-md-3">
+                  <input accept=".pdf" class="form-control" id="BaseCertificateFile" name="BaseCertificateFile"
+                    onchange="checkBaseCertificateFile(this)" type="file" value="">
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="Content">
+                  <input data-val="true" data-val-required="我已閱讀並同意個資使用同意書 欄位是必要項。" id="IsReadPolicy"
+                    name="IsReadPolicy" style="margin-right:20px;-webkit-appearance:checkbox" type="checkbox"
+                    value="true"><input name="IsReadPolicy" type="hidden" value="false">
+                  <label class="control-label detail" for="IsReadPolicy"
+                    style="font-size:18px;font-weight: bold;">我已閱讀並同意個資使用同意書</label>
+                </div>
+              </div>
+            </div>
+            <div>
+              親愛的朋友，您好： 中華職業技能發展學會(下稱「本中心」)因執行課程班務、會員服務等業務而保有您的個人資料，而有關蒐集、處理或利用您的個人資料時，皆以尊重個人權益為基礎，並以誠實信用方式及以下原則為之。
+              我們蒐集您的個人資料目的係為本中心於課程班務業務之執行，辦理講師聘用、酬勞給付、稅務處理、講師授課滿意度調查分析、學員報名、繳費、證書製作、學習分析、滿意度調查分析、新課程訊息通知等相關作業；於辦理會員服務業務之執行，以及辦理本中心之內部稽核業務行為皆屬之(下稱「蒐集目的」)。
+              我們僅會蒐集為上述行為而必要之個人資料，該資料會在前開蒐集目的存續期間及依法令規定要求之期間內被處理或利用；您的個人資料僅會以電子檔案或紙本形式，分別存放於本中心資料庫，或各該執行業務部門，其中紙本形式之個人資料，則於匯轉電子資料後定期銷毀。在有消費爭議或意外傷損理賠等案件發生時，我們必要時也會將您的個人資料提供給受理消費爭議機構，或負責承保本中心意外險之保險公司，於處理消費爭議或意外傷損理賠等案件之必要範圍內蒐集、處理及利用。
+              我們保有您的個人資料時，基於我國個人資料保護法之規定，您可以透過書面行使下述的權利，除基於符合「個人資料保護法」與其他相關法律規定外，我們不會拒絕:<br>
+              <span class="list">◆ 查詢或請求閱覽本人之個人資料。<br></span>
+              <span class="list">◆ 請求製給本人之個人資料複製本。<br></span>
+              <span class="list">◆ 請求補充或更正本人之個人資料。<br></span>
+              <span class="list">◆ 請求停止蒐集、處理或利用本人之個人資料。<br></span>
+              <span class="list">◆ 請求刪除本人之個人資料。<br></span>
+              我們基於上述原因而需蒐集、處理或利用您的個人資料，若您選擇不提供個人資料或是提供不完全時，基於健全本中心相關業務之執行，將無法提供您人事錄用或意外損傷保險理賠等服務。<br>
+              中華職業技能發展學會
+            </div>
+            <br>
+            <div class="form-group">
+              <div class="row">
+                <div class="col-md-12" style="text-align:center;">
+                  <input type="submit" value="確定送出" class="w-50 btn btn-cus">
+                </div>
+
+              </div>
+            </div>
+          </div>
+      </form>
     </div>
   </section>
 

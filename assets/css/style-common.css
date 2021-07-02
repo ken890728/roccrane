@@ -16,6 +16,12 @@
     color: #32325d;
 }
 
+.Content .phone-Name {
+    font-size: 14pt;
+    font-weight: 700;
+    color: #32325d;
+}
+
 .sideBar ul {
     list-style: none;
     padding-left: 3px;
@@ -58,6 +64,13 @@
     font-weight: 500;
     color: #ff7200;
 }
+
+.Content .phone-title span {
+    font-size: 12pt;
+    font-weight: 500;
+    color: #ff7200;
+}
+
 
 .Content label span {
     font-size: 18pt;
@@ -169,5 +182,5 @@
 
 .phone-square-list li {
     list-style-type: square;
-    margin-left: 16px;
+    margin-left: 30px;
 }
