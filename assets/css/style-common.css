@@ -127,6 +127,21 @@
     background-color: #e1e0e0!important;
 }
 
+.phone-normal-table tr td {
+    border: 1px solid #e1e0e0 !important;
+    background-color: #ffffff !important;
+}
+
+.phone-normal-table tr th {
+    border: 1px solid #e1e0e0 !important;
+    background-color: #e1e0e0!important;
+    font-size: 14pt;
+    font-weight: 700;
+    color: #32325d;
+    padding: 10px;
+    text-align: center;
+}
+
 .cjk-list li {
     list-style-type: cjk-ideographic;
     margin-left: 60px;
@@ -134,7 +149,7 @@
 
 .phone-cjk-list li {
     list-style-type: cjk-ideographic;
-    margin-left: 16px;
+    margin-left: 30px;
 }
 
 .decimal-list li {

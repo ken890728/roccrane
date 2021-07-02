@@ -27,7 +27,7 @@
     <!-- //header top-->
 
 
-    <section>
+    <section class="d-none d-xl-block">
         <div class="row">
             <!-- Side Bar -->
             <div class="col-2 sideBar" style="background-color: #e1e0e0;">
@@ -266,10 +266,120 @@
                     <br>
                 </div>
             </div>
-
-
             <!-- Content -->
         </div>
+    </section>
+
+    <section class="d-xl-none">
+        <div class="container">
+            <div class="Content">
+                <div style="text-align: center;">
+                    <div width: 80%;>
+                        <div id="p-t1" class="phone-titleOn" onclick="p_to1()">最新消息</div>
+                        <div id="p-t2" class="phone-titleOff" onclick="p_to2()">即測即評</div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div id="p-page1">
+                    <div class="detail">
+                        <div class="phone-detail-box">
+                            <div class="phone-detail-box-text">
+                                <a href="#">因受COVID-19新冠肺炎疫情影響，即日起本會將暫停受理現場補（換）發證照申請作業。</a>
+                            </div>
+                            <div class="phone-detail-box-date">
+                                Date：2021-6-15
+                            </div>
+                            <div class="phone-detail-box-split">
+                                <img class="detail-box-up-arrow" src="assets/images/right-arrow_s.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="phone-detail-box">
+                            <div class="phone-detail-box-text">
+                                <a href="#">因受COVID-19新冠肺炎疫情影響，即日起本會將暫停受理現場補（換）發證照申請作業。</a>
+                            </div>
+                            <div class="phone-detail-box-date">
+                                Date：2021-6-15
+                            </div>
+                            <div class="phone-detail-box-split">
+                                <img class="detail-box-up-arrow" src="assets/images/right-arrow_s.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="phone-detail-box">
+                            <div class="phone-detail-box-text">
+                                <a href="#">『重要公告』因受疫情影響，本會第四梯次技能檢定測驗取消辦理。</a>
+                            </div>
+                            <div class="phone-detail-box-date">
+                                Date：2021-6-15
+                            </div>
+                            <div class="phone-detail-box-split">
+                                <img class="detail-box-up-arrow" src="assets/images/right-arrow_s.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="phone-detail-box">
+                            <div class="phone-detail-box-text">
+                                <a href="#">因受COVID-19新冠肺炎疫情影響，即日起本會將暫停受理現場補（換）發證照申請作業。</a>
+                            </div>
+                            <div class="phone-detail-box-date">
+                                Date：2021-6-15
+                            </div>
+                            <div class="phone-detail-box-split">
+                                <img class="detail-box-up-arrow" src="assets/images/right-arrow_s.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="p-page2">
+                    <div class="detail">
+                        <div class="phone-detail-box">
+                            <div class="phone-detail-box-text">
+                                <a href="#">「110年度即測即評及發證技術士技能檢定測試期程」。</a>
+                            </div>
+                            <div class="phone-detail-box-date">
+                                Date：2021-6-15
+                            </div>
+                            <div class="phone-detail-box-split">
+                                <img class="detail-box-up-arrow" src="assets/images/right-arrow_s.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="phone-detail-box">
+                            <div class="phone-detail-box-text">
+                                <a href="#">109年度第五梯次即測即評報名時程調整。</a>
+                            </div>
+                            <div class="phone-detail-box-date">
+                                Date：2021-6-15
+                            </div>
+                            <div class="phone-detail-box-split">
+                                <img class="detail-box-up-arrow" src="assets/images/right-arrow_s.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="phone-detail-box">
+                            <div class="phone-detail-box-text">
+                                <a href="#">【檢定懶人包】一分鐘帶你了解即測即評技能檢定!</a>
+                            </div>
+                            <div class="phone-detail-box-date">
+                                Date：2021-6-15
+                            </div>
+                            <div class="phone-detail-box-split">
+                                <img class="detail-box-up-arrow" src="assets/images/right-arrow_s.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
     </section>
 
     <div id="footer">
@@ -284,6 +394,7 @@
         });
 
         $("#page2").hide();
+        $("#p-page2").hide();
 
         function to1() {
             $("#t2").addClass("titleOff")
@@ -301,6 +412,24 @@
             $("#t2").removeClass("titleOff")
             $("#page1").hide();
             $("#page2").show();
+        }
+
+        function p_to1() {
+            $("#p-t2").addClass("phone-titleOff")
+            $("#p-t2").removeClass("phone-titleOn")
+            $("#p-t1").addClass("phone-titleOn")
+            $("#p-t1").removeClass("phone-titleOff")
+            $("#p-page2").hide();
+            $("#p-page1").show();
+        }
+
+        function p_to2() {
+            $("#p-t1").addClass("phone-titleOff")
+            $("#p-t1").removeClass("phone-titleOn")
+            $("#p-t2").addClass("phone-titleOn")
+            $("#p-t2").removeClass("phone-titleOff")
+            $("#p-page1").hide();
+            $("#p-page2").show();
         }
     </script>
 </body>

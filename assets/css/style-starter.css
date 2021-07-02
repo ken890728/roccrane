@@ -14255,6 +14255,7 @@ nav ul li a:before {
 }
 
 .box-wrap {
+    min-height: 410px;
     padding: 40px 30px;
     text-align: center;
     transition: all 0.5s ease 0s;
@@ -14703,6 +14704,7 @@ ol.w3l-right li:before {
 }
 
 .training_course h6 {
+    height: 22px;
     color: #32325d;
     font-weight: bold;
 }
