@@ -1,34 +1,70 @@
-.Content .detail table.t8 {
+table.t8 {
     background: #FFF !important;
     padding: 20px;
 }
 
-.Content .detail table.t8 tr td {
+table.t8 tr td {
     padding: 0px;
     padding-bottom: 5px;
 }
 
-.Content .detail table.t8 tr:nth-child(1)>td {
+table.t8 tr:nth-child(1)>td {
     font-size: 24pt;
     font-weight: bolder;
     color: #ff7200 !important;
 }
 
-.Content .detail table.t8 tr:nth-child(2)>td {
+table.t8 tr:nth-child(2)>td {
     font-size: 24pt;
     font-weight: bolder;
     color: #32325d !important;
 }
 
-.Content .detail table.t8 tr:nth-child(3)>td {
+table.t8 tr:nth-child(3)>td {
     font-size: 18pt;
     font-weight: 500;
     color: #808a9e !important;
     padding-bottom: 20px;
 }
 
-.Content .detail table.t8 tr:nth-child(4)>td {
+table.t8 tr:nth-child(4)>td {
     font-size: 18pt;
+    font-weight: 500;
+    color: #52525b !important;
+}
+
+.t8-phone {
+    margin-bottom: 50px;
+}
+
+.t8-phone tr td {
+    padding: 0px;
+    padding-bottom: 5px;
+}
+
+.t8-phone tr:nth-child(2)>td {
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bolder;
+    color: #ff7200 !important;
+}
+
+.t8-phone tr:nth-child(3)>td {
+    text-align: center;
+    font-size: 14pt;
+    font-weight: bolder;
+    color: #32325d !important;
+}
+
+.t8-phone tr:nth-child(4)>td {
+    font-size: 10pt;
+    font-weight: 500;
+    color: #808a9e !important;
+    padding-bottom: 20px;
+}
+
+.t8-phone tr:nth-child(5)>td {
+    font-size: 10pt;
     font-weight: 500;
     color: #52525b !important;
 }
@@ -79,14 +115,19 @@
     border-spacing: 0 15px;
 }
 
-.banner81-item table tr td {
-    padding: 0;
+.detail .banner81-item table tr td {
     margin: 0;
     line-height: 0;
     font-size: 18px !important;
 }
 
+.phone-detail .banner81-item table tr td {
+    margin: 0;
+    font-size: 18px !important;
+}
+
 .banner81-item table tr td:nth-child(1) {
+    text-align: center;
     width: fit-content;
     background-color: #e1e0e0 !important;
 }
