@@ -30,7 +30,7 @@
   <section>
     <div class="row">
       <!-- Side Bar -->
-      <div class="col-2 sideBar" style="background-color: #e1e0e0;">
+      <div class="col-xl-2 sideBar d-none d-xl-block" style="background-color: #e1e0e0;">
         <div class="container">
           <div class="title my-2">教育訓練</div>
           <ul class="my-2">
@@ -40,9 +40,8 @@
             <li class="my-2"><a class="" href="24.html">產投課程</a></li>
           </ul>
         </div>
-
       </div>
-      <div class="col-9 px-5 mt-5 Content">
+      <div id="class-view" class="px-5 mt-5 Content">
         <div class="Content">
           <div class="title">課程查詢</div>
         </div>
@@ -231,9 +230,7 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <div id="Taipei" class="training_box_cus city">
           <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target=".bd-example-modal-xl">
             <a>
               <div>110/6/1</div>
@@ -350,9 +347,7 @@
               </div>
             </div>
           </div>
-        </div>
-        
-        <div id="Taipei" class="training_box_cus city">
+
           <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target=".bd-example-modal-xl">
             <a>
               <div>110/6/1</div>
@@ -573,6 +568,10 @@
     $(function () {
       $("#header").load("./header.html");
       $("#footer").load("./footer.html");
+      if($( window ).width()>1600)
+        $("#class-view").addClass("col-xl-9");
+      else
+        $("#class-view").addClass("col-xl-10");
     });
 
     //下拉選單動態更新

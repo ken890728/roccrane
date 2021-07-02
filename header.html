@@ -16,17 +16,17 @@
 
 <body>
 
-    <!-- header top-->
-    <section class="line1" style="text-align:center;margin-bottom: 25px;">
+    <!--PC header top-->
+    <section class="line1 d-none d-xl-block" style="text-align:center;margin-bottom: 25px;">
         <div class="">
             <div class="row">
                 <img src="images/33.jpg" style="display:block; margin:auto; width:100%; height:40px" />
             </div>
-            <div class="row">
+            <div  class="row">
                 <a href="index.html"><img src="assets/images/logo.png" style="display:block; margin:25px auto; width:25%" /></a>
             </div>
             <header>
-                <div class="">
+                <div>
                     <nav class="navbar navbar-expand-lg">
                         <!--
                     <h1><a class="navbar-brand" href="index.html">
@@ -154,4 +154,290 @@
         </div>
 
     </section>
-    <!-- //header top-->
+    <!--//PC header top-->
+    <!--Phone header top-->
+    <section class="line1 d-xl-none" style="margin-bottom: 25px;">
+        <div class="menu_img">
+            <img src="images/menu-icon.jpg" height="30px" style="position: absolute;left: 4%;" onclick="open_menu()"/>
+            <a href="index.html"><img src="assets/images/logo.png" style="text-align:center;display:block; margin:25px auto; width:70%" /></a>
+        </div>
+        <div id="phone-hidden-menu" style="text-align: center;">
+            <table class="phone-menu-table" width="70%">
+                <tbody>
+                    <tr class="phone-static-title active">
+                        <td>
+                            <a href="index.html">首頁</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody class="phone-menu-title" onclick="show_detail(this)">
+                    <tr>
+                        <td>
+                            關於我們<img class="arrow-down" style="float: right;margin-top: 8px;margin-right: 10px;" height="15px" src="assets/images/right-arrow_s.png">
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody class="phone-menu-detail">
+                    <tr>
+                        <td>
+                            <a href="11.html">經營理念</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="12.html">服務項目</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="13.html">最新消息</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody class="phone-menu-title" onclick="show_detail(this)">
+                    <tr>
+                        <td>
+                            教育訓練<img class="arrow-down" style="float: right;margin-top: 8px;margin-right: 10px;" height="15px" src="assets/images/right-arrow_s.png">
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody class="phone-menu-detail">
+                    <tr>
+                        <td>
+                            <a href="21.html">課程查詢</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="22.html">報名專區</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="23.html">補辦證書</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="24.html">產投課程</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody class="phone-menu-title" onclick="show_detail(this)">
+                    <tr>
+                        <td>
+                            技術服務<img class="arrow-down" style="float: right;margin-top: 8px;margin-right: 10px;" height="15px" src="assets/images/right-arrow_s.png">
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody class="phone-menu-detail">
+                    <tr>
+                        <td>
+                            <a href="31.html">服務項目</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="32.html">升降設備檢查</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="33.html">砝碼租賃</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="34.html">搭乘設備(吊籃)簽證</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody class="phone-menu-title" onclick="show_detail(this)">
+                    <tr>
+                        <td>
+                            即測即評專區<img class="arrow-down" style="float: right;margin-top: 8px;margin-right: 10px;" height="15px" src="assets/images/right-arrow_s.png">
+                        </td>
+                    </tr> 
+                </tbody>
+                <tbody class="phone-menu-detail">
+                    <tr>
+                        <td>
+                            <a href="41.html">最新消息</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="42.html">測試報名流程</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="43.html">報檢職類及資格</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="44.html">檢定成績查詢</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="45.html">歷屆考古題</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="46.html">年度測試期程</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="47.html">測驗地點</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody class="phone-menu-title" onclick="show_detail(this)">
+                    <tr>
+                        <td>
+                            刊物及下載專區<img class="arrow-down" style="float: right;margin-top: 8px;margin-right: 10px;" height="15px" src="assets/images/right-arrow_s.png">
+                        </td>
+                    </tr> 
+                </tbody>
+                <tbody class="phone-menu-detail">
+                    <tr>
+                        <td>
+                            <a href="51">月刊專區</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="52.html">出版刊物</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="53.html">文件下載</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody class="phone-menu-title" onclick="show_detail(this)">
+                    <tr>
+                        <td>
+                            學習資源<img class="arrow-down" style="float: right;margin-top: 8px;margin-right: 10px;" height="15px" src="assets/images/right-arrow_s.png">
+                        </td>
+                    </tr> 
+                </tbody>
+                <tbody class="phone-menu-detail">
+                    <tr>
+                        <td>
+                            <a href="61.html">線上教學</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="62.html">影音專區</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody class="phone-menu-title" onclick="show_detail(this)">
+                    <tr>
+                        <td>
+                            廠商求才專區<img class="arrow-down" style="float: right;margin-top: 8px;margin-right: 10px;" height="15px" src="assets/images/right-arrow_s.png">
+                        </td>
+                    </tr> 
+                </tbody>
+                <tbody class="phone-menu-detail">
+                    <tr>
+                        <td>
+                            <a href="81.html">熱門職缺</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="82.html">就業見證</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="83.html">業主分享</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody class="phone-menu-title" onclick="show_detail(this)">
+                    <tr>
+                        <td>
+                            會員廠商資訊<img class="arrow-down" style="float: right;margin-top: 8px;margin-right: 10px;" height="15px" src="assets/images/right-arrow_s.png">
+                        </td>
+                    </tr> 
+                </tbody>
+                <tbody class="phone-menu-detail">
+                    <tr>
+                        <td>
+                            <a href="91.html">友站廣告</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="92.html">友站連結</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="93.html">會員名錄</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr class="phone-static-title active">
+                        <td>
+                            <a href="71.html"><img src="assets/images/orange1.png" height="20px" style="margin-left: -22px;margin-right: 5px;">學員專區</a>
+                        </td>
+                    </tr> 
+                    <tr class="phone-static-title active">
+                        <td>
+                            <a href="contact.html"><img src="assets/images/orange2.png" height="20px" style="margin-left: -27px;margin-right: 5px;">聯絡我們</a>
+                        </td>
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+        
+    </section>
+    <!--//Phone header top-->
+    <script>
+        $("#phone-hidden-menu").hide();
+        $(".phone-menu-detail").hide();
+
+        var on_menu_open = false;
+
+        function open_menu(){
+            if(on_menu_open){
+                $("#phone-hidden-menu").hide();
+                $(".phone-menu-title").removeClass("active");
+                $(".phone-menu-detail").hide();
+                $(".arrow-down").css("transform","rotate(0deg)");
+                on_menu_open = false;
+                last_el = 0;
+            }else{
+                $("#phone-hidden-menu").show();
+                on_menu_open = true;
+            }
+        }
+
+        var last_el = 0;
+
+        function show_detail(el){
+            $(".phone-menu-title").removeClass("active");
+            $(".phone-menu-detail").hide();
+            $(".arrow-down").css("transform","rotate(0deg)");
+            if(last_el != el){
+                $(el).addClass("active");
+                $(el).next('.phone-menu-detail').show();
+                $(el).find("tr td .arrow-down").css("transform","rotate(90deg)");
+                last_el = el;
+            }else{
+                last_el = 0;
+            }
+        }
+    </script>
+</body>
