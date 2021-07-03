@@ -1,0 +1,25 @@
+.phone-detail table tr {
+    border: 2px solid #e1e0e0;
+}
+
+.phone-detail table tr:nth-child(odd) {
+    font-size: 14pt;
+    text-align: center;
+    border-top: 0;
+}
+
+.phone-detail table tr:nth-child(even) {
+    border-bottom: 0;
+}
+
+.phone-detail table tr th {
+    background-color: #e1e0e0;
+    font-size: 14pt;
+    color: #32325d;
+    text-align: center;
+    padding: 5px;
+}
+
+.phone-detail table tr td {
+    padding: 5px;
+}
