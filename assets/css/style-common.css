@@ -53,7 +53,7 @@
 
 .Content .phone-title,
 .locate .phone-title {
-    font-size: 24pt;
+    font-size: 20pt;
     font-weight: 700;
     color: #808a9e;
     border-bottom: 3px solid #e1e0e0;
@@ -143,6 +143,7 @@
 .phone-normal-table tr td {
     border: 1px solid #e1e0e0 !important;
     background-color: #ffffff !important;
+    padding: 5px;
 }
 
 .phone-normal-table tr th {
