@@ -39,3 +39,29 @@
 .nowrap {
     white-space: nowrap;
 }
+
+.t43,
+.t46 {
+    width: 100%;
+}
+
+table.t43 tr td,
+table.t46 tr td {
+    border: 1px solid #e1e0e0;
+    padding: 10px;
+}
+
+table.t43 tr td:nth-child(1),
+table.t46 tr td:nth-child(1) {
+    font-weight: 700;
+    color: #32325d;
+    background-color: #e1e0e0;
+    white-space: nowrap;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.table-discribe {
+    border: 1px solid #e1e0e0;
+    padding: 5px;
+}
