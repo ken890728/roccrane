@@ -31,7 +31,7 @@
     <!-- //header top-->
 
 
-    <section>
+    <section class="d-none d-xl-block">
         <div class="row">
             <!-- Side Bar -->
             <div class="col-2 sideBar" style="background-color: #e1e0e0;">
@@ -109,6 +109,74 @@
             <!-- //Form -->
         </div>
     </section>
+
+    <section class="d-xl-none">
+        <div class="container">
+            <div class="content">
+                <div class="phone-title">客訴信箱</div><br>
+                <div class="phone-detail FormBlock">
+                    <form>
+                        <div class="my-5">
+                            <label for="input_topic"><span>*</span>信件主旨</label><br>
+                            <input id="input_topic" class="form-control w-100" type="text">
+                        </div>
+                        <div class="my-5">
+                            <label for="input_checkbox"><span>*</span>問題屬於</label><br>
+                            <input class="checkbox" type="checkbox"><label>訓練輔導人員態度</label><br>
+                            <input class="checkbox" type="checkbox"><label>訓練品質</label><br>
+                            <input class="checkbox" type="checkbox"><label>教學設施</label><br>
+                            <input class="checkbox" type="checkbox"><label>講師教學</label><br>
+                            <input class="checkbox" type="checkbox"><label>會務</label><br>
+                            <input class="checkbox" type="checkbox"><label>其他</label><br>
+                        </div>
+                        <div class="my-5">
+                            <label for="input_date"><span>*</span>發生日期</label><br>
+                            <input id="input_date" class="form-control w-100" type="date">
+                        </div>
+                        <div class="my-5">
+                            <label for="input_place"><span>*</span>發生地點</label><br>
+                            <input id="input_place" class="form-control w-100" type="text">
+                        </div>
+                        <div class="my-5">
+                            <label for="input_staff"><span>*</span>本會服務人員姓名</label><br>
+                            <input id="input_staff" class="form-control w-100" type="text">
+                        </div>
+                        <div class="my-5">
+                            <label for="input_descript"><span>*</span>事件情況說明 <span class="tips">請具體敘述情況 (小提醒：您可以先在記事本編輯內容再將文字貼上)</span></label><br>
+                            <input id="input_descript" class="form-control w-100" type="text">
+                        </div>
+                        <div class="my-5">
+                            <label for="input_name"><span>*</span>姓名</label><br>
+                            <input id="input_name" class="form-control w-100" type="text">
+                        </div>
+                        <div class="my-5">
+                            <label for="input_email"><span>*</span>E-mail</label><br>
+                            <input id="input_email" class="form-control w-100" type="email">
+                        </div>
+                        <div class="my-5">
+                            <label for="input_tel">聯絡電話</label><br>
+                            <input id="input_tel" class="form-control w-100" type="tel">
+                        </div>
+                        <div class="my-5">
+                            <label for="input_phone"><span>*</span>行動電話</label><br>
+                            <input id="input_phone" class="form-control w-100" type="tel">
+                        </div>
+                        <div class="my-5">
+                            <label for="input_response"><span>*</span>回覆方式</label><br>
+                            <select id="input_recv" class="form-control w-100">
+                                <option>電話回覆</option>
+                                <option>E-mail回覆</option>
+                            </select>
+                        </div>
+                        <div class="my-5 d-flex justify-content-center">
+                            <input class="w-50 btn" type="submit" value="送出">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <div id="footer">
 
     </div>
