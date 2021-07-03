@@ -1,66 +1,136 @@
-    .Content .detail table.t52 tr>td:nth-child(odd) {
-        font-size: 24pt;
-        font-weight: 500;
-        color: #52525B !important;
-        background: #FFF !important;
-        padding: 20px;
-        text-align: center;
-    }
-    
-    .Content .detail table.t53 tr {
-        border-bottom: 1px solid #e1e0e0;
-    }
-    
-    .Content .detail table.t53 tr>td:nth-child(even) {
-        font-size: 24pt;
-        font-weight: 500;
-        background: #FFF !important;
-        padding: 20px;
-        text-align: center;
-    }
-    
-    table.t53 tr td a {
-        font-size: 18pt;
-        color: #000;
-    }
-    
-    table.t53 tr td a:hover {
-        color: #ff7200;
-    }
-    
-    .Content .detail table.textcenter tr>td {
-        font-size: 24pt;
-        font-weight: 500;
-        color: #52525B !important;
-        background: #FFF !important;
-        padding: 20px;
-        text-align: center;
-    }
-    
-    .Content .detail table tr td span {
-        font-size: 18pt;
-        font-weight: 500;
-        color: ＃52525b;
-        text-align: center;
-    }
-    
-    li.my-2 a img {
-        display: inline-block;
-        position: absolute;
-        left: 40pt;
-        height: 30pt;
-    }
-    
-    .sideBar ul ul>li>a {
-        font-size: 16pt;
-    }
+table.t51-phone tr {
+    border: 1px solid #e1e0e0;
+}
 
-    .arrow{
-        margin-left: -30px;
-        padding: 0 0 0 30px;
-        list-style: none;
-        background-image: url("../../images/arrow.png");
-        background-repeat: no-repeat;
-        background-position: left center;
-        background-size: 18pt;
-     }
+table.t51-phone tr th,
+table.t51-phone tr td {
+    padding: 5px;
+}
+
+.t51-phone tr:nth-child(1) {
+    font-size: 14pt;
+    color: #32325d;
+    background-color: #e1e0e0;
+    text-align: center;
+}
+
+.t51-phone tr:nth-child(3) {
+    font-size: 10pt;
+    text-align: center;
+}
+
+.Content .detail table.t52 tr>td:nth-child(odd) {
+    font-size: 24pt;
+    font-weight: 500;
+    color: #52525B !important;
+    background: #FFF !important;
+    padding: 20px;
+    text-align: center;
+}
+
+.phone-detail .t52 {
+    width: 100%;
+    border: 1px solid #e1e0e0;
+}
+
+.phone-detail .t52 tr th,
+.phone-detail .t52 tr td {
+    padding: 5px;
+}
+
+.phone-detail .t52 tr th {
+    font-size: 14pt;
+    color: #32325d;
+    background-color: #e1e0e0;
+    text-align: center;
+}
+
+.phone-detail .t52 tr:nth-child(odd),
+.phone-detail .t52 tr:nth-child(odd) tr {
+    background-color: #e1e0e0;
+}
+
+.phone-detail .t52 tr:nth-child(even),
+.phone-detail .t52 tr:nth-child(even) tr {
+    background-color: #FFF;
+}
+
+.phone-detail .t52 table tr td:nth-child(1) {
+    font-weight: 600;
+    white-space: nowrap;
+    padding-right: 10px;
+    vertical-align: top;
+}
+
+.Content .detail table.t53 tr,
+table.t53-phone tr {
+    border-bottom: 1px solid #e1e0e0;
+}
+
+.Content .detail table.t53 tr>td:nth-child(even) {
+    font-size: 24pt;
+    font-weight: 500;
+    background: #FFF !important;
+    padding: 20px;
+    text-align: center;
+}
+
+table.t53 tr td a {
+    font-size: 18pt;
+    color: #000;
+}
+
+table.t53 tr td a:hover,
+table.t53-phone tr td a:hover {
+    color: #ff7200;
+}
+
+table.t53-phone {
+    width: 100%;
+}
+
+table.t53-phone tr td {
+    padding: 10px;
+}
+
+table.t53-phone a {
+    font-size: 14pt;
+    color: #ff7200;
+}
+
+.Content .detail table.textcenter tr>td {
+    font-size: 24pt;
+    font-weight: 500;
+    color: #52525B !important;
+    background: #FFF !important;
+    padding: 20px;
+    text-align: center;
+}
+
+.Content .detail table tr td span {
+    font-size: 18pt;
+    font-weight: 500;
+    color: ＃52525b;
+    text-align: center;
+}
+
+li.my-2 a img {
+    display: inline-block;
+    position: absolute;
+    left: 40pt;
+    height: 30pt;
+}
+
+.sideBar ul ul>li>a {
+    font-size: 16pt;
+}
+
+.arrow {
+    margin-left: -30px;
+    padding: 0 0 0 30px;
+    list-style: none;
+    background-image: url("../../images/arrow.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 18pt;
+}

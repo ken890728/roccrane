@@ -13,7 +13,7 @@
     <div id="header"></div>
 
     <!-- Content Section-->
-    <section>
+    <section class="d-none d-xl-block">
         <div class="row">
             <!-- Side Bar -->
             <div class="col-2 sideBar" style="background-color: #e1e0e0;">
@@ -32,7 +32,7 @@
                             <li><a id="l6" onclick="tol6()" class="jsctr"> 場地租用 </a></li>
                             <li><a id="l7" onclick="tol7()" class="jsctr"> 其他文件下載 </a></li>
                             <li><a id="l8" onclick="tol8()" class="jsctr"> 圖片區 </a></li>
-                        </ul>          
+                        </ul>
                     </ul>
                 </div>
 
@@ -95,6 +95,42 @@
 
         </div>
     </section>
+
+    <section class="d-xl-none">
+        <div class="container">
+            <div class="content">
+                <div class="phone-title">文件下載</div> <br>
+                <div class="phone-detail">
+                    <table class="t53-phone">
+                        <tr>
+                            <td><a href="uploads/(固定式起重機)固定式起重機每日作業前檢點表107.doc">固定式起重機每日作業前檢點表</a></td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="uploads/(固定式起重機)固定式起重機每月自動檢查紀錄表107.doc">固定式起重機每月自動檢查紀錄表</a></td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="uploads/(固定式起重機)固定式起重機每年自動檢查紀錄表107.doc">固定式起重機每年自動檢查紀錄表</a></td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="/uploads/(移動式起重機)移動式起重機每日作業前檢點表107.doc">移動式起重機每日作業前檢點表</a></td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="/uploads/(移動式起重機)移動式起重機每月自動檢查紀錄表107.doc">移動式起重機每月自動檢查紀錄表</a></td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="/uploads/(移動式起重機)移動式起重機每年自動檢查紀錄表107.doc">移動式起重機每年自動檢查紀錄表</a></td>
+                        </tr>
+                    </table>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- /Content Section -->
 
     <div id="footer"></div>
@@ -107,41 +143,42 @@
             $("#footer").load("footer.html");
         });
 
-        function tol1(){
+        function tol1() {
             $(".jsctr").removeClass("active");
             $("#l1").addClass("active");
         }
 
-        function tol2(){
+        function tol2() {
             $(".jsctr").removeClass("active");
             $("#l2").addClass("active");
         }
 
-        function tol3(){
+        function tol3() {
             $(".jsctr").removeClass("active");
             $("#l3").addClass("active");
         }
-        function tol4(){
+
+        function tol4() {
             $(".jsctr").removeClass("active");
             $("#l4").addClass("active");
         }
 
-        function tol5(){
+        function tol5() {
             $(".jsctr").removeClass("active");
             $("#l5").addClass("active");
         }
 
-        function tol6(){
+        function tol6() {
             $(".jsctr").removeClass("active");
             $("#l6").addClass("active");
         }
 
-        function tol7(){
+        function tol7() {
             $(".jsctr").removeClass("active");
             $("#l7").addClass("active");
         }
 
-        function tol8(){
+        function tol8() {
             $(".jsctr").removeClass("active");
             $("#l8").addClass("active");
         }
