@@ -46,7 +46,7 @@
 
 .Content .title,
 .locate .title {
-    font-size: 28pt;
+    font-size: 25pt;
     font-weight: 700;
     color: #808a9e;
 }
@@ -71,7 +71,6 @@
     color: #ff7200;
 }
 
-
 .Content label span {
     font-size: 18pt;
     font-weight: 500;
@@ -87,7 +86,7 @@
 
 .Content .detail {
     font-size: 18pt;
-    font-weight: 500;
+    font-weight: 100;
     color: #52525b;
 }
 
@@ -113,14 +112,14 @@
 
 .Content .detail table tr td {
     font-size: 18pt;
-    font-weight: 500;
+    font-weight: 100;
     color: #52525b;
     padding: 20px;
 }
 
 .Content .detail table tr td span {
     font-size: 18pt;
-    font-weight: 500;
+    font-weight: 100;
     color: #52525b;
     text-align: center;
 }
