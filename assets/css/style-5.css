@@ -20,12 +20,15 @@ table.t51-phone tr td {
 }
 
 .Content .detail table.t52 tr>td:nth-child(odd) {
-    font-size: 24pt;
-    font-weight: 500;
     color: #52525B !important;
     background: #FFF !important;
     padding: 20px;
     text-align: center;
+    width: 15%;
+}
+
+.Content .detail table.t52 tr .sub-title {
+    font-weight: bolder;
 }
 
 .phone-detail .t52 {

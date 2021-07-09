@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-	<footer class="w3l-footer">
+    <footer class="w3l-footer">
         <!-- move top -->
         <div class="bottom_right" id="bottom_right">
             <button id="messenger" class="contact_box" title="messenger">
@@ -21,23 +23,12 @@
 
             <script>
                 // When the user scrolls down 20px from the top of the document, show the button
-                window.onscroll = function() {
-                    scrollFunction()
-                };
 
-                function scrollFunction() {
-                    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                        document.getElementById("bottom_right").style.display = "flex";
-                        document.getElementById("messenger").style.display = "flex";
-                        document.getElementById("line").style.display = "flex";
-                        document.getElementById("movetop").style.display = "flex";
-                    } else {
-                        document.getElementById("bottom_right").style.display = "none";
-                        document.getElementById("messenger").style.display = "none";
-                        document.getElementById("line").style.display = "none";
-                        document.getElementById("movetop").style.display = "none";
-                    }
-                }
+
+                document.getElementById("bottom_right").style.display = "flex";
+                document.getElementById("messenger").style.display = "flex";
+                document.getElementById("line").style.display = "flex";
+                document.getElementById("movetop").style.display = "flex";
 
                 // When the user clicks on the button, scroll to the top of the document
                 function topFunction() {
@@ -56,15 +47,15 @@
 
             <div class="w3-row-padding">
                 <div class="w3-quarter">
-                    　
+
                 </div>
                 <div class="w3-quarter">
                     <img src="images/logo_w.png" style="display:block; margin:auto; width:90%" />
 
                 </div>
                 <div class="w3-quarter">
-                    <p style="color:#666666;font-size: 12px;">研究起重升降機具有關學術，提供有關技術服務提高 製造品質增進使用效率，防止災害發生，協助政府維護工業安全
-                        保障公共安寧，促進經濟發展</p>
+                    <p style="color:#666666;font-size: 12px;">研究起重升降機具有關學術，提供有關技術服務提高 製造品質增進使用效率，防止災害發生，協助政府維護工業安全 保障公共安寧，促進經濟發展
+                    </p>
                 </div>
                 <div class="w3-quarter">
 
@@ -75,4 +66,5 @@
 
     </footer>
 </body>
+
 </html>

@@ -40,6 +40,7 @@ table.t8 tr:nth-child(4)>td {
 .t8-phone tr td {
     padding: 0px;
     padding-bottom: 5px;
+    text-align: center;
 }
 
 .t8-phone tr:nth-child(2)>td {
@@ -89,8 +90,8 @@ table.t8 tr:nth-child(4)>td {
     display: inline-block;
     border-radius: 50%;
     overflow: hidden;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
 }
 
 .circle-img>img {
