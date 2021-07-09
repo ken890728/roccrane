@@ -11,7 +11,7 @@
 
 .sideBar .title,
 .Content .Name {
-    font-size: 24pt;
+    font-size: 20pt;
     font-weight: 700;
     color: #32325d;
 }
@@ -22,6 +22,11 @@
     color: #32325d;
 }
 
+.col-9,
+.col-xl-9 {
+    margin-left: 60px;
+}
+
 .sideBar ul {
     list-style: none;
     padding-left: 3px;
@@ -30,7 +35,7 @@
 .sideBar ul>li,
 .sideBar ul>li>a,
 .Content label {
-    font-size: 18pt;
+    font-size: 15pt;
     font-weight: 500;
     color: #52525b;
     text-decoration: none;
@@ -46,14 +51,14 @@
 
 .Content .title,
 .locate .title {
-    font-size: 25pt;
+    font-size: 22pt;
     font-weight: 700;
     color: #808a9e;
 }
 
 .Content .phone-title,
 .locate .phone-title {
-    font-size: 20pt;
+    font-size: 17pt;
     font-weight: 700;
     color: #808a9e;
     border-bottom: 3px solid #e1e0e0;
@@ -86,13 +91,13 @@
 
 .Content .detail {
     font-size: 18pt;
-    font-weight: 100;
+    font-weight: 300;
     color: #52525b;
 }
 
 .Content .phone-detail {
     font-size: 10pt;
-    font-weight: 500;
+    font-weight: 300;
     color: #52525b;
 }
 
@@ -103,7 +108,7 @@
 
 .Content .detail table tr th {
     background-color: #e1e0e0;
-    font-size: 24pt;
+    font-size: 20pt;
     font-weight: 700;
     color: #32325d;
     padding: 20px;
@@ -112,14 +117,14 @@
 
 .Content .detail table tr td {
     font-size: 18pt;
-    font-weight: 100;
+    font-weight: 300;
     color: #52525b;
     padding: 20px;
 }
 
 .Content .detail table tr td span {
     font-size: 18pt;
-    font-weight: 100;
+    font-weight: 300;
     color: #52525b;
     text-align: center;
 }

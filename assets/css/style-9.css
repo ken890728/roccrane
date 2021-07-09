@@ -2,13 +2,6 @@
     white-space: nowrap;
 }
 
-.Content .detail table.t9 tr td {
-    font-size: 18pt;
-    text-align: center;
-    color: #000;
-    font-weight: 500;
-}
-
 .Content .detail table.t9 tr td:nth-child(4),
 .Content .detail table.t9 tr td:nth-child(5) {
     white-space: nowrap;

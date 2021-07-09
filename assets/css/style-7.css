@@ -1,12 +1,15 @@
-
-.btn-cus{
-	background: #41516f !important;
+.btn-cus {
+    background: #41516f !important;
     color: #ffffff !important;
     font-size: 18pt !important;
     font-weight: 500 !important;
-	padding-left:50px !important;
-	padding-right:50px !important;
-	width: 350px;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    width: 350px;
+}
+
+.control-label {
+    margin-top: 7px;
 }
 
 .inputRequired {
@@ -14,65 +17,66 @@
 }
 
 .Content .detail table.t9 th {
-	white-space: nowrap;
+    white-space: nowrap;
 }
 
 .Content .detail table.t9 tr td {
-	font-size: 18pt;
-	text-align: center;
-	color: #000;
-	font-weight: 500;
+    font-size: 18pt;
+    text-align: center;
+    color: #000;
+    font-weight: 500;
 }
 
 .Content .detail table.t9 tr td:nth-child(4),
 .Content .detail table.t9 tr td:nth-child(5) {
-	white-space: nowrap;
+    white-space: nowrap;
 }
 
 .Content .detail table.t9 tr td:nth-child(1),
 .Content .detail table.t9 tr td:nth-child(6),
 .Content .detail table.t9 tr td:nth-child(7) {
-	text-align: left;
+    text-align: left;
 }
 
 .Content .detail table.t9 tr:nth-child(odd) td {
-	background-color: #e1e0e0 !important;
+    background-color: #e1e0e0 !important;
 }
 
 .Content .detail table.t9 tr:nth-child(even) td {
-	background-color: #FFF !important;
+    background-color: #FFF !important;
 }
+
 
 /*-----*/
 
 .Content .phone-detail table.t9 th {
-	white-space: nowrap;
-	border: none !important;
+    white-space: nowrap;
+    border: none !important;
 }
 
 .Content .phone-detail table.t9 tr td {
-	font-size: 10pt;
-	text-align: center;
-	color: #000;
-	font-weight: 500;
-	border: none !important;
+    font-size: 10pt;
+    text-align: center;
+    color: #000;
+    font-weight: 500;
+    border: none !important;
 }
 
 .Content .phone-detail table.t9 tr td:nth-child(4),
 .Content .phone-detail table.t9 tr td:nth-child(5) {
-	white-space: nowrap;
+    white-space: nowrap;
 }
 
 .Content .phone-detail table.t9 tr td:nth-child(1),
 .Content .phone-detail table.t9 tr td:nth-child(6),
 .Content .phone-detail table.t9 tr td:nth-child(7) {
-	text-align: left;
+    text-align: left;
 }
 
 .Content .phone-detail table.t9 tr:nth-child(odd) td {
-	background-color: #e1e0e0 !important;
+    background-color: #e1e0e0 !important;
 }
 
 .Content .phone-detail table.t9 tr:nth-child(even) td {
-	background-color: #FFF !important;
+    background-color: #FFF !important;
 }

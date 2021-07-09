@@ -36,8 +36,8 @@
             <div class="col-10 px-5 mt-5 Content">
                 <div style="text-align: center;">
                     <div style="margin-left: 30%;">
-                        <div id="t1" class="titleOn" onclick="to1()">最新消息</div>
-                        <div id="t2" class="titleOff" onclick="to2()">即測即評</div>
+                        <div id="t1" class="titleOff" onclick="to1()">最新消息</div>
+                        <div id="t2" class="titleOn" onclick="to2()">即測即評</div>
                     </div>
                 </div><br><br>
                 <div id="page1">
@@ -266,8 +266,8 @@
             <div class="content">
                 <div style="text-align: center;">
                     <div width: 80%;>
-                        <div id="p-t1" class="phone-titleOn" onclick="p_to1()">最新消息</div>
-                        <div id="p-t2" class="phone-titleOff" onclick="p_to2()">即測即評</div>
+                        <div id="p-t1" class="phone-titleOff" onclick="p_to1()">最新消息</div>
+                        <div id="p-t2" class="phone-titleOn" onclick="p_to2()">即測即評</div>
                     </div>
                 </div>
                 <br>
@@ -417,8 +417,8 @@
             $("#header").load("header.html");
             $("#footer").load("footer.html");
         });
-        $("#page2").hide();
-        $("#p-page2").hide();
+        $("#page1").hide();
+        $("#p-page1").hide();
 
         function to1() {
             $("#t2").addClass("titleOff")

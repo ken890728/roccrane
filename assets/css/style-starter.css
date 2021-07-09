@@ -14656,14 +14656,15 @@ ol.w3l-right li:before {
     font-weight: none;
     border-bottom: #52525b 3px solid;
     color: #52525b;
-    font-size: 30px;
-    line-height: 38px;
+    font-size: 12pt;
+    line-height: 32px;
+    padding: 0;
 }
 
 .training .w3-button_active {
     border-bottom: #ff7200 3px solid;
     color: #ff7200;
-    font-size: 35px;
+    font-size: 20pt;
     line-height: 40px;
     font-weight: bold;
 }
@@ -14690,9 +14691,10 @@ ol.w3l-right li:before {
 }
 
 .training_course {
-    width: 300px;
-    height: 340px;
+    width: 350px;
+    height: 440px;
     border: 3px solid #e1e0e0;
+    padding: 30px;
 }
 
 .training_course:hover {
@@ -14702,41 +14704,41 @@ ol.w3l-right li:before {
 
 .training_course a:first-child {
     color: #808a9e;
-    font-size: 16px;
+    font-size: 18pt;
     font-weight: bold;
 }
 
-.training_course h6 {
-    height: 22px;
-    color: #32325d;
+.training_course h2 {
     font-weight: bold;
 }
 
 .training_in table.training_in_top {
+    font-size: 12pt;
     height: 50px;
 }
 
 .training_in table.training_in_top td:first-child {
     color: #333;
-    padding: 3px;
+    padding: 6px;
     background: #e1e0e0;
     border: 2px solid #e1e0e0;
 }
 
 .training_course:hover>.training_in table.training_in_top td:first-child {
     color: #fff;
-    padding: 3px;
+    padding: 6px;
     background: #000;
     border: 2px solid #e1e0e0;
 }
 
 .training_in table.training_in_top td:last-child {
-    font-size: 14px;
-    padding: 5px;
+    font-size: 12pt;
+    padding: 10px;
     border: 2px solid #e1e0e0;
 }
 
 .training_in table.training_in_bottom {
+    font-size: 12pt !important;
     height: 30px;
 }
 
@@ -14751,7 +14753,7 @@ td:nth-child(4) {
 .training_in table.training_in_bottom td:nth-child(2),
 td:nth-child(5) {
     border: 2px solid #e1e0e0;
-    padding: 4px 14px;
+    padding: 6px 25px !important;
 }
 
 .training_course:hover>.training_in table.training_in_bottom td:nth-child(1),
@@ -14781,6 +14783,132 @@ td:nth-child(5) {
 
 
 /*-- //homeblock5 --*/
+
+
+/*------------*/
+
+.phone-training_box_cus {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.phone-training_course_cus {
+    width: 350px;
+    height: 400px;
+    border: 3px solid #e1e0e0;
+    padding: 30px;
+}
+
+.phone-training_course_cus:hover {
+    border: 3px solid #ff7200;
+    cursor: pointer;
+}
+
+.phone-training_course_cus a:first-child {
+    font-size: 18pt;
+    font-weight: bold;
+    color: #41516f;
+}
+
+.phone-none-class {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #ff7200;
+    margin-bottom: 8px;
+}
+
+.phone-training_course_cus h2 {
+    font-weight: bold;
+}
+
+.phone-training_in_cus table.phone-training_in_top_cus {
+    font-size: 12pt;
+    height: 50px;
+}
+
+.phone-training_in_cus table.phone-training_in_top_cus td:first-child {
+    color: #333;
+    padding: 3px;
+    background: #e1e0e0;
+    border: 2px solid #e1e0e0;
+    width: 45px;
+}
+
+.phone-training_course_cus:hover>.phone-training_in_cus table.phone-training_in_top_cus td:first-child {
+    color: #fff;
+    padding: 3px;
+    background: #000;
+    border: 2px solid #e1e0e0;
+}
+
+.phone-training_in_cus table.phone-training_in_top_cus td:last-child {
+    font-size: 10pt;
+    padding: 5px;
+    border: 2px solid #e1e0e0;
+}
+
+.phone-training_in_cus table.phone-training_in_bottom_cus {
+    font-size: 11pt !important;
+    width: 100%;
+    height: 30px;
+}
+
+.phone-training_in_cus table.phone-training_in_bottom_cus td:nth-child(1),
+td:nth-child(4) {
+    color: #333;
+    background: #e1e0e1;
+    border: 2px solid #e1e0e0;
+    padding: 3px;
+}
+
+.phone-training_in_cus table.phone-training_in_bottom_cus td:nth-child(2),
+td:nth-child(5) {
+    border: 2px solid #e1e0e0;
+    padding: 6px 19px !important;
+}
+
+.phone-training_course_cus:hover>.phone-training_in_cus table.phone-training_in_bottom_cus td:nth-child(1),
+.phone-training_course_cus:hover>.phone-training_in_cus table.phone-training_in_bottom_cus td:nth-child(4) {
+    color: #fff;
+    background: #000;
+}
+
+.phone-training_button {
+    width: 250px;
+    background-color: #e1e0e1;
+}
+
+.phone-training_course_cus:hover>.phone-training_bottom .phone-training_button,
+.phone-training_course_cus:hover>.phone-training_bottom .phone-training_button_over {
+    color: #fff !important;
+    background-color: #ff7200;
+}
+
+.phone-training_bottom .phone-training_button_over {
+    width: 250px;
+    color: #fff !important;
+    background-color: #ff7200;
+}
+
+.phone-training_course_cus:hover>.phone-training_bottom .phone-training_note a {
+    color: #ff7200;
+    font-weight: bolder;
+}
+
+.phone-training_bottom img {
+    width: 30px;
+}
+
+.phone-normal-table tr td {
+    padding: 5px;
+}
+
+.phone-normal-table tr td.center {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 
 
 /* contact-form */
@@ -17037,7 +17165,7 @@ h2.title {
         height: 380px;
         border-radius: 20px;
         background-color: #fff;
-        box-shadow: 1px 1px 10px rgb(170, 170, 170);
+        box-shadow: 1px 1px 50px rgb(170, 170, 170);
     }
     .rwd_menu li:nth-child(odd) {
         list-style-image: url(../images/right-arrow.png);
@@ -17086,7 +17214,6 @@ h2.title {
     }
     .training_box_rwd .training_course {
         width: 100%;
-        height: 250px;
         max-width: 600px;
     }
     .training_course:hover>.training_in table.training_in_top td:first-child {
@@ -17124,13 +17251,36 @@ h2.title {
         width: 100px;
         border-bottom: none;
         color: #fff;
-        font-size: 18px;
+        font-size: 10pt;
     }
     .address .w3-button_active {
         border-bottom: #ff7200 3px solid;
         color: #ff7200;
-        font-size: 22px;
+        font-size: 15pt;
     }
+}
+
+.triangle-left:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #FFF transparent transparent;
+    position: absolute;
+    left: -20px;
+}
+
+.triangle-left1:before {
+    top: 80px;
+}
+
+.triangle-left2:before {
+    top: 135px;
+}
+
+.triangle-left3:before {
+    top: 195px;
 }
 
 @media (max-width: 576px) {
