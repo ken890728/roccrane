@@ -15026,7 +15026,7 @@ p.text-center {
     bottom: 100px;
     right: 30px;
     width: 60px;
-    height: 135px;
+    height: 110px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15075,6 +15075,8 @@ p.text-center {
     justify-content: center;
     align-items: center;
     background-color: #2196F3;
+    width: 50px;
+    height: 50px;
 }
 
 .w3l-footer #line {
@@ -15082,6 +15084,8 @@ p.text-center {
     justify-content: center;
     align-items: center;
     background-color: #00C200;
+    width: 50px;
+    height: 50px;
 }
 
 .w3l-footer #messenger:hover,
@@ -17256,7 +17260,7 @@ h2.title {
     .address .w3-button_active {
         border-bottom: #ff7200 3px solid;
         color: #ff7200;
-        font-size: 15pt;
+        font-size: 12pt;
     }
 }
 
