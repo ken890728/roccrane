@@ -9,16 +9,16 @@
     max-width: 12.716763%;
 }
 
-.sideBar .container{
+.sideBar .container {
     padding-top: 100px !important;
 }
 
-.sideBar .title.my-2{
+.sideBar .title.my-2 {
     margin-top: 0 !important;
     margin-bottom: 25px !important;
 }
 
-.sideBar .my-2 .my-2{
+.sideBar .my-2 .my-2 {
     margin-top: 0 !important;
     margin-bottom: 16px !important;
 }
@@ -28,11 +28,11 @@
     width: max-content;
 }
 
-.Content{
+.Content {
     font-family: 微軟正黑體;
 }
 
-.Content.Content-padding{
+.Content.Content-padding {
     padding-left: 50px !important;
     padding-right: 100px !important;
     flex: 0 0 87.283237%;
@@ -96,7 +96,7 @@
 }
 
 .Content .title span {
-    font-size: 18pt;
+    font-size: 17pt;
     font-weight: 500;
     color: #ff7200;
 }
@@ -108,7 +108,7 @@
 }
 
 .Content label span {
-    font-size: 18pt;
+    font-size: 17pt;
     font-weight: 500;
     color: #ff7200;
 }
@@ -116,7 +116,7 @@
 .Content input[type=submit] {
     background: #41516f;
     color: #ffffff;
-    font-size: 18pt;
+    font-size: 17pt;
     font-weight: 500;
 }
 
@@ -127,7 +127,13 @@
     margin-bottom: 50px;
 }
 
-.Content .detail p:not(:last-child){
+.Content .detail p {
+    font-size: 12pt;
+    font-weight: 500;
+    color: #52525b;
+}
+
+.Content .detail p:not(:last-child) {
     margin-bottom: 16px;
 }
 
@@ -149,24 +155,26 @@
     color: #32325d;
     padding: 20px;
     text-align: center;
+    height: 50px;
 }
 
 .Content .detail table tr td {
     font-size: 12pt;
     font-weight: 500;
     color: #52525b;
-    padding: 20px;
+    padding: 15px;
+    padding-left: 25px;
+    line-height: 24pt;
 }
 
 .Content .detail table tr td span {
-    font-size: 18pt;
+    font-size: 10pt;
     font-weight: 300;
     color: #52525b;
     text-align: center;
 }
 
 .td-icon {
-    float: left;
     margin-right: 10px;
 }
 
