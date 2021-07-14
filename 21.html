@@ -28,437 +28,423 @@
 
 
     <section class="d-none d-xl-block">
-        <div class="row">
-            <!-- Side Bar -->
-            <div class="col-xl-2 sideBar d-none d-xl-block" style="background-color: #e1e0e0;">
-                <div class="container">
-                    <div class="title my-2">教育訓練</div>
-                    <ul class="my-2">
-                        <li class="my-2"><a class="active" href="21.html">課程查詢</a></li>
-                        <li class="my-2"><a class="" href="22.html">報名專區</a></li>
-                        <li class="my-2"><a class="" href="23.html">補辦證書</a></li>
-                        <li class="my-2"><a class="" href="24.html">產投課程</a></li>
-                    </ul>
-                </div>
+        <div id="class-view" class="Content">
+            <div class="Content">
+                <div class="title">課程查詢</div>
             </div>
-            <div id="class-view" class="px-5 mt-5 Content">
-                <div class="Content">
-                    <div class="title">課程查詢</div>
-                </div>
-                <form method="" target="">
-                    <div class="d-flex my-5">
-                        <div class="input-group input-group-lg" style="width: 30%;">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">課程類別</div>
-                            </div>
-                            <select class="custom-select" id="class" name="class">
-                <option value="0" selected>所有課程</option>
-                <option value="1">技術操作類</option>
-                <option value="2">營造作業主管</option>
-                <option value="3">有害物作業主管</option>
-                <option value="4">其他教育訓練</option>
-                <option value="5">在職教育訓練(回訓)</option>
-              </select>
+            <form method="" target="">
+                <div class="d-flex" style="margin-bottom: 15px;">
+                    <div class="input-group input-group-lg" style="width: 50%;">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">課程類別</div>
                         </div>
-
-                        <div class="input-group mx-4 input-group-lg" style="width: 55%;">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">課程名稱</div>
-                            </div>
-                            <select class="custom-select" id="class-name" name="class-name">
-              </select>
-                        </div>
-                    </div>
-                    <div class="d-flex my-5">
-                        <div class="input-group input-group-lg" style="width: 20%;">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">開課地點</div>
-                            </div>
-                            <select class="custom-select" id="class-place" name="class-place">
-                <option value="0" selected>請選擇</option>
-                <option value="1">臺北</option>
-                <option value="2">桃園</option>
-              </select>
-                        </div>
-
-                        <div class="input-group mx-4 input-group-lg" style="width: 20%;">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">課程時段</div>
-                            </div>
-                            <select class="custom-select" id="class-time" name="class-time">
-                <option value="0" selected>請選擇</option>
-                <option value="1">日間</option>
-                <option value="2">夜間</option>
-                <option value="3">假日</option>
-              </select>
-                        </div>
-
-                        <div class="input-group input-group-lg" style="width: 60%;">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">課程關鍵字</div>
-                            </div>
-                            <input type="text" class="form-control" placeholder="請輸入" id="class-keyword" name="class-keyword">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-md-12" style="text-align:center;">
-                                <input type="submit" value="送出查詢" class="btn btn-cus">
-                            </div>
-                        </div>
-                    </div>
-                </form>
-                <br>
-                <div class="Content">
-                    <div class="title">專業課程</div>
-                </div>
-                <br>
-                <div id="Taipei" class="training_box_cus city">
-                    <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target="#class-modal">
-                        <a>
-                            <div>110/6/1</div>
-                            拖吊 危險機械
-                            <h2>固定式起重機(伸臂式)</h2>
-                        </a>
-                        <div class="training_in_cus mt-4">
-                            <table class="training_in_top_cus mb-2">
-                                <tbody>
-                                    <tr>
-                                        <td>內容</td>
-                                        <td>吊升荷重在三公噸以上之固定式<br> 起重機(伸臂式)安全衛生教育訓練
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table class="training_in_bottom_cus mb-2">
-                                <tbody>
-                                    <tr>
-                                        <td>總時數</td>
-                                        <td>18hr</td>
-                                        <td style="width: 20px;"></td>
-                                        <td>價格</td>
-                                        <td>$1800</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <h5 class="mt-2">備註說明</h5>
-                        </div>
-                        <div class="training_bottom row d-flex justify-content-between mr-2 mt-5">
-                            <div class="col-6 d-flex justify-content-start align-self-end"><a class="training_button d-flex justify-content-center align-self-center text-dark">登記課程</a></div>
-                            <div class="col-5 row d-flex justify-content-around">
-                                <div class="training_note d-flex flex-column"><img src="./images/time.png"><a>日間</a></div>
-                                <div class="training_note d-flex flex-column"><img src="./images/gps.png"><a>台北</a></div>
-                            </div>
-                        </div>
+                        <select class="custom-select" id="class" name="class">
+            <option value="0" selected>所有課程</option>
+            <option value="1">技術操作類</option>
+            <option value="2">營造作業主管</option>
+            <option value="3">有害物作業主管</option>
+            <option value="4">其他教育訓練</option>
+            <option value="5">在職教育訓練(回訓)</option>
+            </select>
                     </div>
 
-                    <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target="#class-modal">
-                        <a>
-                            <div class="none-class">尚未開班(請先報名)</div>
-                            拖吊 危險機械
-                            <h2>固定式起重機(伸臂式)</h2>
-                        </a>
-                        <div class="training_in_cus mt-4">
-                            <table class="training_in_top_cus mb-2">
-                                <tbody>
-                                    <tr>
-                                        <td>內容</td>
-                                        <td>吊升荷重在三公噸以上之固定式<br> 起重機(伸臂式)安全衛生教育訓練
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table class="training_in_bottom_cus mb-2">
-                                <tbody>
-                                    <tr>
-                                        <td>總時數</td>
-                                        <td>18hr</td>
-                                        <td style="width: 20px;"></td>
-                                        <td>價格</td>
-                                        <td>$1800</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <h5 class="mt-2">備註說明</h5>
+                    <div class="input-group input-group-lg" style="width: 50%;">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">課程名稱</div>
                         </div>
-                        <div class="training_bottom row d-flex justify-content-between mr-2 mt-5">
-                            <div class="col-6 d-flex justify-content-start align-self-end"><a class="training_button d-flex justify-content-center align-self-center text-dark">登記課程</a></div>
-                            <div class="col-5 row d-flex justify-content-around">
-                                <div class="training_note d-flex flex-column"><img src="./images/time.png"><a>日間</a></div>
-                                <div class="training_note d-flex flex-column"><img src="./images/gps.png"><a>台北</a></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target="#class-modal">
-                        <a>
-                            <span></span>110/6/1<br> 拖吊 危險機械
-                            <h2>固定式起重機(伸臂式)</h2>
-                        </a>
-                        <div class="training_in_cus mt-4">
-                            <table class="training_in_top_cus mb-2">
-                                <tbody>
-                                    <tr>
-                                        <td>內容</td>
-                                        <td>吊升荷重在三公噸以上之固定式<br> 起重機(伸臂式)安全衛生教育訓練
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table class="training_in_bottom_cus mb-2">
-                                <tbody>
-                                    <tr>
-                                        <td>總時數</td>
-                                        <td>18hr</td>
-                                        <td style="width: 20px;"></td>
-                                        <td>價格</td>
-                                        <td>$1800</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <h5 class="mt-2">備註說明</h5>
-                        </div>
-                        <div class="training_bottom row d-flex justify-content-between mr-2 mt-5">
-                            <div class="col-6 d-flex justify-content-start align-self-end"><a class="training_button_over d-flex justify-content-center align-self-center text-dark">已額滿</a></div>
-                            <div class="col-5 row d-flex justify-content-around">
-                                <div class="training_note d-flex flex-column"><img src="./images/time.png"><a>日間</a></div>
-                                <div class="training_note d-flex flex-column"><img src="./images/gps.png"><a>台北</a></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target="#class-modal">
-                        <a>
-                            <div>110/6/1</div>
-                            拖吊 危險機械
-                            <h2>固定式起重機(伸臂式)</h2>
-                        </a>
-                        <div class="training_in_cus mt-4">
-                            <table class="training_in_top_cus mb-2">
-                                <tbody>
-                                    <tr>
-                                        <td>內容</td>
-                                        <td>吊升荷重在三公噸以上之固定式<br> 起重機(伸臂式)安全衛生教育訓練
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table class="training_in_bottom_cus mb-2">
-                                <tbody>
-                                    <tr>
-                                        <td>總時數</td>
-                                        <td>18hr</td>
-                                        <td style="width: 20px;"></td>
-                                        <td>價格</td>
-                                        <td>$1800</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <h5 class="mt-2">備註說明</h5>
-                        </div>
-                        <div class="training_bottom row d-flex justify-content-between mr-2 mt-5">
-                            <div class="col-6 d-flex justify-content-start align-self-end"><a class="training_button d-flex justify-content-center align-self-center text-dark">登記課程</a></div>
-                            <div class="col-5 row d-flex justify-content-around">
-                                <div class="training_note d-flex flex-column"><img src="./images/time.png"><a>日間</a></div>
-                                <div class="training_note d-flex flex-column"><img src="./images/gps.png"><a>台北</a></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target="#class-modal">
-                        <a>
-                            <div class="none-class">尚未開班(請先報名)</div>
-                            拖吊 危險機械
-                            <h2>固定式起重機(伸臂式)</h2>
-                        </a>
-                        <div class="training_in_cus mt-4">
-                            <table class="training_in_top_cus mb-2">
-                                <tbody>
-                                    <tr>
-                                        <td>內容</td>
-                                        <td>吊升荷重在三公噸以上之固定式<br> 起重機(伸臂式)安全衛生教育訓練
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table class="training_in_bottom_cus mb-2">
-                                <tbody>
-                                    <tr>
-                                        <td>總時數</td>
-                                        <td>18hr</td>
-                                        <td style="width: 20px;"></td>
-                                        <td>價格</td>
-                                        <td>$1800</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <h5 class="mt-2">備註說明</h5>
-                        </div>
-                        <div class="training_bottom row d-flex justify-content-between mr-2 mt-5">
-                            <div class="col-6 d-flex justify-content-start align-self-end"><a class="training_button d-flex justify-content-center align-self-center text-dark">登記課程</a></div>
-                            <div class="col-5 row d-flex justify-content-around">
-                                <div class="training_note d-flex flex-column"><img src="./images/time.png"><a>日間</a></div>
-                                <div class="training_note d-flex flex-column"><img src="./images/gps.png"><a>台北</a></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target="#class-modal">
-                        <a>
-                            <span></span>110/6/1<br> 拖吊 危險機械
-                            <h2>固定式起重機(伸臂式)</h2>
-                        </a>
-                        <div class="training_in_cus mt-4">
-                            <table class="training_in_top_cus mb-2">
-                                <tbody>
-                                    <tr>
-                                        <td>內容</td>
-                                        <td>吊升荷重在三公噸以上之固定式<br> 起重機(伸臂式)安全衛生教育訓練
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table class="training_in_bottom_cus mb-2">
-                                <tbody>
-                                    <tr>
-                                        <td>總時數</td>
-                                        <td>18hr</td>
-                                        <td style="width: 20px;"></td>
-                                        <td>價格</td>
-                                        <td>$1800</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <h5 class="mt-2">備註說明</h5>
-                        </div>
-                        <div class="training_bottom row d-flex justify-content-between mr-2 mt-5">
-                            <div class="col-6 d-flex justify-content-start align-self-end"><a class="training_button_over d-flex justify-content-center align-self-center text-dark">已額滿</a></div>
-                            <div class="col-5 row d-flex justify-content-around">
-                                <div class="training_note d-flex flex-column"><img src="./images/time.png"><a>日間</a></div>
-                                <div class="training_note d-flex flex-column"><img src="./images/gps.png"><a>台北</a></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target="#class-modal">
-                        <a>
-                            <div>110/6/1</div>
-                            拖吊 危險機械
-                            <h2>固定式起重機(伸臂式)</h2>
-                        </a>
-                        <div class="training_in_cus mt-4">
-                            <table class="training_in_top_cus mb-2">
-                                <tbody>
-                                    <tr>
-                                        <td>內容</td>
-                                        <td>吊升荷重在三公噸以上之固定式<br> 起重機(伸臂式)安全衛生教育訓練
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table class="training_in_bottom_cus mb-2">
-                                <tbody>
-                                    <tr>
-                                        <td>總時數</td>
-                                        <td>18hr</td>
-                                        <td style="width: 20px;"></td>
-                                        <td>價格</td>
-                                        <td>$1800</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <h5 class="mt-2">備註說明</h5>
-                        </div>
-                        <div class="training_bottom row d-flex justify-content-between mr-2 mt-5">
-                            <div class="col-6 d-flex justify-content-start align-self-end"><a class="training_button d-flex justify-content-center align-self-center text-dark">登記課程</a></div>
-                            <div class="col-5 row d-flex justify-content-around">
-                                <div class="training_note d-flex flex-column"><img src="./images/time.png"><a>日間</a></div>
-                                <div class="training_note d-flex flex-column"><img src="./images/gps.png"><a>台北</a></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target="#class-modal">
-                        <a>
-                            <div class="none-class">尚未開班(請先報名)</div>
-                            拖吊 危險機械
-                            <h2>固定式起重機(伸臂式)</h2>
-                        </a>
-                        <div class="training_in_cus mt-4">
-                            <table class="training_in_top_cus mb-2">
-                                <tbody>
-                                    <tr>
-                                        <td>內容</td>
-                                        <td>吊升荷重在三公噸以上之固定式<br> 起重機(伸臂式)安全衛生教育訓練
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table class="training_in_bottom_cus mb-2">
-                                <tbody>
-                                    <tr>
-                                        <td>總時數</td>
-                                        <td>18hr</td>
-                                        <td style="width: 20px;"></td>
-                                        <td>價格</td>
-                                        <td>$1800</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <h5 class="mt-2">備註說明</h5>
-                        </div>
-                        <div class="training_bottom row d-flex justify-content-between mr-2 mt-5">
-                            <div class="col-6 d-flex justify-content-start align-self-end"><a class="training_button d-flex justify-content-center align-self-center text-dark">登記課程</a></div>
-                            <div class="col-5 row d-flex justify-content-around">
-                                <div class="training_note d-flex flex-column"><img src="./images/time.png"><a>日間</a></div>
-                                <div class="training_note d-flex flex-column"><img src="./images/gps.png"><a>台北</a></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target="#class-modal">
-                        <a>
-                            <span></span>110/6/1<br> 拖吊 危險機械
-                            <h2>固定式起重機(伸臂式)</h2>
-                        </a>
-                        <div class="training_in_cus mt-4">
-                            <table class="training_in_top_cus mb-2">
-                                <tbody>
-                                    <tr>
-                                        <td>內容</td>
-                                        <td>吊升荷重在三公噸以上之固定式<br> 起重機(伸臂式)安全衛生教育訓練
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table class="training_in_bottom_cus mb-2">
-                                <tbody>
-                                    <tr>
-                                        <td>總時數</td>
-                                        <td>18hr</td>
-                                        <td style="width: 20px;"></td>
-                                        <td>價格</td>
-                                        <td>$1800</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <h5 class="mt-2">備註說明</h5>
-                        </div>
-                        <div class="training_bottom row d-flex justify-content-between mr-2 mt-5">
-                            <div class="col-6 d-flex justify-content-start align-self-end"><a class="training_button_over d-flex justify-content-center align-self-center text-dark">已額滿</a></div>
-                            <div class="col-5 row d-flex justify-content-around">
-                                <div class="training_note d-flex flex-column"><img src="./images/time.png"><a>日間</a></div>
-                                <div class="training_note d-flex flex-column"><img src="./images/gps.png"><a>台北</a></div>
-                            </div>
-                        </div>
+                        <select class="custom-select" id="class-name" name="class-name">
+            </select>
                     </div>
                 </div>
+                <div class="d-flex" style="margin-bottom: 25px;">
+                    <div class="input-group input-group-lg" style="width: 33%;">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">開課地點</div>
+                        </div>
+                        <select class="custom-select" id="class-place" name="class-place">
+            <option value="0" selected>請選擇</option>
+            <option value="1">臺北</option>
+            <option value="2">桃園</option>
+            </select>
+                    </div>
 
+                    <div class="input-group mx-4 input-group-lg" style="width: 33%;">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">課程時段</div>
+                        </div>
+                        <select class="custom-select" id="class-time" name="class-time">
+            <option value="0" selected>請選擇</option>
+            <option value="1">日間</option>
+            <option value="2">夜間</option>
+            <option value="3">假日</option>
+            </select>
+                    </div>
+
+                    <div class="input-group input-group-lg" style="width: 33%;">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">課程關鍵字</div>
+                        </div>
+                        <input type="text" class="form-control" placeholder="請輸入" id="class-keyword" name="class-keyword">
+                    </div>
+                </div>
                 <div class="form-group">
                     <div class="row">
                         <div class="col-md-12" style="text-align:center;">
-                            <input type="submit" value="更多課程" class="btn btn-cus">
+                            <input type="submit" value="送出查詢" class="btn btn-cus">
                         </div>
+                    </div>
+                </div>
+            </form>
+            <br>
+            <div class="Content">
+                <div class="title">專業課程</div>
+            </div>
+            <br>
+            <div id="Taipei" class="training_box_cus city">
+                <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target="#class-modal">
+                    <a>
+                        <div>110/6/1</div>
+                        拖吊 危險機械
+                        <h2>固定式起重機(伸臂式)</h2>
+                    </a>
+                    <div class="training_in_cus mt-4">
+                        <table class="training_in_top_cus mb-2">
+                            <tbody>
+                                <tr>
+                                    <td>內容</td>
+                                    <td>吊升荷重在三公噸以上之固定式<br> 起重機(伸臂式)安全衛生教育訓練
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="training_in_bottom_cus mb-2">
+                            <tbody>
+                                <tr>
+                                    <td>總時數</td>
+                                    <td>18hr</td>
+                                    <td style="width: 20px;"></td>
+                                    <td>價格</td>
+                                    <td>$1800</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h5 class="mt-2">備註說明</h5>
+                    </div>
+                    <div class="training_bottom row d-flex justify-content-between mr-2 mt-5">
+                        <div class="col-6 d-flex justify-content-start align-self-end"><a class="training_button d-flex justify-content-center align-self-center text-dark">登記課程</a></div>
+                        <div class="col-5 row d-flex justify-content-around">
+                            <div class="training_note d-flex flex-column"><img src="./images/time.png"><a>日間</a></div>
+                            <div class="training_note d-flex flex-column"><img src="./images/gps.png"><a>台北</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target="#class-modal">
+                    <a>
+                        <div class="none-class">尚未開班(請先報名)</div>
+                        拖吊 危險機械
+                        <h2>固定式起重機(伸臂式)</h2>
+                    </a>
+                    <div class="training_in_cus mt-4">
+                        <table class="training_in_top_cus mb-2">
+                            <tbody>
+                                <tr>
+                                    <td>內容</td>
+                                    <td>吊升荷重在三公噸以上之固定式<br> 起重機(伸臂式)安全衛生教育訓練
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="training_in_bottom_cus mb-2">
+                            <tbody>
+                                <tr>
+                                    <td>總時數</td>
+                                    <td>18hr</td>
+                                    <td style="width: 20px;"></td>
+                                    <td>價格</td>
+                                    <td>$1800</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h5 class="mt-2">備註說明</h5>
+                    </div>
+                    <div class="training_bottom row d-flex justify-content-between mr-2 mt-5">
+                        <div class="col-6 d-flex justify-content-start align-self-end"><a class="training_button d-flex justify-content-center align-self-center text-dark">登記課程</a></div>
+                        <div class="col-5 row d-flex justify-content-around">
+                            <div class="training_note d-flex flex-column"><img src="./images/time.png"><a>日間</a></div>
+                            <div class="training_note d-flex flex-column"><img src="./images/gps.png"><a>台北</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target="#class-modal">
+                    <a>
+                        <span></span>110/6/1<br> 拖吊 危險機械
+                        <h2>固定式起重機(伸臂式)</h2>
+                    </a>
+                    <div class="training_in_cus mt-4">
+                        <table class="training_in_top_cus mb-2">
+                            <tbody>
+                                <tr>
+                                    <td>內容</td>
+                                    <td>吊升荷重在三公噸以上之固定式<br> 起重機(伸臂式)安全衛生教育訓練
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="training_in_bottom_cus mb-2">
+                            <tbody>
+                                <tr>
+                                    <td>總時數</td>
+                                    <td>18hr</td>
+                                    <td style="width: 20px;"></td>
+                                    <td>價格</td>
+                                    <td>$1800</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h5 class="mt-2">備註說明</h5>
+                    </div>
+                    <div class="training_bottom row d-flex justify-content-between mr-2 mt-5">
+                        <div class="col-6 d-flex justify-content-start align-self-end"><a class="training_button_over d-flex justify-content-center align-self-center text-dark">已額滿</a></div>
+                        <div class="col-5 row d-flex justify-content-around">
+                            <div class="training_note d-flex flex-column"><img src="./images/time.png"><a>日間</a></div>
+                            <div class="training_note d-flex flex-column"><img src="./images/gps.png"><a>台北</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target="#class-modal">
+                    <a>
+                        <div>110/6/1</div>
+                        拖吊 危險機械
+                        <h2>固定式起重機(伸臂式)</h2>
+                    </a>
+                    <div class="training_in_cus mt-4">
+                        <table class="training_in_top_cus mb-2">
+                            <tbody>
+                                <tr>
+                                    <td>內容</td>
+                                    <td>吊升荷重在三公噸以上之固定式<br> 起重機(伸臂式)安全衛生教育訓練
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="training_in_bottom_cus mb-2">
+                            <tbody>
+                                <tr>
+                                    <td>總時數</td>
+                                    <td>18hr</td>
+                                    <td style="width: 20px;"></td>
+                                    <td>價格</td>
+                                    <td>$1800</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h5 class="mt-2">備註說明</h5>
+                    </div>
+                    <div class="training_bottom row d-flex justify-content-between mr-2 mt-5">
+                        <div class="col-6 d-flex justify-content-start align-self-end"><a class="training_button d-flex justify-content-center align-self-center text-dark">登記課程</a></div>
+                        <div class="col-5 row d-flex justify-content-around">
+                            <div class="training_note d-flex flex-column"><img src="./images/time.png"><a>日間</a></div>
+                            <div class="training_note d-flex flex-column"><img src="./images/gps.png"><a>台北</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target="#class-modal">
+                    <a>
+                        <div class="none-class">尚未開班(請先報名)</div>
+                        拖吊 危險機械
+                        <h2>固定式起重機(伸臂式)</h2>
+                    </a>
+                    <div class="training_in_cus mt-4">
+                        <table class="training_in_top_cus mb-2">
+                            <tbody>
+                                <tr>
+                                    <td>內容</td>
+                                    <td>吊升荷重在三公噸以上之固定式<br> 起重機(伸臂式)安全衛生教育訓練
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="training_in_bottom_cus mb-2">
+                            <tbody>
+                                <tr>
+                                    <td>總時數</td>
+                                    <td>18hr</td>
+                                    <td style="width: 20px;"></td>
+                                    <td>價格</td>
+                                    <td>$1800</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h5 class="mt-2">備註說明</h5>
+                    </div>
+                    <div class="training_bottom row d-flex justify-content-between mr-2 mt-5">
+                        <div class="col-6 d-flex justify-content-start align-self-end"><a class="training_button d-flex justify-content-center align-self-center text-dark">登記課程</a></div>
+                        <div class="col-5 row d-flex justify-content-around">
+                            <div class="training_note d-flex flex-column"><img src="./images/time.png"><a>日間</a></div>
+                            <div class="training_note d-flex flex-column"><img src="./images/gps.png"><a>台北</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target="#class-modal">
+                    <a>
+                        <span></span>110/6/1<br> 拖吊 危險機械
+                        <h2>固定式起重機(伸臂式)</h2>
+                    </a>
+                    <div class="training_in_cus mt-4">
+                        <table class="training_in_top_cus mb-2">
+                            <tbody>
+                                <tr>
+                                    <td>內容</td>
+                                    <td>吊升荷重在三公噸以上之固定式<br> 起重機(伸臂式)安全衛生教育訓練
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="training_in_bottom_cus mb-2">
+                            <tbody>
+                                <tr>
+                                    <td>總時數</td>
+                                    <td>18hr</td>
+                                    <td style="width: 20px;"></td>
+                                    <td>價格</td>
+                                    <td>$1800</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h5 class="mt-2">備註說明</h5>
+                    </div>
+                    <div class="training_bottom row d-flex justify-content-between mr-2 mt-5">
+                        <div class="col-6 d-flex justify-content-start align-self-end"><a class="training_button_over d-flex justify-content-center align-self-center text-dark">已額滿</a></div>
+                        <div class="col-5 row d-flex justify-content-around">
+                            <div class="training_note d-flex flex-column"><img src="./images/time.png"><a>日間</a></div>
+                            <div class="training_note d-flex flex-column"><img src="./images/gps.png"><a>台北</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target="#class-modal">
+                    <a>
+                        <div>110/6/1</div>
+                        拖吊 危險機械
+                        <h2>固定式起重機(伸臂式)</h2>
+                    </a>
+                    <div class="training_in_cus mt-4">
+                        <table class="training_in_top_cus mb-2">
+                            <tbody>
+                                <tr>
+                                    <td>內容</td>
+                                    <td>吊升荷重在三公噸以上之固定式<br> 起重機(伸臂式)安全衛生教育訓練
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="training_in_bottom_cus mb-2">
+                            <tbody>
+                                <tr>
+                                    <td>總時數</td>
+                                    <td>18hr</td>
+                                    <td style="width: 20px;"></td>
+                                    <td>價格</td>
+                                    <td>$1800</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h5 class="mt-2">備註說明</h5>
+                    </div>
+                    <div class="training_bottom row d-flex justify-content-between mr-2 mt-5">
+                        <div class="col-6 d-flex justify-content-start align-self-end"><a class="training_button d-flex justify-content-center align-self-center text-dark">登記課程</a></div>
+                        <div class="col-5 row d-flex justify-content-around">
+                            <div class="training_note d-flex flex-column"><img src="./images/time.png"><a>日間</a></div>
+                            <div class="training_note d-flex flex-column"><img src="./images/gps.png"><a>台北</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target="#class-modal">
+                    <a>
+                        <div class="none-class">尚未開班(請先報名)</div>
+                        拖吊 危險機械
+                        <h2>固定式起重機(伸臂式)</h2>
+                    </a>
+                    <div class="training_in_cus mt-4">
+                        <table class="training_in_top_cus mb-2">
+                            <tbody>
+                                <tr>
+                                    <td>內容</td>
+                                    <td>吊升荷重在三公噸以上之固定式<br> 起重機(伸臂式)安全衛生教育訓練
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="training_in_bottom_cus mb-2">
+                            <tbody>
+                                <tr>
+                                    <td>總時數</td>
+                                    <td>18hr</td>
+                                    <td style="width: 20px;"></td>
+                                    <td>價格</td>
+                                    <td>$1800</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h5 class="mt-2">備註說明</h5>
+                    </div>
+                    <div class="training_bottom row d-flex justify-content-between mr-2 mt-5">
+                        <div class="col-6 d-flex justify-content-start align-self-end"><a class="training_button d-flex justify-content-center align-self-center text-dark">登記課程</a></div>
+                        <div class="col-5 row d-flex justify-content-around">
+                            <div class="training_note d-flex flex-column"><img src="./images/time.png"><a>日間</a></div>
+                            <div class="training_note d-flex flex-column"><img src="./images/gps.png"><a>台北</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="training_course_cus mb-5 p-4" data-toggle="modal" data-target="#class-modal">
+                    <a>
+                        <span></span>110/6/1<br> 拖吊 危險機械
+                        <h2>固定式起重機(伸臂式)</h2>
+                    </a>
+                    <div class="training_in_cus mt-4">
+                        <table class="training_in_top_cus mb-2">
+                            <tbody>
+                                <tr>
+                                    <td>內容</td>
+                                    <td>吊升荷重在三公噸以上之固定式<br> 起重機(伸臂式)安全衛生教育訓練
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="training_in_bottom_cus mb-2">
+                            <tbody>
+                                <tr>
+                                    <td>總時數</td>
+                                    <td>18hr</td>
+                                    <td style="width: 20px;"></td>
+                                    <td>價格</td>
+                                    <td>$1800</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h5 class="mt-2">備註說明</h5>
+                    </div>
+                    <div class="training_bottom row d-flex justify-content-between mr-2 mt-5">
+                        <div class="col-6 d-flex justify-content-start align-self-end"><a class="training_button_over d-flex justify-content-center align-self-center text-dark">已額滿</a></div>
+                        <div class="col-5 row d-flex justify-content-around">
+                            <div class="training_note d-flex flex-column"><img src="./images/time.png"><a>日間</a></div>
+                            <div class="training_note d-flex flex-column"><img src="./images/gps.png"><a>台北</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-12" style="text-align:center;">
+                        <input type="submit" value="更多課程" class="btn btn-cus">
                     </div>
                 </div>
             </div>
