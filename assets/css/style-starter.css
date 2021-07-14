@@ -13432,9 +13432,10 @@ p.white {
     padding: 6px 40px;
     color: #fff;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 32px;
     font-weight: 600;
     transition: 0.3s ease-in;
+    width:14%;
 }
 
 .transparent-btn {
@@ -14119,17 +14120,17 @@ nav ul li a:before {
 
 .w3l-main-slider .banner-info-bg h6 {
     text-shadow: black 0.1em 0.1em 0.2em;
-    font-size: 36px;
+    font-size: 36pt;
     margin-bottom: 14px;
     color: #fff;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .w3l-main-slider .banner-info-bg h5 {
     text-shadow: black 0.1em 0.1em 0.2em;
-    font-size: 60px;
-    line-height: 70px;
-    font-weight: 300;
+    font-size: 50pt;
+    line-height: 50px;
+    font-weight: bolder;
     color: #fff;
 }
 
@@ -14150,9 +14151,8 @@ nav ul li a:before {
 }
 
 .w3l-main-slider .banner-info-bg {
-    max-width: 850px;
-    margin: 0 auto;
-    text-align: center;
+    max-width: 900px;
+    margin: 0 ;
 }
 
 .w3l-main-slider p.text-label {
@@ -14178,7 +14178,7 @@ nav ul li a:before {
 .w3l-main-slider .banner-view {
     background: url(../images/slide1.jpg) no-repeat 0 20%;
     background-size: cover;
-    min-height: 680px;
+    min-height: 900px;
     position: relative;
     z-index: 0;
     display: grid;
@@ -14250,22 +14250,22 @@ nav ul li a:before {
 /*-- homeblock1 --*/
 
 .home-services {
-    margin-top: -100px;
+    margin-top: -17.5%;
     z-index: 10;
     position: relative;
 }
 
 .box-wrap {
-    min-height: 410px;
-    padding: 40px 30px;
+    padding: 4% 3%;
     text-align: center;
     transition: all 0.5s ease 0s;
     border-radius: 8px;
     box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
     background-color: var(--card-bg);
-    position: relative;
     display: flex;
     flex-direction: column;
+    width: 28%;
+    height: 455px;
 }
 
 .box-wrap:hover {
@@ -14274,7 +14274,7 @@ nav ul li a:before {
 }
 
 .box-wrap h4 a {
-    font-size: 24px;
+    font-size: 20pt;
     font-weight: 600;
     text-align: left;
     margin-top: 25px;
@@ -14393,7 +14393,7 @@ a.read {
 }
 
 .w3l-homeblock3 img {
-    width: 100%;
+    width: 91%;
 }
 
 .w3l-aboutblock ul.w3l-right-book li span {
@@ -14486,24 +14486,27 @@ ol.w3l-right li:before {
 
 .w3l-homeblock3 span {
     color: #ff7200;
-    font-size: 45px;
-    font-weight: 600;
+    font-size: 36pt;
+    font-weight: bolder;
 }
 
 .w3l-homeblock3 p.top {
     color: #808a9e;
-    font-size: 16px;
+    font-size: 18pt;
+    margin-top: 9%;
 }
 
 .w3l-homeblock3 p.bottom {
-    font-size: 14px;
-    line-height: 24px;
+    margin-top: 7%;
+    font-size: 11pt;
+    line-height: 140%;
 }
 
 .w3l-homeblock3 h4 {
-    font-size: 18px;
+    font-size: 24pt;
     color: #32325d;
     font-weight: bold;
+    margin-top: -2%;
 }
 
 .w3l-homeblock3 .block4_img {
@@ -14512,12 +14515,9 @@ ol.w3l-right li:before {
 }
 
 .w3l-homeblock3 .content {
-    margin-top: -30px !important;
+    margin-top: -3.5% !important;
     background: #e1e0e0;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    height: 390px;
 }
 
 .w3l-homeblock3 .content_left {
@@ -14532,17 +14532,19 @@ ol.w3l-right li:before {
 }
 
 .w3l-homeblock3 .content_left span {
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 34pt;
+    font-weight: bolder;
 }
 
 .w3l-homeblock3 .content_right {
     min-width: 750px;
     height: 135px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-position: center;
     background-image: url(../images/dotted_line.png);
+    margin-left: -3.8%;
+    margin-top: 11.3%;
 }
 
 .w3l-homeblock3 .content_right .step {
@@ -14656,23 +14658,23 @@ ol.w3l-right li:before {
     font-weight: none;
     border-bottom: #52525b 3px solid;
     color: #52525b;
-    font-size: 12pt;
-    line-height: 32px;
+    font-size: 21pt;
+    line-height: 60px;
     padding: 0;
 }
 
 .training .w3-button_active {
     border-bottom: #ff7200 3px solid;
     color: #ff7200;
-    font-size: 20pt;
-    line-height: 40px;
-    font-weight: bold;
+    font-size: 33pt;
+    line-height: 70px;
+    font-weight: bolder;
 }
 
 .training .training_title a,
 .enterprise_title a,
 .contact_title a {
-    font-size: 24px;
+    font-size: 24pt;
     color: #32325d;
     font-weight: bold;
 }
@@ -14692,7 +14694,7 @@ ol.w3l-right li:before {
 
 .training_course {
     width: 350px;
-    height: 440px;
+    height: 420px;
     border: 3px solid #e1e0e0;
     padding: 30px;
 }
@@ -14767,7 +14769,14 @@ td:nth-child(5) {
     background-color: #e1e0e1;
 }
 
-.training_course:hover>.training_bottom .training_button {
+.training_course:hover>.training_bottom .training_button,
+.training_course:hover>.training_bottom .training_button_over {
+    color: #fff !important;
+    background-color: #ff7200;
+}
+
+.training_bottom .training_button_over {
+    width: 250px;
     color: #fff !important;
     background-color: #ff7200;
 }
@@ -15105,6 +15114,7 @@ h4.w3f_title {
     font-size: 22px;
     line-height: 30px;
     color: #eee;
+    font-weight: bolder;
 }
 
 ul.list-agileits li a,
@@ -15162,7 +15172,7 @@ p.copy-footer-29 {
 }
 
 .text-uppercase img {
-    width: 300px;
+    width: 340px;
 }
 
 .address .w3-bar-item {
@@ -15174,14 +15184,14 @@ p.copy-footer-29 {
     border-bottom: #52525b 3px solid;
     color: #52525b;
     font-size: 20px;
-    line-height: 36px;
+    line-height: 46px;
 }
 
 .address .w3-button_active {
     border-bottom: #ff7200 3px solid;
     color: #ff7200;
     font-size: 26px;
-    line-height: 40px;
+    line-height: 50px;
     font-weight: bold;
 }
 
@@ -16845,7 +16855,7 @@ h2.title {
 
 .w3l-contact-main .map-content-9 form textarea {
     resize: none;
-    height: 130px;
+    height: 200px;
     margin: 30px 0;
     font-family: 'Spartan', sans-serif;
 }
@@ -16996,7 +17006,6 @@ h2.title {
 
 .banner-info-bg h5 {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -17009,7 +17018,8 @@ h2.title {
 .box-wrap a.btn-style {
     font-size: 16px;
     padding: 0 10px;
-    width: 120px;
+    width: 50%;
+    height: 32px
 }
 
 
@@ -17022,18 +17032,20 @@ h2.title {
 
 .swiper-wrapper {
     height: 50px;
-    margin-top: 30px;
-    padding: 0 35px;
+    margin-top: 20px;
 }
 
 .swiper-slide {
     margin: 0 -1px;
+    display: flex;
+    justify-content: center;
 }
 
 .swiper-slide img {
     display: block;
-    width: 70px;
+    width: 100px;
     object-fit: cover;
+    padding-top: 8%;
 }
 
 .swiper-button-next::after,
@@ -17082,6 +17094,7 @@ h2.title {
     background-color: #ff7200;
     border-color: #ff7200;
     text-shadow: none;
+    width: 17%;
 }
 
 
