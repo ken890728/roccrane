@@ -88,10 +88,15 @@
 }
 
 .training_course_cus {
-    width: 380px;
-    height: 450px;
+    width: 388.25px;
+    height: 430px;
     border: 3px solid #e1e0e0;
-    padding: 30px;
+    padding: 25px;
+    margin-bottom: 50px;
+}
+
+.training_note{
+    font-size: 12pt;
 }
 
 .training_course_cus:hover {
@@ -100,9 +105,16 @@
 }
 
 .training_course_cus a:first-child {
-    font-size: 18pt;
+    font-size: 12pt;
     font-weight: bold;
     color: #41516f;
+}
+
+.date-class {
+    font-size: 14pt;
+    font-weight: bold;
+    color: #41516f;
+    margin-bottom: 8px;
 }
 
 .none-class {
@@ -113,12 +125,14 @@
 }
 
 .training_course_cus h2 {
+    font-size: 17pt;
     font-weight: bold;
 }
 
 .training_in_cus table.training_in_top_cus {
-    font-size: 13pt;
+    font-size: 10pt;
     height: 50px;
+    width: 100%;
 }
 
 .training_in_cus table.training_in_top_cus td:first-child {
@@ -136,14 +150,19 @@
 }
 
 .training_in_cus table.training_in_top_cus td:last-child {
-    font-size: 13pt;
+    font-size: 10pt;
     padding: 10px;
     border: 2px solid #e1e0e0;
 }
 
+.training_in_cus h5{
+    font-size: 10pt;
+}
+
 .training_in_cus table.training_in_bottom_cus {
-    font-size: 13pt !important;
+    font-size: 10pt !important;
     height: 30px;
+    width: 100%;
 }
 
 .training_in_cus table.training_in_bottom_cus td:nth-child(1),

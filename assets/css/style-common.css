@@ -229,7 +229,31 @@
     margin-left: 60px;
 }
 
-.phone-square-list li {
+.cjk-list li {
+    list-style-type: cjk-ideographic;
+    margin-left: 60px;
+}
+
+.phone-cjk-list li:not(:last-child){
+    margin-bottom: 16px;
+}
+
+.decimal-list li:not(:last-child){
+    list-style-type: decimal;
+    margin-bottom: 16px;
+}
+
+.phone-decimal-list li:not(:last-child){
+    list-style-type: decimal;
+    margin-bottom: 16px;
+}
+
+.square-list li:not(:last-child){
+    list-style-type: square;
+    margin-bottom: 16px;
+}
+
+.phone-square-list li:not(:last-child){
     list-style-type: square;
     margin-left: 30px;
 }
