@@ -27,10 +27,10 @@
     <!-- //header top-->
 
 
-    <section class="d-none d-xl-block">
+    <section class="d-none d-xl-block d-lg-screen">
         <div class="row">
             <!-- Side Bar -->
-            <div class="col-2 sideBar" style="background-color: #e1e0e0;">
+            <div class="sideBar" style="background-color: #e1e0e0;">
                 <div class="container">
                     <div class="title my-2">聯絡我們</div>
                     <ul class="my-2">
@@ -42,9 +42,9 @@
             </div>
             <!-- //Side Bar -->
             <!-- Form -->
-            <div class="col-8 px-5 mt-5 FormBlock">
+            <div class="Content Content-padding">
                 <div class="title">客訴信箱<span>*為必填</span></div>
-                <form>
+                <form class="detail">
                     <div class="my-5">
                         <label for="input_topic"><span>*</span>信件主旨</label><br>
                         <input id="input_topic" class="form-control w-100" type="text">
@@ -90,7 +90,7 @@
                         <label for="input_phone"><span>*</span>行動電話</label><br>
                         <input id="input_phone" class="form-control w-100" type="tel">
                     </div>
-                    <div class="my-5">
+                    <div class="my-5" style="margin-bottom: 25px !important;">
                         <label for="input_response"><span>*</span>回覆方式</label><br>
                         <select id="input_recv" class="form-control w-100">
                             <option>電話回覆</option>

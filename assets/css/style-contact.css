@@ -1,45 +1,17 @@
+.Content .detail .my-5{
+    margin-top: 0 !important;
+    margin-bottom: 16px !important;
+}
+
 .locate .Name {
     font-size: 24pt;
     font-weight: 700;
     color: #32325d;
 }
 
-.FormBlock label {
-    font-size: 18pt;
-    font-weight: 500;
-    color: #52525b;
-    text-decoration: none;
-}
-
-.FormBlock .title,
-.locate .title {
-    font-size: 28pt;
-    font-weight: 700;
-    color: #808a9e;
-}
-
-.FormBlock .title span {
-    font-size: 18pt;
-    font-weight: 500;
-    color: #ff7200;
-}
-
-.FormBlock label span {
-    font-size: 18pt;
-    font-weight: 500;
-    color: #ff7200;
-}
-
-.FormBlock input[type=submit] {
-    background: #41516f;
-    color: #ffffff;
-    font-size: 18pt;
-    font-weight: 500;
-}
-
 .locate .detail {
-    font-size: 18pt;
-    font-weight: 500;
+    font-size: 14pt;
+    font-weight: bold;
     color: #52525b;
 }
 

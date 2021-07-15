@@ -5,14 +5,15 @@
     padding-right: 0 !important;
     padding-left: 0 !important;
     font-family: 微軟正黑體;
-    flex: 0 0 12.716763%;
-    max-width: 12.716763%;
+    letter-spacing: 5px;
+    flex: 0 0 15.134%;
+    max-width: 15.134%;
 }
 
 @media (max-width: 1600px) {
     .sideBar{
-        flex: 0 0 15.7118499%;
-        max-width: 15.7118499%;
+        flex: 0 0 19.15734%;
+        max-width: 19.15734%;
     }
 }
 
@@ -35,26 +36,39 @@
     margin-bottom: 16px !important;
 }
 
+.sideBar .my-2 .sm-list li{
+    margin-top: 0 !important;
+    margin-bottom: 16px !important;
+}
+
 .sideBar>.container {
     padding-top: 3rem;
     width: max-content;
 }
 
+@media (min-width: 2000px) {
+    .d-lg-screen{
+        width: 1920px;
+        margin: 0 auto;
+    }
+}
+
 .Content {
     font-family: 微軟正黑體;
+    letter-spacing: 5px;
 }
 
 .Content.Content-padding {
     padding-left: 50px !important;
     padding-right: 100px !important;
-    flex: 0 0 87.283237%;
-    max-width: 87.283237%;
+    flex: 0 0 84.866%;
+    max-width: 84.866%;
 }
 
 @media (max-width: 1600px) {
     .Content.Content-padding{
-        flex: 0 0 84.2881501%;
-        max-width: 84.2881501%;
+        flex: 0 0 80.84266%;
+        max-width: 80.84266%;
     }
 }
 
@@ -225,7 +239,7 @@
 
 .cjk-list li {
     list-style-type: cjk-ideographic;
-    margin-left: 60px;
+    margin-left: 34px;
 }
 
 .phone-cjk-list li {
@@ -235,7 +249,7 @@
 
 .decimal-list li {
     list-style-type: decimal;
-    margin-left: 20pt;
+    margin-left: 35px;
 }
 
 .phone-decimal-list li {
@@ -246,11 +260,6 @@
 .square-list li {
     list-style-type: square;
     margin-left: 20px;
-}
-
-.cjk-list li {
-    list-style-type: cjk-ideographic;
-    margin-left: 60px;
 }
 
 .phone-cjk-list li:not(:last-child){

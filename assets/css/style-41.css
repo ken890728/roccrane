@@ -1,0 +1,132 @@
+.Content .titleOn,
+.locate .title {
+    font-size: 28pt;
+    font-weight: bolder;
+    color: #ff7200;
+    border-bottom: 2px solid;
+    width: 30%;
+    display: table-cell;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+.Content .titleOff,
+.locate .title {
+    font-size: 18pt;
+    font-weight: 700;
+    color: #808a9e;
+    border-bottom: 2px solid;
+    width: 30%;
+    display: table-cell;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+.Content .phone-titleOn,
+.locate .title {
+    font-size: 20pt;
+    font-weight: bolder;
+    color: #ff7200;
+    border-bottom: 2px solid;
+    width: 10%;
+    display: table-cell;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+.Content .phone-titleOff,
+.locate .title {
+    font-size: 12pt;
+    font-weight: 700;
+    color: #808a9e;
+    border-bottom: 2px solid;
+    width: 10%;
+    display: table-cell;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+.Content .detail {
+    font-size: 18pt;
+    font-weight: 500;
+    color: #52525b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-box {
+    color: #e1e0e0;
+    border-bottom: 1px solid;
+    width: 70%;
+}
+
+.phone-detail-box{
+    width: 80%;
+    text-align: justify;
+    text-justify:inter-ideograph;
+    margin-bottom: 60px;
+}
+
+.detail-box-bottom {
+    color: #e1e0e0;
+    width: 70%;
+}
+
+.detail-box-date {
+    text-align: center;
+    color: #41516f;
+    height: 120px;
+    width: 120px;
+}
+
+.phone-detail-box-date {
+    color: #808a9e;
+    font-size: 12pt;
+    font-weight: 100;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10%;
+}
+
+.detail-box-up-arrow{
+    float: right;
+    margin-right: -30px;
+    margin-top: -8px;
+    transform:rotate(-90deg);
+}
+
+.phone-detail-box-split{
+    width: 90%;
+    border-top: 1px solid #e1e0e0;
+}
+
+.detail-box-d {
+    text-align: center;
+    font-size: 50pt;
+    font-weight: bolder;
+    height: 75px;
+}
+
+.detail-box-ym {
+    text-align: center;
+}
+
+.detail-box-text a {
+    color: #52525b !important;
+    font-weight: bolder;
+}
+
+.phone-detail-box-text a{
+    color: #52525b !important;
+    font-weight: bolder;
+}
+
+.td-icon {
+    float: left;
+    margin-right: 10px;
+}
+
+table tr td:nth-child(1) {
+    width: 120px;
+}

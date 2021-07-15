@@ -27,10 +27,10 @@
     <!-- //header top-->
 
 
-    <section class="d-none d-xl-block">
+    <section class="d-none d-xl-block d-lg-screen">
         <div class="row">
             <!-- Side Bar -->
-            <div class="col-2 sideBar" style="background-color: #e1e0e0;">
+            <div class="sideBar" style="background-color: #e1e0e0;">
                 <div class="container">
                     <div class="title my-2">聯絡我們</div>
                     <ul class="my-2">
@@ -42,9 +42,9 @@
             </div>
             <!-- //Side Bar -->
             <!-- Form -->
-            <div class="col-8 px-5 mt-5 FormBlock">
+            <div class="Content Content-padding">
                 <div class="title">聯絡我們<span>*為必填</span></div>
-                <form>
+                <form class="detail">
                     <div class="my-5">
                         <label for="input_name"><span>*</span>姓名</label><br>
                         <input id="input_name" class="form-control w-100" type="text">
@@ -69,7 +69,7 @@
                         <label for="input_phone"><span>*</span>行動電話</label><br>
                         <input id="input_phone" class="form-control w-100" type="tel">
                     </div>
-                    <div class="my-5">
+                    <div class="my-5" style="margin-bottom: 25px !important;">
                         <label for="input_response">回覆方式</label><br>
                         <select id="input_recv" class="form-control w-100">
                             <option>電話回覆</option>
@@ -80,12 +80,10 @@
                         <input class="w-50 btn" type="submit" value="送出">
                     </div>
                 </form>
-            </div>
-            <!-- //Form -->
-            <div class="col-8 offset-2">
+
                 <div class="title">協會地點</div>
-                <div class="wrap my-5">
-                    <div class="top d-flex my-5">
+                <div class="wrap">
+                    <div class="top d-flex">
                         <div class="Name">
                             台北據點
                         </div>
@@ -94,15 +92,15 @@
                             <div>電話：02-23880159 / 傳真：02-23880151</div>
                         </div>
                     </div>
-                    <div>
+                    <div class="detail">
                         <div class="map">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.767339952782!2d121.5092012149586!3d25.04196858396869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a90b07e9b14d%3A0xb73266f7ab311899!2zMTAw5Y-w5YyX5biC5Lit5q2j5Y2A5Y2a5oSb6LevMTU06JmfNQ!5e0!3m2!1szh-TW!2stw!4v1624587638503!5m2!1szh-TW!2stw"
                                 allowfullscreen=""></iframe>
                         </div>
                     </div>
                 </div>
-                <div class="wrap my-5">
-                    <div class="top d-flex my-5">
+                <div class="wrap">
+                    <div class="top d-flex">
                         <div class="Name">
                             桃園據點
                         </div>
@@ -111,7 +109,7 @@
                             <div>電話：03-3571072 / 傳真：03-3577223</div>
                         </div>
                     </div>
-                    <div>
+                    <div class="detail">
                         <div class="map">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.7374162244423!2d121.30839631495788!3d25.00903698398403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681e52fcd1af73%3A0x6cfe2ba3e6395b03!2z5Lit6I-v6LW36YeN5Y2H6ZmN5qmf5YW35Y2U5pyD!5e0!3m2!1szh-TW!2stw!4v1624587989048!5m2!1szh-TW!2stw"
                                 allowfullscreen=""></iframe>
@@ -119,7 +117,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <section class="d-xl-none">
@@ -164,36 +161,36 @@
                 </form>
                 <div>
                     <div class="phone-title">協會地點</div><br>
-                        <div class="phone-Name">
-                            台北據點
+                    <div class="phone-Name">
+                        台北據點
+                    </div>
+                    <div class="phone-detail mx-3">
+                        <div>地點：臺北市中正區博愛路154號5樓</div>
+                        <div>電話：02-23880159 / 傳真：02-23880151</div>
+                    </div>
+                    <div>
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.767339952782!2d121.5092012149586!3d25.04196858396869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a90b07e9b14d%3A0xb73266f7ab311899!2zMTAw5Y-w5YyX5biC5Lit5q2j5Y2A5Y2a5oSb6LevMTU06JmfNQ!5e0!3m2!1szh-TW!2stw!4v1624587638503!5m2!1szh-TW!2stw"
+                                allowfullscreen=""></iframe>
                         </div>
-                        <div class="phone-detail mx-3">
-                            <div>地點：臺北市中正區博愛路154號5樓</div>
-                            <div>電話：02-23880159 / 傳真：02-23880151</div>
-                        </div>
-                        <div>
-                            <div class="map">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.767339952782!2d121.5092012149586!3d25.04196858396869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a90b07e9b14d%3A0xb73266f7ab311899!2zMTAw5Y-w5YyX5biC5Lit5q2j5Y2A5Y2a5oSb6LevMTU06JmfNQ!5e0!3m2!1szh-TW!2stw!4v1624587638503!5m2!1szh-TW!2stw"
-                                    allowfullscreen=""></iframe>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="phone-Name">
-                            桃園據點
-                        </div>
-                        <div class="phone-detail mx-3">
-                            <div>地點：桃園市經國路9號14樓之2(阿波羅大廈)</div>
-                            <div>電話：03-3571072 / 傳真：03-3577223</div>
-                        </div>
-                        <div>
-                            <div class="map">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.7374162244423!2d121.30839631495788!3d25.00903698398403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681e52fcd1af73%3A0x6cfe2ba3e6395b03!2z5Lit6I-v6LW36YeN5Y2H6ZmN5qmf5YW35Y2U5pyD!5e0!3m2!1szh-TW!2stw!4v1624587989048!5m2!1szh-TW!2stw"
-                                    allowfullscreen=""></iframe>
-                            </div>
+                    </div>
+                    <br>
+                    <div class="phone-Name">
+                        桃園據點
+                    </div>
+                    <div class="phone-detail mx-3">
+                        <div>地點：桃園市經國路9號14樓之2(阿波羅大廈)</div>
+                        <div>電話：03-3571072 / 傳真：03-3577223</div>
+                    </div>
+                    <div>
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.7374162244423!2d121.30839631495788!3d25.00903698398403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681e52fcd1af73%3A0x6cfe2ba3e6395b03!2z5Lit6I-v6LW36YeN5Y2H6ZmN5qmf5YW35Y2U5pyD!5e0!3m2!1szh-TW!2stw!4v1624587989048!5m2!1szh-TW!2stw"
+                                allowfullscreen=""></iframe>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
         <br>
     </section>
