@@ -33,7 +33,7 @@
 }
 
 .sideBar ul ul>li>a {
-    font-size: 16pt;
+    font-size: 10pt;
 }
 
 .nowrap {
@@ -64,16 +64,6 @@ table.t46 tr td:nth-child(1) {
 .table-discribe {
     border: 1px solid #e1e0e0;
     padding: 5px;
-}
-
-.Content .detail,
-.detail-center {
-    font-size: 18pt;
-    font-weight: 500;
-    color: #52525b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .Content .titleOn,
