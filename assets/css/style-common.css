@@ -9,8 +9,20 @@
     max-width: 12.716763%;
 }
 
+@media (max-width: 1600px) {
+    .sideBar{
+        flex: 0 0 15.7118499%;
+        max-width: 15.7118499%;
+    }
+}
+
 .sideBar .container {
     padding-top: 100px !important;
+}
+
+.sideBar .my-2 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 .sideBar .title.my-2 {
@@ -37,6 +49,13 @@
     padding-right: 100px !important;
     flex: 0 0 87.283237%;
     max-width: 87.283237%;
+}
+
+@media (max-width: 1600px) {
+    .Content.Content-padding{
+        flex: 0 0 84.2881501%;
+        max-width: 84.2881501%;
+    }
 }
 
 .sideBar .title,
@@ -216,7 +235,7 @@
 
 .decimal-list li {
     list-style-type: decimal;
-    margin-left: 60px;
+    margin-left: 20pt;
 }
 
 .phone-decimal-list li {
@@ -226,7 +245,7 @@
 
 .square-list li {
     list-style-type: square;
-    margin-left: 60px;
+    margin-left: 20px;
 }
 
 .cjk-list li {
