@@ -1,3 +1,11 @@
+.textcenter {
+    text-align: center;
+}
+
+.entry-title {
+    font-size: 14pt;
+}
+
 .phone-detail table tr {
     border: 2px solid #e1e0e0;
 }
