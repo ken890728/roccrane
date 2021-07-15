@@ -71,7 +71,7 @@ table.t53-phone tr {
 }
 
 .Content .detail table.t53 tr>td:nth-child(even) {
-    font-size: 24pt;
+    font-size: 12pt;
     font-weight: 500;
     background: #FFF !important;
     padding: 20px;
@@ -79,7 +79,7 @@ table.t53-phone tr {
 }
 
 table.t53 tr td a {
-    font-size: 18pt;
+    font-size: 12pt;
     color: #000;
 }
 
@@ -102,7 +102,7 @@ table.t53-phone a {
 }
 
 .Content .detail table.textcenter tr>td {
-    font-size: 24pt;
+    font-size: 12pt;
     font-weight: 500;
     color: #52525B !important;
     background: #FFF !important;
@@ -111,9 +111,9 @@ table.t53-phone a {
 }
 
 .Content .detail table tr td span {
-    font-size: 18pt;
+    font-size: 17pt;
     font-weight: 500;
-    color: ＃52525b;
+    color: #52525b;
     text-align: center;
 }
 
@@ -125,7 +125,7 @@ li.my-2 a img {
 }
 
 .sideBar ul ul>li>a {
-    font-size: 16pt;
+    font-size: 10pt;
 }
 
 .arrow {
