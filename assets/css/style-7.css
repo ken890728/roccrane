@@ -18,10 +18,11 @@
 
 .Content .detail table.t9 th {
     white-space: nowrap;
+    font-size: 14pt;
 }
 
 .Content .detail table.t9 tr td {
-    font-size: 18pt;
+    font-size: 12pt;
     text-align: center;
     color: #000;
     font-weight: 500;
