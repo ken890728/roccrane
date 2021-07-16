@@ -35,6 +35,12 @@ table.t8 tr:nth-child(4)>td {
     color: #52525b !important;
 }
 
+.view-table tr td{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: center;
+}
+
 .t8-phone {
     margin-bottom: 50px;
 }

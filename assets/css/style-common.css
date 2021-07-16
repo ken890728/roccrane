@@ -1,11 +1,11 @@
-/* SideBar */
+﻿/* SideBar */
 
 .sideBar {
     height: 850px;
     padding-right: 0 !important;
     padding-left: 0 !important;
     font-family: 微軟正黑體;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     flex: 0 0 15.134%;
     max-width: 15.134%;
 }
@@ -55,7 +55,7 @@
 
 .Content {
     font-family: 微軟正黑體;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 
 .Content.Content-padding {
@@ -164,10 +164,9 @@
     font-size: 12pt;
     font-weight: 500;
     color: #52525b;
-}
-
-.Content .detail p:not(:last-child) {
-    margin-bottom: 16px;
+    line-height: 32px;
+    position: relative;
+    top: -8px;
 }
 
 .Content .phone-detail {
@@ -250,6 +249,9 @@
 .decimal-list li {
     list-style-type: decimal;
     margin-left: 35px;
+    line-height: 32px;
+    position: relative;
+    top: -8px;
 }
 
 .phone-decimal-list li {

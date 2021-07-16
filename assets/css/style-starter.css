@@ -73,7 +73,7 @@ section {
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    font-size: 1rem;
+    font-size: 10pt;
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
@@ -13305,7 +13305,7 @@ h6 {
 p {
     margin: 0;
     padding: 0;
-    font-size: 17px;
+    font-size: 10pt;
     line-height: 28px;
     color: var(--font-color);
     font-family: 'Open Sans', sans-serif;
@@ -13431,7 +13431,7 @@ p.white {
 .btn-style {
     padding: 6px 40px;
     color: #fff;
-    font-size: 18px;
+    font-size: 10pt;
     line-height: 32px;
     font-weight: 600;
     transition: 0.3s ease-in;
@@ -14274,7 +14274,7 @@ nav ul li a:before {
 }
 
 .box-wrap h4 a {
-    font-size: 20pt;
+    font-size: 14pt;
     font-weight: 600;
     text-align: left;
     margin-top: 25px;
@@ -14342,7 +14342,7 @@ a.read {
 
 .icon span.title {
     color: white;
-    font-size: 25px;
+    font-size: 17pt;
     font-weight: bold;
 }
 
@@ -14486,24 +14486,24 @@ ol.w3l-right li:before {
 
 .w3l-homeblock3 span {
     color: #ff7200;
-    font-size: 36pt;
+    font-size: 24pt;
     font-weight: bolder;
 }
 
 .w3l-homeblock3 p.top {
     color: #808a9e;
-    font-size: 18pt;
+    font-size: 12pt;
     margin-top: 9%;
 }
 
 .w3l-homeblock3 p.bottom {
     margin-top: 7%;
-    font-size: 11pt;
+    font-size: 10pt;
     line-height: 140%;
 }
 
 .w3l-homeblock3 h4 {
-    font-size: 24pt;
+    font-size: 17pt;
     color: #32325d;
     font-weight: bold;
     margin-top: -2%;
@@ -14532,7 +14532,7 @@ ol.w3l-right li:before {
 }
 
 .w3l-homeblock3 .content_left span {
-    font-size: 34pt;
+    font-size: 24pt;
     font-weight: bolder;
 }
 
@@ -14583,7 +14583,7 @@ ol.w3l-right li:before {
 
 .w3l-homeblock3 .content_right .step:hover>.step_content a {
     color: #ff7200;
-    font-size: 16px;
+    font-size: 12pt;
 }
 
 .w3l-homeblock3 .content_right .step:hover>.step_circle {
@@ -14658,15 +14658,15 @@ ol.w3l-right li:before {
     font-weight: none;
     border-bottom: #52525b 3px solid;
     color: #52525b;
-    font-size: 21pt;
-    line-height: 60px;
+    font-size: 17pt;
+    line-height: 63px;
     padding: 0;
 }
 
 .training .w3-button_active {
     border-bottom: #ff7200 3px solid;
     color: #ff7200;
-    font-size: 33pt;
+    font-size: 24pt;
     line-height: 70px;
     font-weight: bolder;
 }
@@ -14674,7 +14674,7 @@ ol.w3l-right li:before {
 .training .training_title a,
 .enterprise_title a,
 .contact_title a {
-    font-size: 24pt;
+    font-size: 17pt;
     color: #32325d;
     font-weight: bold;
 }
@@ -17021,7 +17021,7 @@ h2.title {
 }
 
 .box-wrap a.btn-style {
-    font-size: 16px;
+    font-size: 10pt;
     padding: 0 10px;
     width: 50%;
     height: 32px
