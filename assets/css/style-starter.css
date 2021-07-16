@@ -73,7 +73,7 @@ section {
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    font-size: 10pt;
+    font-size: 14pt;
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
@@ -462,7 +462,7 @@ h5,
 
 h6,
 .h6 {
-    font-size: 1rem;
+    font-size: 11pt;
 }
 
 .lead {
@@ -14250,13 +14250,13 @@ nav ul li a:before {
 /*-- homeblock1 --*/
 
 .home-services {
-    margin-top: -17.5%;
+    margin-top: -265px;
     z-index: 10;
     position: relative;
 }
 
 .box-wrap {
-    padding: 4% 3%;
+    padding: 2% 3%;
     text-align: center;
     transition: all 0.5s ease 0s;
     border-radius: 8px;
@@ -14264,8 +14264,8 @@ nav ul li a:before {
     background-color: var(--card-bg);
     display: flex;
     flex-direction: column;
-    width: 28%;
-    height: 455px;
+    width: 306.66667;
+    height: 332.22222px;
 }
 
 .box-wrap:hover {
@@ -14393,7 +14393,8 @@ a.read {
 }
 
 .w3l-homeblock3 img {
-    width: 91%;
+    width: 400px;
+    height: 260px;
 }
 
 .w3l-aboutblock ul.w3l-right-book li span {
@@ -14493,11 +14494,11 @@ ol.w3l-right li:before {
 .w3l-homeblock3 p.top {
     color: #808a9e;
     font-size: 12pt;
-    margin-top: 9%;
+    margin-top: 15px;
 }
 
 .w3l-homeblock3 p.bottom {
-    margin-top: 7%;
+    margin-top: 15px;
     font-size: 10pt;
     line-height: 140%;
 }
@@ -14515,14 +14516,13 @@ ol.w3l-right li:before {
 }
 
 .w3l-homeblock3 .content {
-    margin-top: -3.5% !important;
     background: #e1e0e0;
-    height: 390px;
+    height: 215px;
 }
 
 .w3l-homeblock3 .content_left {
     width: 300px;
-    padding-left: 50px;
+    padding-left: 15px;
 }
 
 .w3l-homeblock3 .content_left img {
@@ -14537,14 +14537,13 @@ ol.w3l-right li:before {
 }
 
 .w3l-homeblock3 .content_right {
-    min-width: 750px;
     height: 135px;
     display: flex;
     justify-content: space-between;
     background-position: center;
     background-image: url(../images/dotted_line.png);
-    margin-left: -3.8%;
-    margin-top: 11.3%;
+    margin-left: -60px;
+    margin-top: 50px;
 }
 
 .w3l-homeblock3 .content_right .step {
@@ -14567,6 +14566,7 @@ ol.w3l-right li:before {
 .w3l-homeblock3 .content_right .step_content a {
     font-weight: bold;
     color: #32325d;
+    font-size: 10pt;
 }
 
 .w3l-homeblock3 .content_right .step:hover {
@@ -14693,15 +14693,10 @@ ol.w3l-right li:before {
 }
 
 .training_course {
-    width: 350px;
-    height: 420px;
+    width: 320px;
+    height: 380px;
     border: 3px solid #e1e0e0;
     padding: 30px;
-}
-
-.training_box:after {
-    content: "";
-    width: 350px;
 }
 
 .training_course:hover {
@@ -14711,17 +14706,19 @@ ol.w3l-right li:before {
 
 .training_course a:first-child {
     color: #808a9e;
-    font-size: 18pt;
+    font-size: 14pt;
     font-weight: bold;
 }
 
 .training_course h2 {
     font-weight: bold;
+    font-size: 17pt;
 }
 
 .training_in table.training_in_top {
-    font-size: 12pt;
+    font-size: 11pt;
     height: 50px;
+    width: 100%;
 }
 
 .training_in table.training_in_top td:first-child {
@@ -14739,14 +14736,15 @@ ol.w3l-right li:before {
 }
 
 .training_in table.training_in_top td:last-child {
-    font-size: 12pt;
+    font-size: 11pt;
     padding: 10px;
     border: 2px solid #e1e0e0;
 }
 
 .training_in table.training_in_bottom {
-    font-size: 12pt !important;
+    font-size: 11pt !important;
     height: 30px;
+    width: 100%;
 }
 
 .training_in table.training_in_bottom td:nth-child(1),
@@ -14793,6 +14791,7 @@ td:nth-child(5) {
 
 .training_bottom img {
     width: 30px;
+    height: 30px;
 }
 
 
@@ -15177,7 +15176,7 @@ p.copy-footer-29 {
 }
 
 .text-uppercase img {
-    width: 340px;
+    width: 290px;
 }
 
 .address .w3-bar-item {
@@ -17050,7 +17049,7 @@ h2.title {
     display: block;
     width: 100px;
     object-fit: cover;
-    padding-top: 8%;
+    padding-top: 15px;
 }
 
 .swiper-button-next::after,
@@ -17067,7 +17066,7 @@ h2.title {
 .swiper-button-next img,
 .swiper-button-prev img {
     height: 50px;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .training_box_rwd {
@@ -17099,7 +17098,10 @@ h2.title {
     background-color: #ff7200;
     border-color: #ff7200;
     text-shadow: none;
-    width: 17%;
+    padding: 0px;
+    border: 0px;
+    width: 85px;
+    height: 20px;
 }
 
 
