@@ -1433,8 +1433,8 @@
 
                         <div class="swiper-button-next d-none d-md-block" style="margin-right: 25px;"><img src="./images/right-arrow.png"></div>
                         <div class="swiper-button-prev d-none d-md-block" style="margin-left: 10px;"><img src="./images/left-arrow.png"></div>
-                        <div class="swiper-button-next d-block d-md-none"><img src="./images/right-arrow.png"></div>
-                        <div class="swiper-button-prev d-block d-md-none"><img src="./images/left-arrow.png"></div>
+                        <div class="swiper-button-next d-block d-md-none" style="margin-top: -10px;margin-right: 20px;"><img src="./images/right-arrow.png"></div>
+                        <div class="swiper-button-prev d-block d-md-none" style="margin-top: -10px;margin-left: 5px;"><img src="./images/left-arrow.png"></div>
 
                     </div>
                 </div>
@@ -1494,7 +1494,7 @@
                                 <button class="w3-bar-item tablink_address w3-button_active" onclick="openCity_address(event,'Taipei_address','Taipei_map')">台北職訓</button>
                                 <button class="w3-bar-item tablink_address w3-button" onclick="openCity_address(event,'Taoyuan_address','Taoyuan_map')">桃園職訓</button>
                             </div>
-                            <div id="Taipei_address" class="w3-container city_address col-8 col-sm-6 col-md-12" style="padding: 0;">
+                            <div class="Taipei_address w3-container city_address col-8 col-sm-6 col-md-12" style="padding: 0;">
                                 <div>
                                     <ul class="list-agileits">
                                         <li><a href="">電話：(02)2388-0159&nbsp;&nbsp;傳真：(02)2388-0151</a></li>
@@ -1503,7 +1503,7 @@
                                 </div>
                             </div>
 
-                            <div id="Taoyuan_address" class="w3-container city_address col-8 col-sm-6 col-md-12" style="padding: 0;display:none">
+                            <div class="Taoyuan_address w3-container city_address col-8 col-sm-6 col-md-12" style="padding: 0;display:none">
                                 <div>
                                     <ul class="list-agileits">
                                         <li><a href="">電話：(03)357-7223&nbsp;&nbsp;傳真：(03)357-1071</a></li>
@@ -1525,7 +1525,7 @@
                                 <button class="w3-bar-item tablink_address w3-button" onclick="openCity_address(event,'Taoyuan_address','Taoyuan_map')">桃園職訓</button>
                             </div>
 
-                            <div id="Taipei_address" class="w3-container city_address col-9 col-sm-6 col-md-12" style="padding: 0;">
+                            <div class="Taipei_address w3-container city_address col-9 col-sm-6 col-md-12" style="padding: 0;">
                                 <div>
                                     <ul class="list-agileits">
                                         <li class="d-none d-md-block"><a href="">電話：(02)2388-0159</a>
@@ -1537,7 +1537,7 @@
                                 </div>
                             </div>
 
-                            <div id="Taoyuan_address" class="w3-container city_address col-9 col-sm-6 col-md-12" style="padding: 0;display:none">
+                            <div class="Taoyuan_address w3-container city_address col-9 col-sm-6 col-md-12" style="padding: 0;display:none">
                                 <div>
                                     <ul class="list-agileits">
                                         <li class="d-none d-md-block"><a href="">電話：(03)357-7223</a>
@@ -1942,7 +1942,8 @@
                     tablinks_address[i].className = tablinks_address[i].className.replace(" w3-button_active", " ");
                 }
                 document.getElementById(citymap).style.display = "block";
-                document.getElementById(cityaddress).style.display = "block";
+                document.getElementsByClassName(cityaddress)[0].style.display = "block";
+                document.getElementsByClassName(cityaddress)[1].style.display = "block";
                 evt.currentTarget.className += " w3-button_active";
             }
         </script>
@@ -1960,7 +1961,7 @@
 
         <script>
             var swiper = new Swiper(".mySwiper_rwd", {
-                slidesPerView: 3,
+                slidesPerView: 4,
                 navigation: {
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",

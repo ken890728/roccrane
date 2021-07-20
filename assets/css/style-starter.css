@@ -17136,6 +17136,12 @@ h2.title {
     height: 100%;
 }
 
+@media screen and (max-width:1200px) {
+    .swiper-container.mySwiper_rwd {
+        width: 85%;
+    }
+}
+
 .swiper-wrapper {
     height: 50px;
     margin-top: 20px;
