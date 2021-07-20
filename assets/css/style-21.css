@@ -57,7 +57,7 @@
     height: 40px;
 }
 
-.input-group-lg{
+.input-group-lg {
     font-size: 14px;
 }
 
@@ -98,9 +98,10 @@
     border: 3px solid #e1e0e0;
     padding: 25px;
     margin-bottom: 50px;
+    position: relative;
 }
 
-.training_note{
+.training_note {
     font-size: 14pt;
 }
 
@@ -160,7 +161,7 @@
     border: 2px solid #e1e0e0;
 }
 
-.training_in_cus h5{
+.training_in_cus h5 {
     font-size: 11pt;
 }
 
@@ -237,6 +238,7 @@ td:nth-child(5) {
     height: 400px;
     border: 3px solid #e1e0e0;
     padding: 30px;
+    position: relative;
 }
 
 .phone-training_course_cus:hover {

@@ -11,7 +11,7 @@
 }
 
 @media (max-width: 1600px) {
-    .sideBar{
+    .sideBar {
         flex: 0 0 19.15734%;
         max-width: 19.15734%;
     }
@@ -36,7 +36,7 @@
     margin-bottom: 16px !important;
 }
 
-.sideBar .my-2 .sm-list li{
+.sideBar .my-2 .sm-list li {
     margin-top: 0 !important;
     margin-bottom: 16px !important;
 }
@@ -47,7 +47,7 @@
 }
 
 @media (min-width: 2000px) {
-    .d-lg-screen{
+    .d-lg-screen {
         width: 1920px;
         margin: 0 auto;
     }
@@ -66,7 +66,7 @@
 }
 
 @media (max-width: 1600px) {
-    .Content.Content-padding{
+    .Content.Content-padding {
         flex: 0 0 80.84266%;
         max-width: 80.84266%;
     }
@@ -191,8 +191,10 @@
 }
 
 .Content .detail table tr td {
+    -webkit-appearance: none;
+    -moz-appearance: none;
     font-size: 12pt;
-    font-weight: 500;
+    font-weight: 500 !important;
     color: #52525b;
     padding: 15px;
     padding-left: 25px;
@@ -256,7 +258,7 @@
 
 .phone-decimal-list li {
     list-style-type: decimal;
-    margin-left: 16px;
+    margin-left: 25px;
 }
 
 .square-list li {
@@ -264,26 +266,26 @@
     margin-left: 20px;
 }
 
-.phone-cjk-list li:not(:last-child){
+.phone-cjk-list li:not(:last-child) {
     margin-bottom: 16px;
 }
 
-.decimal-list li:not(:last-child){
+.decimal-list li:not(:last-child) {
     list-style-type: decimal;
     margin-bottom: 16px;
 }
 
-.phone-decimal-list li:not(:last-child){
+.phone-decimal-list li:not(:last-child) {
     list-style-type: decimal;
     margin-bottom: 16px;
 }
 
-.square-list li:not(:last-child){
+.square-list li:not(:last-child) {
     list-style-type: square;
     margin-bottom: 16px;
 }
 
-.phone-square-list li:not(:last-child){
+.phone-square-list li:not(:last-child) {
     list-style-type: square;
     margin-left: 30px;
 }
