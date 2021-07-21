@@ -1,6 +1,6 @@
-.Content .detail .my-5{
+.Content .detail .my-5 {
     margin-top: 0 !important;
-    margin-bottom: 16px !important;
+    margin-bottom: 30px !important;
 }
 
 .locate .Name {
@@ -18,7 +18,7 @@
 .map iframe {
     border: none;
     width: 100%;
-    min-height: 400px;
+    min-height: 300px;
     display: block;
     -webkit-filter: var(--iframe-filter);
     -moz-filter: var(--iframe-filter);
