@@ -18,7 +18,7 @@
 .map iframe {
     border: none;
     width: 100%;
-    min-height: 280px;
+    min-height: 275px;
     display: block;
     -webkit-filter: var(--iframe-filter);
     -moz-filter: var(--iframe-filter);
