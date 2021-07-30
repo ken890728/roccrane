@@ -15,6 +15,7 @@
 .inputRequired {
     background-color: aliceblue !important;
 }
+
 .Content .detail table.t9 th {
     white-space: nowrap;
 }
@@ -26,7 +27,6 @@
 .Content .detail table.t9 tr td:nth-child(2) {
     text-align: center;
 }
-
 
 .Content .detail table.t9 tr:nth-child(odd) td {
     background-color: #e1e0e0 !important;
@@ -47,8 +47,6 @@ table tr td {
     background-color: #fff !important;
 }
 
-
-
 table.phone-main-layer tr:nth-child(odd) table tr td {
     background-color: #e1e0e0 !important;
 }
@@ -67,6 +65,7 @@ table.phone-main-layer table tr td:nth-child(1) {
     white-space: nowrap;
     padding-right: 10px;
 }
+
 
 /*-----*/
 
@@ -96,8 +95,28 @@ table.phone-main-layer table tr td:nth-child(1) {
 
 .Content .phone-detail table.t9 tr:nth-child(odd) td {
     background-color: #e1e0e0 !important;
+    color: #52525B;
 }
 
 .Content .phone-detail table.t9 tr:nth-child(even) td {
     background-color: #FFF !important;
+    color: #52525B;
+}
+
+input[type=radio] {
+    -webkit-appearance: radio;
+}
+
+input[type=checkbox] {
+    -webkit-appearance: checkbox;
+}
+
+.form-radio .row .col-md-10 input[type=text] {
+    display: inline;
+    width: 20%;
+}
+
+.form-radio .row .col-md-9 input[type=text] {
+    display: inline;
+    width: 30%;
 }

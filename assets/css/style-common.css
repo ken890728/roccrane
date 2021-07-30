@@ -286,7 +286,11 @@
     margin-bottom: 16px;
 }
 
-.phone-square-list li:not(:last-child) {
+.phone-square-list li {
     list-style-type: square;
     margin-left: 30px;
+}
+
+.phone-square-list li:not(:last-child) {
+    margin-bottom: 16px;
 }

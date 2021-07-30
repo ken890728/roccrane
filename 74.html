@@ -28,240 +28,252 @@
     <!-- //header top-->
 
 
-    <section class="d-none d-xl-block d-lg-screen">
+    <section class="d-none d-xl-block" style="width: 1320px;margin: 0 auto;">
         <div class="row">
-            <div class="sideBar" style="background-color: #e1e0e0;">
-                <div class="container">
-                    <div class="title my-2">學員專區</div>
-                    <ul class="my-2">
-                        <li class="my-2"><a class="" href="71.html">個人資料修改</a></li>
-                        <li class="my-2"><a class="" href="72.html">個人學習履歷</a></li>
-                        <li class="my-2"><a class="" href="73.html">學員權益</a></li>
-                        <li class="my-2"><a class="active" href="74.html">問卷調查</a></li>
-                    </ul>
-                </div>
-
-            </div>
-            <div class="Content Content-padding">
-                <div class="title">問券調查</div>
+            <div class="Content">
+                <div class="title">受訓學員意見調查表</div>
                 <div class="detail">
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-md-1">
-
-                                <label class="control-label" for="StudentName"><span style="color:red;margin-left:-11px">*</span>學員姓名</label>
-
-                            </div>
-                            <div class="col-md-3">
-                                <input class="form-control inputRequired text-box single-line" data-val="true" data-val-length="姓名 輸入長度超過限制，最多30個字!!" data-val-length-max="30" data-val-required="請輸入學員姓名" id="StudentName" name="StudentName" type="text" value="">
-                                <span class="field-validation-valid text-danger" data-valmsg-for="StudentName" data-valmsg-replace="true"></span>
-                            </div>
-                            <div class="col-md-1">
-                                <label class="control-label" for="IdentifyId"><span style="color:red;margin-left:-11px">*</span>身分證號</label>
-
-                            </div>
-
-                            <div class="col-md-3">
-                                <input class="form-control inputRequired text-box single-line" data-val="true" data-val-regex="身份證字號或居留證號格式錯誤" data-val-regex-pattern="^([A-Z][0-9]{9}|[A-Z][0-9]{6}|[A-Z][0-9]{7}|[A-Z][A-Z][0-9]{8})$" data-val-required="請輸入身分證號" id="IdentifyId" name="IdentifyId"
-                                    type="text" value="">
-                                <span class="field-validation-valid text-danger" data-valmsg-for="IdentifyId" data-valmsg-replace="true"></span>
-                            </div>
-
-                            <label class="control-label col-md-1" for="PhotoFile">相片</label>
-                            <div class="col-md-3">
-                                <input accept=".jpg,.gif.png" class="form-control" id="PhotoFile" name="PhotoFile" onchange="checkFile(this)" type="file" value="">
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-md-1">
-                                <label class="control-label" for="Birthday"><span style="color:red;margin-left:-11px">*</span>生日</label>
-
-                            </div>
-                            <div class="col-md-3">
-                                <input autocomplete="off" class="form-control datepicker inputRequired hasDatepicker" data-val="true" data-val-date="欄位 生日 必須是日期。" data-val-required="請輸入生日" id="Birthday" name="Birthday" placeholder="西元年/月/日" type="text" value="">
-                                <span class="field-validation-valid text-danger" data-valmsg-for="Birthday" data-valmsg-replace="true"></span>
-                            </div>
-                            <div class="col-md-1">
-                                <label class="control-label" for="MobilePhone1"><span style="color:red;margin-left:-11px">*</span>手機一</label>
-                            </div>
-                            <div class="col-md-3">
-                                <input class="form-control inputRequired text-box single-line" data-val="true" data-val-length="手機 輸入長度超過限制，最多10個字!!" data-val-length-max="10" data-val-required="請輸入手機一" id="MobilePhone1" name="MobilePhone1" type="tel" value="">
-                                <span class="field-validation-valid text-danger" data-valmsg-for="MobilePhone1" data-valmsg-replace="true"></span>
-                            </div>
-                            <label class="control-label col-md-1" for="MobilePhone2">手機二</label>
-                            <div class="col-md-3">
-                                <input class="form-control text-box single-line" data-val="true" data-val-length="手機 輸入長度超過限制，最多10個字!!" data-val-length-max="10" id="MobilePhone2" name="MobilePhone2" type="tel" value="">
-                                <span class="field-validation-valid text-danger" data-valmsg-for="MobilePhone2" data-valmsg-replace="true"></span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="form-group">
-                        <div class="row">
-                            <label class="control-label col-md-1" for="Gender">性別</label>
-                            <div class="col-md-3">
-                                <select class="form-control" data-val="true" data-val-number="欄位 性別 必須是數字。" data-val-range="請選擇正確性別" data-val-range-max="1" data-val-range-min="0" data-val-required="請輸入性別" id="Gender" name="Gender">
-                                    <option value="1">男</option>
-                                    <option value="0">女</option>
-                                </select>
-                                <span class="field-validation-valid text-danger" data-valmsg-for="Gender" data-valmsg-replace="true"></span>
-                            </div>
-                            <label class="control-label col-md-1" for="EmailAddr">電子信箱</label>
-                            <div class="col-md-7">
-                                <input class="form-control text-box single-line" data-val="true" data-val-email="學員Email格式錯誤" data-val-length="電子信箱 輸入長度超過限制，最多50個字!!" data-val-length-max="50" id="EmailAddr" name="EmailAddr" type="email" value="">
-                                <span class="field-validation-valid text-danger" data-valmsg-for="EmailAddr" data-valmsg-replace="true"></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="row">
-                            <label class="control-label col-md-1" for="Tel">電話</label>
-                            <div class="col-md-5">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <input class="form-control text-box single-line" data-val="true" data-val-length="區碼 輸入長度超過限制，最多3個字!!" data-val-length-max="3" id="TelAreaCode" name="TelAreaCode" placeholder="區碼" type="text" value="">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input class="form-control text-box single-line" data-val="true" data-val-length="電話 輸入長度超過限制，最多10個字!!" data-val-length-max="10" id="Tel" name="Tel" placeholder="電話號碼" type="text" value="">
-                                        <span class="field-validation-valid text-danger" data-valmsg-for="TelExt" data-valmsg-replace="true"></span>
-                                        <span class="field-validation-valid text-danger" data-valmsg-for="Tel" data-valmsg-replace="true"></span>
-                                        <span class="field-validation-valid text-danger" data-valmsg-for="TelAreaCode" data-valmsg-replace="true"></span>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <input class="form-control text-box single-line" data-val="true" data-val-length="分機 輸入長度超過限制，最多10個字!!" data-val-length-max="10" id="TelExt" name="TelExt" placeholder="分機" type="text" value="">
-                                    </div>
-                                </div>
-                            </div>
-                            <label class="control-label col-md-1" for="Fax">傳真</label>
-                            <div class="col-md-5">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <input class="form-control text-box single-line" data-val="true" data-val-length="區碼 輸入長度超過限制，最多3個字!!" data-val-length-max="3" id="FaxAreaCode" name="FaxAreaCode" placeholder="區碼" type="text" value="">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input class="form-control text-box single-line" data-val="true" data-val-length="傳真 輸入長度超過限制，最多10個字!!" data-val-length-max="10" id="Fax" name="Fax" placeholder="傳真號碼" type="text" value="">
-                                        <span class="field-validation-valid text-danger" data-valmsg-for="FaxExt" data-valmsg-replace="true"></span>
-                                        <span class="field-validation-valid text-danger" data-valmsg-for="Fax" data-valmsg-replace="true"></span>
-                                        <span class="field-validation-valid text-danger" data-valmsg-for="FaxAreaCode" data-valmsg-replace="true"></span>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <input class="form-control text-box single-line" data-val="true" data-val-length="分機 輸入長度超過限制，最多10個字!!" data-val-length-max="10" id="FaxExt" name="FaxExt" placeholder="分機" type="text" value="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-
-                    <div class="form-group">
-                        <div class="row">
-                            <label class="control-label col-md-1" for="Addr">聯絡地址</label>
-                            <div class="col-md-11">
-                                <div class="row">
-                                    <div class="col-md-2">
-                                        <input class="form-control text-box single-line" data-val="true" data-val-length="郵遞區號 輸入長度超過限制，最多10個字!!" data-val-length-max="10" id="AddrPostCode" name="AddrPostCode" placeholder="郵遞區號" type="text" value="">
-                                        <span class="field-validation-valid text-danger" data-valmsg-for="AddrPostCode" data-valmsg-replace="true"></span>
-                                    </div>
-                                    <div class="col-md-10">
-                                        <input class="form-control text-box single-line" data-val="true" data-val-length="地址 輸入長度超過限制，最多100個字!!" data-val-length-max="100" id="Addr" name="Addr" placeholder="聯絡地址" type="text" value="">
-                                        <span class="field-validation-valid text-danger" data-valmsg-for="Addr" data-valmsg-replace="true"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <label class="control-label col-md-1" for="LawAddr">戶籍地址</label>
-                            <div class="col-md-11">
-                                <div class="row">
-                                    <div class="col-md-2">
-                                        <input class="form-control text-box single-line" data-val="true" data-val-length="郵遞區號 輸入長度超過限制，最多10個字!!" data-val-length-max="10" id="LawAddrPostCode" name="LawAddrPostCode" placeholder="郵遞區號" type="text" value="">
-                                        <span class="field-validation-valid text-danger" data-valmsg-for="LawAddrPostCode" data-valmsg-replace="true"></span>
-                                    </div>
-                                    <div class="col-md-10">
-                                        <input class="form-control text-box single-line" data-val="true" data-val-length="戶籍地址 輸入長度超過限制，最多100個字!!" data-val-length-max="100" id="LawAddr" name="LawAddr" placeholder="戶籍地址" type="text" value="">
-                                        <span class="field-validation-valid text-danger" data-valmsg-for="LawAddr" data-valmsg-replace="true"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <label class="control-label col-md-1" for="EducationCode">學歷</label>
-                            <div class="col-md-3">
-                                <select class="form-control" data-val="true" data-val-number="欄位 學歷 必須是數字。" data-val-required="請輸入學歷" id="EducationCode" name="EducationCode">
-                                    <option value="1">不識字</option>
-                                    <option value="2">國小</option>
-                                    <option value="3">國中</option>
-                                    <option value="4">高中(職)</option>
-                                    <option value="5">專科</option>
-                                    <option value="6">大學</option>
-                                    <option value="7">研究所以上</option>
-                                    <option value="99">其他</option>
-                                </select>
-                                <span class="field-validation-valid text-danger" data-valmsg-for="EducationCode" data-valmsg-replace="true"></span>
-                            </div>
-
-                            <div class="col-md-1">
-                                <label class="control-label" for="EducationSchoolName"><span style="color:red;margin-left:-11px">*</span>學校名稱</label>
-
-                            </div>
-                            <div class="col-md-3">
-                                <input class="form-control inputRequired text-box single-line" data-val="true" data-val-length="學校名稱 輸入長度超過限制，最多50個字!!" data-val-length-max="50" data-val-required="請輸入學校名稱" id="EducationSchoolName" name="EducationSchoolName" type="text" value="">
-                                <span class="field-validation-valid text-danger" data-valmsg-for="EducationSchoolName" data-valmsg-replace="true"></span>
-                            </div>
-                            <label class="control-label col-md-1" for="EducationDepartment">科系</label>
-                            <div class="col-md-3">
-                                <input class="form-control text-box single-line" data-val="true" data-val-length="科系 輸入長度超過限制，最多50個字!!" data-val-length-max="50" id="EducationDepartment" name="EducationDepartment" type="text" value="">
-                                <span class="field-validation-valid text-danger" data-valmsg-for="EducationDepartment" data-valmsg-replace="true"></span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="form-group">
-                        <div class="row">
-                            <label class="control-label col-md-1" for="EducationYear">畢業年</label>
-                            <div class="col-md-3">
-                                <input class="form-control text-box single-line" data-val="true" data-val-number="欄位 畢業年 必須是數字。" data-val-range="區間錯誤" data-val-range-max="200" data-val-range-min="1" id="EducationYear" name="EducationYear" type="number" value="">
-                                <span class="field-validation-valid text-danger" data-valmsg-for="EducationYear" data-valmsg-replace="true"></span>
-                            </div>
-                            <label class="control-label col-md-1" for="EducationMonth">畢業月</label>
-                            <div class="col-md-3">
-                                <input class="form-control text-box single-line" data-val="true" data-val-number="欄位 畢業月 必須是數字。" data-val-range="區間錯誤" data-val-range-max="12" data-val-range-min="1" id="EducationMonth" name="EducationMonth" type="number" value="">
-                                <span class="field-validation-valid text-danger" data-valmsg-for="EducationMonth" data-valmsg-replace="true"></span>
-                            </div>
-                            <label class="control-label col-md-1" for="EduFile">畢業證書</label>
-                            <div class="col-md-3">
-                                <input accept=".pdf" class="form-control" id="EduFile" name="EduFile" onchange="checkPdfFile(this)" type="file" value="">
-                            </div>
-                        </div>
-                    </div>
+                    親愛的學員，您好！
+                    <br>爲瞭解參訓人員在進修過程之相關需求、參與情況、滿意程度，特實施此次問卷調查。結果將做為各項課程優化之參考，問卷著重於課程方面的需求瞭解及滿意度之調查，期盼您熱心提供寶貴的意見與想法。謝謝您的合作！
+                    <br><br>中華起重升降機具協會附設職業訓練中心 敬啟
                 </div>
-
-                <div class="form-group" style="margin: -25px;">
-                    <br>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-md-12" style="text-align:center;">
-                                <input type="submit" value="確定送出" class="w-50 btn btn-cus" style="padding-left:50px;padding-right:50px;max-width:100%;">
+                <form action="">
+                    <div class="title">第一部分 基本資料</div>
+                    <div class="detail">
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="control-label col-md-1" for="StudentName">姓名</label>
+                                <div class="col-md-3">
+                                    <input class="form-control text-box single-line" data-val="true" data-val-length="姓名 輸入長度超過限制，最多30個字!!" data-val-length-max="30" data-val-required="請輸入學員姓名" id="StudentName" name="StudentName" type="text" value="">
+                                    <span class="field-validation-valid text-danger" data-valmsg-for="StudentName" data-valmsg-replace="true"></span>
+                                </div>
+                                <label class="control-label col-md-1" for="EmailAddr">電子信箱</label>
+                                <div class="col-md-3">
+                                    <input class="form-control text-box single-line" data-val="true" data-val-email="學員Email格式錯誤" data-val-length="電子信箱 輸入長度超過限制，最多50個字!!" data-val-length-max="50" id="EmailAddr" name="EmailAddr" type="email" value="">
+                                    <span class="field-validation-valid text-danger" data-valmsg-for="EmailAddr" data-valmsg-replace="true"></span>
+                                </div>
                             </div>
-
+                        </div>
+                        <div class="form-group form-radio">
+                            <div class="row">
+                                <label class="control-label col-md-1" for="edu">學歷</label>
+                                <div class="col-md-10">
+                                    <input type="radio" name="edu">&nbsp;不識字&nbsp;
+                                    <input type="radio" name="edu">&nbsp;國小&nbsp;
+                                    <input type="radio" name="edu">&nbsp;國中&nbsp;
+                                    <input type="radio" name="edu">&nbsp;高中-大專&nbsp;
+                                    <input type="radio" name="edu">&nbsp;大學以上&nbsp;
+                                    <input type="radio" name="edu">&nbsp;其他&nbsp;
+                                    <input class="form-control text-box single-line" type="text" name="edu-other">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-radio">
+                            <div class="row">
+                                <label class="control-label col-md-1" for="age">年齡</label>
+                                <div class="col-md-10" style="margin-top: 6px;">
+                                    <input type="radio" name="age">&nbsp;20歲以下&nbsp;
+                                    <input type="radio" name="age">&nbsp;21-30歲&nbsp;
+                                    <input type="radio" name="age">&nbsp;31-40歲&nbsp;
+                                    <input type="radio" name="age">&nbsp;41-50歲&nbsp;
+                                    <input type="radio" name="age">&nbsp;51歲以上&nbsp;
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-radio">
+                            <div class="row">
+                                <label class="control-label col-md-1" for="res">參訓原因</label>
+                                <div class="col-md-10">
+                                    <input type="radio" name="res">&nbsp;公司派訓&nbsp;
+                                    <input type="radio" name="res">&nbsp;個人進修&nbsp;
+                                    <input type="radio" name="res">&nbsp;其他&nbsp;
+                                    <input class="form-control text-box single-line" type="text" name="res-other">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <div class="title">
+                        第二部份 課程安排與設計
+                    </div>
+                    <div class="detail">
+                        <div class="form-group form-radio">
+                            <div class="row">
+                                <label class="control-label col-md-4" for="op1">課程安排，整體滿意程度為？</label>
+                                <div class="col-md-5" style="margin-top: 5px;">
+                                    <input type="radio" name="op1">&nbsp;較差&nbsp;
+                                    <input type="radio" name="op1">&nbsp;尚可&nbsp;
+                                    <input type="radio" name="op1">&nbsp;普通&nbsp;
+                                    <input type="radio" name="op1">&nbsp;良好&nbsp;
+                                    <input type="radio" name="op1">&nbsp;極佳&nbsp;
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-radio">
+                            <div class="row">
+                                <label class="control-label col-md-4" for="op2">課程之教材內容，滿意程度為？</label>
+                                <div class="col-md-5" style="margin-top: 5px;">
+                                    <input type="radio" name="op2">&nbsp;較差&nbsp;
+                                    <input type="radio" name="op2">&nbsp;尚可&nbsp;
+                                    <input type="radio" name="op2">&nbsp;普通&nbsp;
+                                    <input type="radio" name="op2">&nbsp;良好&nbsp;
+                                    <input type="radio" name="op2">&nbsp;極佳&nbsp;
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-radio">
+                            <div class="row">
+                                <label class="control-label col-md-4" for="op3">安排之課程，有助於提昇您學習之興趣？</label>
+                                <div class="col-md-5" style="margin-top: 5px;">
+                                    <input type="radio" name="op3">&nbsp;較差&nbsp;
+                                    <input type="radio" name="op3">&nbsp;尚可&nbsp;
+                                    <input type="radio" name="op3">&nbsp;普通&nbsp;
+                                    <input type="radio" name="op3">&nbsp;良好&nbsp;
+                                    <input type="radio" name="op3">&nbsp;極佳&nbsp;
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-radio">
+                            <div class="row">
+                                <label class="control-label col-md-4" for="op4">課程之安排，能滿足您的就業所需？</label>
+                                <div class="col-md-5" style="margin-top: 5px;">
+                                    <input type="radio" name="op4">&nbsp;較差&nbsp;
+                                    <input type="radio" name="op4">&nbsp;尚可&nbsp;
+                                    <input type="radio" name="op4">&nbsp;普通&nbsp;
+                                    <input type="radio" name="op4">&nbsp;良好&nbsp;
+                                    <input type="radio" name="op4">&nbsp;極佳&nbsp;
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title">
+                        第三部份 授課情形
+                    </div>
+                    <div class="detail">
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="control-label col-md-1" for="className">課程名稱</label>
+                                <div class="col-md-4">
+                                    <input class="form-control text-box single-line" name="className" type="text" value="">
+                                </div>
+                                <label class="control-label col-md-1" for="EmailAddr">講師姓名</label>
+                                <div class="col-md-3">
+                                    <input class="form-control text-box single-line" name="tchName" type="text" value="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-radio">
+                            <div class="row">
+                                <label class="control-label col-md-1" for="op5">講課內容</label>
+                                <div class="col-md-5" style="margin-top: 5px;">
+                                    <input type="radio" name="op5">&nbsp;較差&nbsp;
+                                    <input type="radio" name="op5">&nbsp;尚可&nbsp;
+                                    <input type="radio" name="op5">&nbsp;普通&nbsp;
+                                    <input type="radio" name="op5">&nbsp;良好&nbsp;
+                                    <input type="radio" name="op5">&nbsp;極佳&nbsp;
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-radio">
+                            <div class="row">
+                                <label class="control-label col-md-1" for="op6">教學方式</label>
+                                <div class="col-md-5" style="margin-top: 5px;">
+                                    <input type="radio" name="op6">&nbsp;較差&nbsp;
+                                    <input type="radio" name="op6">&nbsp;尚可&nbsp;
+                                    <input type="radio" name="op6">&nbsp;普通&nbsp;
+                                    <input type="radio" name="op6">&nbsp;良好&nbsp;
+                                    <input type="radio" name="op6">&nbsp;極佳&nbsp;
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-radio">
+                            <div class="row">
+                                <label class="control-label col-md-1" for="op7">學習效果</label>
+                                <div class="col-md-5" style="margin-top: 5px;">
+                                    <input type="radio" name="op7">&nbsp;較差&nbsp;
+                                    <input type="radio" name="op7">&nbsp;尚可&nbsp;
+                                    <input type="radio" name="op7">&nbsp;普通&nbsp;
+                                    <input type="radio" name="op7">&nbsp;良好&nbsp;
+                                    <input type="radio" name="op7">&nbsp;極佳&nbsp;
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title">
+                        第四部份 其他
+                    </div>
+                    <div class="detail">
+                        <div class="form-group form-radio">
+                            <div class="row">
+                                <label class="control-label col-md-3" for="help" style="align-self: center;">參訓後對工作是否有幫助</label>
+                                <div class="col-md-9" style="margin-left: -50px;">
+                                    <input type="radio" name="help">&nbsp;對初次工作有幫助&nbsp;
+                                    <input type="radio" name="help">&nbsp;對目前工作效率有幫助&nbsp;
+                                    <input type="radio" name="help">&nbsp;對轉換工作有幫助&nbsp;
+                                    <input type="radio" name="help">&nbsp;對調升職位有幫助&nbsp;
+                                    <br>
+                                    <input type="radio" name="help">&nbsp;其他&nbsp;
+                                    <input class="form-control text-box single-line" type="text" name="help-other">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-radio">
+                            <div class="row">
+                                <label class="control-label col-md-3" for="helpOp1" style="align-self: center;">行政人員服務態度</label>
+                                <div class="col-md-9" style="margin-left: -50px;margin-top: 5px;">
+                                    <input type="radio" name="helpOp1">&nbsp;很不滿意&nbsp;
+                                    <input type="radio" name="helpOp1">&nbsp;不太滿意&nbsp;
+                                    <input type="radio" name="helpOp1">&nbsp;普通&nbsp;
+                                    <input type="radio" name="helpOp1">&nbsp;滿意&nbsp;
+                                    <input type="radio" name="helpOp1">&nbsp;非常滿意&nbsp;
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-radio">
+                            <div class="row">
+                                <label class="control-label col-md-3" for="helpClass" style="align-self: center;">想上其他課程?</label>
+                                <div class="col-md-9" style="margin-left: -50px;">
+                                    <input type="checkbox" name="helpClass">&nbsp;天車(固定式起重機)&nbsp;
+                                    <input type="checkbox" name="helpClass">&nbsp;吊車(移動式起重機)&nbsp;
+                                    <input type="checkbox" name="helpClass">&nbsp;堆高機&nbsp;
+                                    <input type="checkbox" name="helpClass">&nbsp;吊籠(洗窗機)&nbsp;
+                                    <input type="checkbox" name="helpClass">&nbsp;吊掛&nbsp;
+                                    <input type="checkbox" name="helpClass">&nbsp;挖土機&nbsp;
+                                    <input type="checkbox" name="helpClass">&nbsp;小山貓&nbsp;
+                                    <br>
+                                    <input type="checkbox" name="helpClass">&nbsp;急救&nbsp;
+                                    <input type="checkbox" name="helpClass">&nbsp;粉塵&nbsp;
+                                    <input type="checkbox" name="helpClass">&nbsp;乙炔熔接&nbsp;
+                                    <input type="checkbox" name="helpClass">&nbsp;有機溶劑&nbsp;
+                                    <input type="checkbox" name="helpClass">&nbsp;施工架組配&nbsp;
+                                    <input type="checkbox" name="helpClass">&nbsp;鋼構組配&nbsp;
+                                    <input type="checkbox" name="helpClass">&nbsp;一般手工電焊&nbsp;
+                                    <input type="checkbox" name="helpClass">&nbsp;危險品運送&nbsp;
+                                    <br>
+                                    <input type="checkbox" name="helpClass">&nbsp;營造/非營造 業務主管-甲、乙、丙種&nbsp;
+                                    <input type="checkbox" name="helpClass">&nbsp;其他&nbsp;
+                                    <input class="form-control text-box single-line" type="text" name="helpClass-other">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-radio">
+                            <div class="row">
+                                <label class="control-label col-md-3" for="help">我有話要說：</label>
+                            </div>
+                            <div class="row">
+                                <textarea class="col-md-6 form-control " style="margin-left: 15px;" rows="4" name="content"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <div class="form-group ">
+                            <div class="row ">
+                                <div class="col-md-12 " style="text-align:center; ">
+                                    <input type="submit" value="送出問卷" class="w-50 btn btn-cus ">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
@@ -270,223 +282,279 @@
     <section class="d-xl-none">
         <div class="container">
             <div class="content">
-                <div class="phone-title">問券調查</div><br>
-            </div>
-            <div class="form-group">
-                <div class="row">
-                    <div class="col-md-1">
-
-                        <label class="control-label" for="StudentName">學員姓名<span
-                                style="color:red;">*</span></label>
-
-                    </div>
-                    <div class="col-md-3">
-                        <input class="form-control inputRequired text-box single-line" data-val="true" data-val-length="姓名 輸入長度超過限制，最多30個字!!" data-val-length-max="30" data-val-required="請輸入學員姓名" id="StudentName" name="StudentName" type="text" value="">
-                        <span class="field-validation-valid text-danger" data-valmsg-for="StudentName" data-valmsg-replace="true"></span>
-                    </div>
-                    <div class="col-md-1">
-                        <label class="control-label" for="IdentifyId">身分證號<span
-                                style="color:red;">*</span></label>
-
-                    </div>
-
-                    <div class="col-md-3">
-                        <input class="form-control inputRequired text-box single-line" data-val="true" data-val-regex="身份證字號或居留證號格式錯誤" data-val-regex-pattern="^([A-Z][0-9]{9}|[A-Z][0-9]{6}|[A-Z][0-9]{7}|[A-Z][A-Z][0-9]{8})$" data-val-required="請輸入身分證號" id="IdentifyId" name="IdentifyId"
-                            type="text" value="">
-                        <span class="field-validation-valid text-danger" data-valmsg-for="IdentifyId" data-valmsg-replace="true"></span>
-                    </div>
-
-                    <label class="control-label col-md-1" for="PhotoFile">相片</label>
-                    <div class="col-md-3">
-                        <input accept=".jpg,.gif.png" class="form-control" id="PhotoFile" name="PhotoFile" onchange="checkFile(this)" type="file" value="">
-                    </div>
-
+                <div class="phone-title">受訓學員意見調查表</div>
+                <div class="phone-detail">
+                    親愛的學員，您好！
+                    <br>爲瞭解參訓人員在進修過程之相關需求、參與情況、滿意程度，特實施此次問卷調查。結果將做為各項課程優化之參考，問卷著重於課程方面的需求瞭解及滿意度之調查，期盼您熱心提供寶貴的意見與想法。謝謝您的合作！
+                    <br><br>中華起重升降機具協會附設職業訓練中心<br>敬啟
+                    <br>
                 </div>
-            </div>
-
-            <div class="form-group">
-                <div class="row">
-                    <div class="col-md-1">
-                        <label class="control-label" for="Birthday">生日<span style="color:red;">*</span></label>
-
-                    </div>
-                    <div class="col-md-3">
-                        <input autocomplete="off" class="form-control datepicker inputRequired hasDatepicker" data-val="true" data-val-date="欄位 生日 必須是日期。" data-val-required="請輸入生日" id="Birthday" name="Birthday" placeholder="西元年/月/日" type="text" value="">
-                        <span class="field-validation-valid text-danger" data-valmsg-for="Birthday" data-valmsg-replace="true"></span>
-                    </div>
-                    <div class="col-md-1">
-                        <label class="control-label" for="MobilePhone1">手機一<span
-                                style="color:red;">*</span></label>
-                    </div>
-                    <div class="col-md-3">
-                        <input class="form-control inputRequired text-box single-line" data-val="true" data-val-length="手機 輸入長度超過限制，最多10個字!!" data-val-length-max="10" data-val-required="請輸入手機一" id="MobilePhone1" name="MobilePhone1" type="tel" value="">
-                        <span class="field-validation-valid text-danger" data-valmsg-for="MobilePhone1" data-valmsg-replace="true"></span>
-                    </div>
-                    <label class="control-label col-md-1" for="MobilePhone2">手機二</label>
-                    <div class="col-md-3">
-                        <input class="form-control text-box single-line" data-val="true" data-val-length="手機 輸入長度超過限制，最多10個字!!" data-val-length-max="10" id="MobilePhone2" name="MobilePhone2" type="tel" value="">
-                        <span class="field-validation-valid text-danger" data-valmsg-for="MobilePhone2" data-valmsg-replace="true"></span>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="form-group">
-                <div class="row">
-                    <label class="control-label col-md-1" for="Gender">性別</label>
-                    <div class="col-md-3">
-                        <select class="form-control" data-val="true" data-val-number="欄位 性別 必須是數字。" data-val-range="請選擇正確性別" data-val-range-max="1" data-val-range-min="0" data-val-required="請輸入性別" id="Gender" name="Gender">
-                            <option value="1">男</option>
-                            <option value="0">女</option>
-                        </select>
-                        <span class="field-validation-valid text-danger" data-valmsg-for="Gender" data-valmsg-replace="true"></span>
-                    </div>
-                    <label class="control-label col-md-1" for="EmailAddr">電子信箱</label>
-                    <div class="col-md-7">
-                        <input class="form-control text-box single-line" data-val="true" data-val-email="學員Email格式錯誤" data-val-length="電子信箱 輸入長度超過限制，最多50個字!!" data-val-length-max="50" id="EmailAddr" name="EmailAddr" type="email" value="">
-                        <span class="field-validation-valid text-danger" data-valmsg-for="EmailAddr" data-valmsg-replace="true"></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="row">
-                    <label class="control-label col-md-1" for="Tel">電話</label>
-                    <div class="col-md-5">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <input class="form-control text-box single-line" data-val="true" data-val-length="區碼 輸入長度超過限制，最多3個字!!" data-val-length-max="3" id="TelAreaCode" name="TelAreaCode" placeholder="區碼" type="text" value="">
+                <br>
+                <form action="">
+                    <div class="phone-title">第一部分 基本資料</div>
+                    <div class="phone-detail">
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="control-label col-md-1" for="StudentName">姓名</label>
+                                <div class="col-md-3">
+                                    <input class="form-control text-box single-line" data-val="true" data-val-length="姓名 輸入長度超過限制，最多30個字!!" data-val-length-max="30" data-val-required="請輸入學員姓名" id="StudentName" name="StudentName" type="text" value="">
+                                    <span class="field-validation-valid text-danger" data-valmsg-for="StudentName" data-valmsg-replace="true"></span>
+                                </div>
+                                <label class="control-label col-md-1" for="EmailAddr">電子信箱</label>
+                                <div class="col-md-3">
+                                    <input class="form-control text-box single-line" data-val="true" data-val-email="學員Email格式錯誤" data-val-length="電子信箱 輸入長度超過限制，最多50個字!!" data-val-length-max="50" id="EmailAddr" name="EmailAddr" type="email" value="">
+                                    <span class="field-validation-valid text-danger" data-valmsg-for="EmailAddr" data-valmsg-replace="true"></span>
+                                </div>
                             </div>
-                            <div class="col-md-6">
-                                <input class="form-control text-box single-line" data-val="true" data-val-length="電話 輸入長度超過限制，最多10個字!!" data-val-length-max="10" id="Tel" name="Tel" placeholder="電話號碼" type="text" value="">
-                                <span class="field-validation-valid text-danger" data-valmsg-for="TelExt" data-valmsg-replace="true"></span>
-                                <span class="field-validation-valid text-danger" data-valmsg-for="Tel" data-valmsg-replace="true"></span>
-                                <span class="field-validation-valid text-danger" data-valmsg-for="TelAreaCode" data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="form-group form-radio">
+                            <div class="row">
+                                <label class="control-label col-md-1" for="edu">學歷</label>
+                                <div class="col-md-10">
+                                    <input type="radio" name="edu">&nbsp;不識字&nbsp;
+                                    <input type="radio" name="edu">&nbsp;國小&nbsp;
+                                    <input type="radio" name="edu">&nbsp;國中&nbsp;
+                                    <input type="radio" name="edu">&nbsp;高中-大專&nbsp;
+                                    <br>
+                                    <input type="radio" name="edu">&nbsp;大學以上&nbsp;
+                                    <input type="radio" name="edu">&nbsp;其他&nbsp;
+                                    <input class="form-control text-box single-line" style="width: 30%;" type="text" name="edu-other">
+                                </div>
                             </div>
-                            <div class="col-md-3">
-                                <input class="form-control text-box single-line" data-val="true" data-val-length="分機 輸入長度超過限制，最多10個字!!" data-val-length-max="10" id="TelExt" name="TelExt" placeholder="分機" type="text" value="">
+                        </div>
+                        <div class="form-group form-radio">
+                            <div class="row">
+                                <label class="control-label col-md-1" for="age">年齡</label>
+                                <div class="col-md-10" style="margin-top: 6px;">
+                                    <input type="radio" name="age">&nbsp;20歲以下&nbsp;
+                                    <input type="radio" name="age">&nbsp;21-30歲&nbsp;
+                                    <input type="radio" name="age">&nbsp;31-40歲&nbsp;
+                                    <br>
+                                    <input type="radio" name="age">&nbsp;41-50歲&nbsp;
+                                    <input type="radio" name="age">&nbsp;51歲以上&nbsp;
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-radio">
+                            <div class="row">
+                                <label class="control-label col-md-1" for="res">參訓原因</label>
+                                <div class="col-md-10">
+                                    <input type="radio" name="res">&nbsp;公司派訓&nbsp;
+                                    <input type="radio" name="res">&nbsp;個人進修&nbsp;
+                                    <br>
+                                    <input type="radio" name="res">&nbsp;其他&nbsp;
+                                    <input class="form-control text-box single-line" style="width: 30%;" type="text" name="res-other">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <label class="control-label col-md-1" for="Fax">傳真</label>
-                    <div class="col-md-5">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <input class="form-control text-box single-line" data-val="true" data-val-length="區碼 輸入長度超過限制，最多3個字!!" data-val-length-max="3" id="FaxAreaCode" name="FaxAreaCode" placeholder="區碼" type="text" value="">
+                    <br>
+                    <div class="phone-title">
+                        第二部份 課程安排與設計
+                    </div>
+                    <div class="phone-detail">
+                        <div class="form-group form-radio">
+                            <div class="row">
+                                <label class="control-label col-md-4" for="op1">課程安排，整體滿意程度為？</label>
+                                <div class="col-md-5" style="margin-top: 5px;">
+                                    <input type="radio" name="op1">&nbsp;較差&nbsp;
+                                    <input type="radio" name="op1">&nbsp;尚可&nbsp;
+                                    <input type="radio" name="op1">&nbsp;普通&nbsp;
+                                    <input type="radio" name="op1">&nbsp;良好&nbsp;
+                                    <input type="radio" name="op1">&nbsp;極佳&nbsp;
+                                </div>
                             </div>
-                            <div class="col-md-6">
-                                <input class="form-control text-box single-line" data-val="true" data-val-length="傳真 輸入長度超過限制，最多10個字!!" data-val-length-max="10" id="Fax" name="Fax" placeholder="傳真號碼" type="text" value="">
-                                <span class="field-validation-valid text-danger" data-valmsg-for="FaxExt" data-valmsg-replace="true"></span>
-                                <span class="field-validation-valid text-danger" data-valmsg-for="Fax" data-valmsg-replace="true"></span>
-                                <span class="field-validation-valid text-danger" data-valmsg-for="FaxAreaCode" data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="form-group form-radio">
+                            <div class="row">
+                                <label class="control-label col-md-4" for="op2">課程之教材內容，滿意程度為？</label>
+                                <div class="col-md-5" style="margin-top: 5px;">
+                                    <input type="radio" name="op2">&nbsp;較差&nbsp;
+                                    <input type="radio" name="op2">&nbsp;尚可&nbsp;
+                                    <input type="radio" name="op2">&nbsp;普通&nbsp;
+                                    <input type="radio" name="op2">&nbsp;良好&nbsp;
+                                    <input type="radio" name="op2">&nbsp;極佳&nbsp;
+                                </div>
                             </div>
-                            <div class="col-md-3">
-                                <input class="form-control text-box single-line" data-val="true" data-val-length="分機 輸入長度超過限制，最多10個字!!" data-val-length-max="10" id="FaxExt" name="FaxExt" placeholder="分機" type="text" value="">
+                        </div>
+                        <div class="form-group form-radio">
+                            <div class="row">
+                                <label class="control-label col-md-4" for="op3">安排之課程，有助於提昇您學習之興趣？</label>
+                                <div class="col-md-5" style="margin-top: 5px;">
+                                    <input type="radio" name="op3">&nbsp;較差&nbsp;
+                                    <input type="radio" name="op3">&nbsp;尚可&nbsp;
+                                    <input type="radio" name="op3">&nbsp;普通&nbsp;
+                                    <input type="radio" name="op3">&nbsp;良好&nbsp;
+                                    <input type="radio" name="op3">&nbsp;極佳&nbsp;
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-radio">
+                            <div class="row">
+                                <label class="control-label col-md-4" for="op4">課程之安排，能滿足您的就業所需？</label>
+                                <div class="col-md-5" style="margin-top: 5px;">
+                                    <input type="radio" name="op4">&nbsp;較差&nbsp;
+                                    <input type="radio" name="op4">&nbsp;尚可&nbsp;
+                                    <input type="radio" name="op4">&nbsp;普通&nbsp;
+                                    <input type="radio" name="op4">&nbsp;良好&nbsp;
+                                    <input type="radio" name="op4">&nbsp;極佳&nbsp;
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-
-
-
-
-
-
-            <div class="form-group">
-                <div class="row">
-                    <label class="control-label col-md-1" for="Addr">聯絡地址</label>
-                    <div class="col-md-11">
-                        <div class="row">
-                            <div class="col-md-2">
-                                <input class="form-control text-box single-line" data-val="true" data-val-length="郵遞區號 輸入長度超過限制，最多10個字!!" data-val-length-max="10" id="AddrPostCode" name="AddrPostCode" placeholder="郵遞區號" type="text" value="">
-                                <span class="field-validation-valid text-danger" data-valmsg-for="AddrPostCode" data-valmsg-replace="true"></span>
+                    <br>
+                    <div class="phone-title">
+                        第三部份 授課情形
+                    </div>
+                    <div class="phone-detail">
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="control-label col-md-1" for="className">課程名稱</label>
+                                <div class="col-md-4">
+                                    <input class="form-control text-box single-line" name="className" type="text" value="">
+                                </div>
+                                <label class="control-label col-md-1" for="EmailAddr">講師姓名</label>
+                                <div class="col-md-3">
+                                    <input class="form-control text-box single-line" name="tchName" type="text" value="">
+                                </div>
                             </div>
-                            <div class="col-md-10">
-                                <input class="form-control text-box single-line" data-val="true" data-val-length="地址 輸入長度超過限制，最多100個字!!" data-val-length-max="100" id="Addr" name="Addr" placeholder="聯絡地址" type="text" value="">
-                                <span class="field-validation-valid text-danger" data-valmsg-for="Addr" data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="form-group form-radio">
+                            <div class="row">
+                                <label class="control-label col-md-1" for="op5">講課內容</label>
+                                <div class="col-md-5" style="margin-top: 5px;">
+                                    <input type="radio" name="op5">&nbsp;較差&nbsp;
+                                    <input type="radio" name="op5">&nbsp;尚可&nbsp;
+                                    <input type="radio" name="op5">&nbsp;普通&nbsp;
+                                    <input type="radio" name="op5">&nbsp;良好&nbsp;
+                                    <input type="radio" name="op5">&nbsp;極佳&nbsp;
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-radio">
+                            <div class="row">
+                                <label class="control-label col-md-1" for="op6">教學方式</label>
+                                <div class="col-md-5" style="margin-top: 5px;">
+                                    <input type="radio" name="op6">&nbsp;較差&nbsp;
+                                    <input type="radio" name="op6">&nbsp;尚可&nbsp;
+                                    <input type="radio" name="op6">&nbsp;普通&nbsp;
+                                    <input type="radio" name="op6">&nbsp;良好&nbsp;
+                                    <input type="radio" name="op6">&nbsp;極佳&nbsp;
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-radio">
+                            <div class="row">
+                                <label class="control-label col-md-1" for="op7">學習效果</label>
+                                <div class="col-md-5" style="margin-top: 5px;">
+                                    <input type="radio" name="op7">&nbsp;較差&nbsp;
+                                    <input type="radio" name="op7">&nbsp;尚可&nbsp;
+                                    <input type="radio" name="op7">&nbsp;普通&nbsp;
+                                    <input type="radio" name="op7">&nbsp;良好&nbsp;
+                                    <input type="radio" name="op7">&nbsp;極佳&nbsp;
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="row">
-                    <label class="control-label col-md-1" for="LawAddr">戶籍地址</label>
-                    <div class="col-md-11">
-                        <div class="row">
-                            <div class="col-md-2">
-                                <input class="form-control text-box single-line" data-val="true" data-val-length="郵遞區號 輸入長度超過限制，最多10個字!!" data-val-length-max="10" id="LawAddrPostCode" name="LawAddrPostCode" placeholder="郵遞區號" type="text" value="">
-                                <span class="field-validation-valid text-danger" data-valmsg-for="LawAddrPostCode" data-valmsg-replace="true"></span>
+                    <br>
+                    <div class="phone-title">
+                        第四部份 其他
+                    </div>
+                    <div class="phone-detail">
+                        <div class="form-group form-radio">
+                            <div class="row">
+                                <label class="control-label col-md-3" for="help" style="align-self: center;">參訓後對工作是否有幫助</label>
+                                <div class="col-md-9">
+                                    <input type="radio" name="help">&nbsp;對初次工作有幫助&nbsp;
+                                    <br>
+                                    <input type="radio" name="help">&nbsp;對目前工作效率有幫助&nbsp;
+                                    <br>
+                                    <input type="radio" name="help">&nbsp;對轉換工作有幫助&nbsp;
+                                    <br>
+                                    <input type="radio" name="help">&nbsp;對調升職位有幫助&nbsp;
+                                    <br>
+                                    <input type="radio" name="help">&nbsp;其他&nbsp;
+                                    <input class="form-control text-box single-line" style="width: 50%;" type="text" name="help-other">
+                                </div>
                             </div>
-                            <div class="col-md-10">
-                                <input class="form-control text-box single-line" data-val="true" data-val-length="戶籍地址 輸入長度超過限制，最多100個字!!" data-val-length-max="100" id="LawAddr" name="LawAddr" placeholder="戶籍地址" type="text" value="">
-                                <span class="field-validation-valid text-danger" data-valmsg-for="LawAddr" data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="form-group form-radio">
+                            <div class="row">
+                                <label class="control-label col-md-3" for="helpOp1" style="align-self: center;">行政人員服務態度</label>
+                                <div class="col-md-9">
+                                    <input type="radio" name="helpOp1">&nbsp;很不滿意&nbsp;
+                                    <br>
+                                    <input type="radio" name="helpOp1">&nbsp;不太滿意&nbsp;
+                                    <br>
+                                    <input type="radio" name="helpOp1">&nbsp;普通&nbsp;
+                                    <br>
+                                    <input type="radio" name="helpOp1">&nbsp;滿意&nbsp;
+                                    <br>
+                                    <input type="radio" name="helpOp1">&nbsp;非常滿意&nbsp;
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-radio">
+                            <div class="row">
+                                <label class="control-label col-md-3" for="helpClass" style="align-self: center;">想上其他課程?</label>
+                                <div class="col-md-9">
+                                    <input type="checkbox" name="helpClass">&nbsp;天車(固定式起重機)&nbsp;
+                                    <br>
+                                    <input type="checkbox" name="helpClass">&nbsp;吊車(移動式起重機)&nbsp;
+                                    <br>
+                                    <input type="checkbox" name="helpClass">&nbsp;堆高機&nbsp;
+                                    <br>
+                                    <input type="checkbox" name="helpClass">&nbsp;吊籠(洗窗機)&nbsp;
+                                    <br>
+                                    <input type="checkbox" name="helpClass">&nbsp;吊掛&nbsp;
+                                    <br>
+                                    <input type="checkbox" name="helpClass">&nbsp;挖土機&nbsp;
+                                    <br>
+                                    <input type="checkbox" name="helpClass">&nbsp;小山貓&nbsp;
+                                    <br>
+                                    <input type="checkbox" name="helpClass">&nbsp;急救&nbsp;
+                                    <br>
+                                    <input type="checkbox" name="helpClass">&nbsp;粉塵&nbsp;
+                                    <br>
+                                    <input type="checkbox" name="helpClass">&nbsp;乙炔熔接&nbsp;
+                                    <br>
+                                    <input type="checkbox" name="helpClass">&nbsp;有機溶劑&nbsp;
+                                    <br>
+                                    <input type="checkbox" name="helpClass">&nbsp;施工架組配&nbsp;
+                                    <br>
+                                    <input type="checkbox" name="helpClass">&nbsp;鋼構組配&nbsp;
+                                    <br>
+                                    <input type="checkbox" name="helpClass">&nbsp;一般手工電焊&nbsp;
+                                    <br>
+                                    <input type="checkbox" name="helpClass">&nbsp;危險品運送&nbsp;
+                                    <br>
+                                    <input type="checkbox" name="helpClass">&nbsp;營造/非營造 業務主管-甲、乙、丙種&nbsp;
+                                    <br>
+                                    <input type="checkbox" name="helpClass">&nbsp;其他&nbsp;
+                                    <input class="form-control text-box single-line" style="width: 50%;" type="text" name="helpClass-other">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-radio">
+                            <div class="row">
+                                <label class="control-label col-md-3" for="help">我有話要說：</label>
+                            </div>
+                            <div class="row">
+                                <textarea class="col-md-6 form-control " style="margin-left: 15px;margin-right: 15px;" rows="4" name="content"></textarea>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="row">
-                    <label class="control-label col-md-1" for="EducationCode">學歷</label>
-                    <div class="col-md-3">
-                        <select class="form-control" data-val="true" data-val-number="欄位 學歷 必須是數字。" data-val-required="請輸入學歷" id="EducationCode" name="EducationCode">
-                            <option value="1">不識字</option>
-                            <option value="2">國小</option>
-                            <option value="3">國中</option>
-                            <option value="4">高中(職)</option>
-                            <option value="5">專科</option>
-                            <option value="6">大學</option>
-                            <option value="7">研究所以上</option>
-                            <option value="99">其他</option>
-                        </select>
-                        <span class="field-validation-valid text-danger" data-valmsg-for="EducationCode" data-valmsg-replace="true"></span>
-                    </div>
+                    <div class="form-group ">
+                        <div class="form-group ">
+                            <div class="row ">
+                                <div class="col-md-12 " style="text-align:center; ">
+                                    <input type="submit" value="送出問卷" style="font-size: 10pt !important;" class="w-50 btn btn-cus ">
+                                </div>
 
-                    <div class="col-md-1">
-                        <label class="control-label" for="EducationSchoolName">學校名稱<span
-                                style="color:red;">*</span></label>
-
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-3">
-                        <input class="form-control inputRequired text-box single-line" data-val="true" data-val-length="學校名稱 輸入長度超過限制，最多50個字!!" data-val-length-max="50" data-val-required="請輸入學校名稱" id="EducationSchoolName" name="EducationSchoolName" type="text" value="">
-                        <span class="field-validation-valid text-danger" data-valmsg-for="EducationSchoolName" data-valmsg-replace="true"></span>
-                    </div>
-                    <label class="control-label col-md-1" for="EducationDepartment">科系</label>
-                    <div class="col-md-3">
-                        <input class="form-control text-box single-line" data-val="true" data-val-length="科系 輸入長度超過限制，最多50個字!!" data-val-length-max="50" id="EducationDepartment" name="EducationDepartment" type="text" value="">
-                        <span class="field-validation-valid text-danger" data-valmsg-for="EducationDepartment" data-valmsg-replace="true"></span>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="form-group">
-                <div class="row">
-                    <label class="control-label col-md-1" for="EducationYear">畢業年</label>
-                    <div class="col-md-3">
-                        <input class="form-control text-box single-line" data-val="true" data-val-number="欄位 畢業年 必須是數字。" data-val-range="區間錯誤" data-val-range-max="200" data-val-range-min="1" id="EducationYear" name="EducationYear" type="number" value="">
-                        <span class="field-validation-valid text-danger" data-valmsg-for="EducationYear" data-valmsg-replace="true"></span>
-                    </div>
-                    <label class="control-label col-md-1" for="EducationMonth">畢業月</label>
-                    <div class="col-md-3">
-                        <input class="form-control text-box single-line" data-val="true" data-val-number="欄位 畢業月 必須是數字。" data-val-range="區間錯誤" data-val-range-max="12" data-val-range-min="1" id="EducationMonth" name="EducationMonth" type="number" value="">
-                        <span class="field-validation-valid text-danger" data-valmsg-for="EducationMonth" data-valmsg-replace="true"></span>
-                    </div>
-                    <label class="control-label col-md-1" for="EduFile">畢業證書</label>
-                    <div class="col-md-3">
-                        <input accept=".pdf" class="form-control" id="EduFile" name="EduFile" onchange="checkPdfFile(this)" type="file" value="">
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="form-group">
-                <div class="row">
-                    <div class="col-md-12" style="text-align:center;">
-                        <input type="submit" value="送出" class="w-50 btn btn-cus">
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
     </section>

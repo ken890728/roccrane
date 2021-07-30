@@ -1,25 +1,30 @@
-.control-label{
-	margin-top: 0px;
+.control-label {
+    margin-top: 0px;
 }
 
 .inputRequired {
     background-color: aliceblue !important;
 }
+
 .form-control {
     border-radius: 3px;
 }
 
 .info {
-	background-color: #e1e0e0;
-	margin-bottom: 50px;
-	padding: 20px;
+    background-color: #e1e0e0;
+    margin-bottom: 50px;
+    padding: 20px;
 }
 
-.btn-cus{
-	background: #41516f !important;
+.btn-cus {
+    background: #41516f !important;
     color: #ffffff !important;
     font-size: 18pt !important;
-    font-weight: 500 !important; 
+    font-weight: 500 !important;
+}
+
+.phone-form .row .col-md-1 {
+    margin-top: 15px;
 }
 
 .form-control {
@@ -36,13 +41,14 @@
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.btn{
-	background: #41516f;
+
+.btn {
+    background: #41516f;
     color: #ffffff;
     font-size: 18pt;
     font-weight: 500;
 }
 
-.list{
-	margin-left: 20px;
+.list {
+    margin-left: 20px;
 }
