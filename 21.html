@@ -857,6 +857,19 @@
             "一般勞工安全衛生教育訓練"
         ];
 
+        var s5 = ["起重機暨吊掛操作人員回訓",
+            "堆高機操作人員回訓",
+            "吊籠操作人員回訓",
+            "急救人員回訓",
+            "(營造業)安全衛生業務主管回訓",
+            "有害物作業主管回訓",
+            "乙炔熔接操作人員回訓",
+            "營建用提升機/升降機操作人員回訓",
+            "高空工作車操作人員回訓",
+            "鍋爐操作人員回訓",
+            "(營造業)一般安全衛生講習回訓"
+        ];
+
         var s0 = s1.concat(s2, s3, s4);
 
         $("#class-name").html('<option value="0" selected>所有課程</option>');
@@ -903,6 +916,9 @@
                     break;
                 case "5":
                     $("#class-name").html('<option value="0" selected>所有課程</option>');
+                    for (var i = 0; i < s5.length; i++) {
+                        $("#class-name").html($("#class-name").html() + '<option value="' + i + '">' + s5[i] + "</option>");
+                    }
                     break;
             }
         });
