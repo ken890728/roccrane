@@ -50,3 +50,17 @@ table.phone-main-layer table tr td:nth-child(1) {
     white-space: nowrap;
     padding-right: 10px;
 }
+
+.page-item .page-link {
+    z-index: 3;
+    color: #52525b !important;
+    background-color: #fff !important;
+    border-color: #e1e0e0 !important;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #52525b !important;
+    background-color: #e1e0e0 !important;
+    border-color: #e1e0e0 !important;
+}

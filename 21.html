@@ -956,6 +956,9 @@
                     break;
                 case "5":
                     $("#phone-class-name").html('<option value="0" selected>所有課程</option>');
+                    for (var i = 0; i < s5.length; i++) {
+                        $("#phone-class-name").html($("#phone-class-name").html() + '<option value="' + i + '">' + s5[i] + "</option>");
+                    }
                     break;
             }
         });
