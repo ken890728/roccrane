@@ -52,3 +52,7 @@
 .list {
     margin-left: 20px;
 }
+
+.detail .form-group .row .col-md-1 {
+    padding-right: 0;
+}
